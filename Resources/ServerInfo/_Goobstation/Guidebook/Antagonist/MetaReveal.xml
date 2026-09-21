@@ -3,76 +3,76 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Revealing conditions for antags
+  # Conditions de révélation pour les antags
 
-  The following list provides revealing conditions for different antags you may see on the station
+  La liste suivante présente les conditions de révélation pour les différents antags que vous pouvez croiser sur la station.
 
-  ## Heretics
-  The revealing condition for this shield is any of the following:
-  - Finding a rune
-  - Finding a reality fracture
-  - Witnessing a crewmember using their powers
+  ## Hérétiques
+  La condition de révélation pour ce shield est l'une des suivantes :
+  - Trouver une rune
+  - Trouver une fracture de réalité
+  - Voir un membre d'équipage utiliser ses pouvoirs
 
-  ## Cosmic Cult
+  ## Culte Cosmique
 
-  The revealing condition for this shield is any of the following:
-  - witnessing a crewmember with the telltale facemask
-  - Seeing a glyph
-  - witnessing a crewmember absorb a malign shift
-  - witnessing a crewmember use a cult-specific ability
-  - witnessing cult gear like entropic swords and armor
+  La condition de révélation pour ce shield est l'une des suivantes :
+  - voir un membre d'équipage portant le masque caractéristique
+  - voir un glyphe
+  - voir un membre d'équipage absorber une faille maline
+  - voir un membre d'équipage utiliser une capacité propre au culte
+  - voir de l'équipement du culte comme les épées entropiques ou les armures
 
-  ## Devils
+  ## Diables
 
-  The revealing condition for this shield is any of the following:
-  - You are a Devil.
-  - You are the Chaplain, a lawyer, or a member of Central Command. (Including BSO and NTR)
-  - You have made a deal with the Devil.
-  - You have witnessed someone make a deal.
+  La condition de révélation pour ce shield est l'une des suivantes :
+  - Vous êtes un Diable.
+  - Vous êtes le Chapelain, un avocat, ou un membre du Commandement Central. (BSO et NTR inclus)
+  - Vous avez passé un pacte avec le Diable.
+  - Vous avez vu quelqu'un passer un pacte.
 
   ## Zombies
 
-  Revealing conditions to the "Zombie" Shield:
-  - You are a Nuclear Operative
-  - You are a Syndicate Agent
-  - You are a Zombie
-  - You have seen Zombies on the station
+  Conditions de révélation pour le shield "Zombie" :
+  - Vous êtes un Opérateur Nucléaire
+  - Vous êtes un Agent du Syndicat
+  - Vous êtes un Zombie
+  - Vous avez vu des Zombies sur la station
 
-  ## Infections(Once the zombie virus is proven)
+  ## Infections (une fois que le virus zombie est avéré)
 
-  Revealing conditions to the "Infections" Shield:
-  - You are a Chemist
-  - You are a Chief Medical Officer
-  - Zombies are announced to be real and station-wide
+  Conditions de révélation pour le shield "Infections" :
+  - Vous êtes un Chimiste
+  - Vous êtes le Médecin-chef
+  - Les Zombies sont annoncés comme réels et présents sur toute la station
 
-  ## Deathsquad
+  ## Escadron de la mort
 
-  Revealing conditions to the "Deathsquad" Shield:
-  - You'll know.
+  Conditions de révélation pour le shield "Escadron de la mort" :
+  - Vous le saurez.
 
-  ## Implanted implants
+  ## Implants implantés
 
-  The revealing condition for this shield is any of the following:
-  - discovering a non-NT implanter, used or unused
-  - discovering a non-NT implant box
-  - discovering use of a non-NT implant by anyone
-  - experiencing a situation where absolutely no other explanation is possible
-  - discovering an unlocked uplink
+  La condition de révélation pour ce shield est l'une des suivantes :
+  - découvrir un implanter non-NT, utilisé ou non
+  - découvrir une boîte d'implant non-NT
+  - découvrir l'utilisation d'un implant non-NT par quiconque
+  - se retrouver dans une situation où aucune autre explication n'est possible
+  - découvrir un uplink déverrouillé
 
-  ## Chameleon Items
+  ## Objets caméléon
 
-  The revealing condition for this shield is any of the following:
-  - seeing someone else cause any chameleon item to change
-  - finding holographic nanomachine fibers
-  - experiencing a situation where absolutely no other explanation is possible
-  - discovering an unlocked uplink
+  La condition de révélation pour ce shield est l'une des suivantes :
+  - voir quelqu'un d'autre provoquer un changement sur un objet caméléon
+  - trouver des fibres de nanomachines holographiques
+  - se retrouver dans une situation où aucune autre explication n'est possible
+  - découvrir un uplink déverrouillé
 
-  ## Stealth Items
+  ## Objets furtifs
 
-  The revealing condition for this shield is any of the following:
-  - seeing the item behave differently than the expected behavior for the item
-  - seeing the item used for its hidden purpose
-  - experiencing a situation where absolutely no other explanation is possible
-  - discovering an unlocked uplink
+  La condition de révélation pour ce shield est l'une des suivantes :
+  - voir l'objet se comporter différemment de son comportement attendu
+  - voir l'objet utilisé pour sa fonction cachée
+  - se retrouver dans une situation où aucune autre explication n'est possible
+  - découvrir un uplink déverrouillé
 
 </Document>

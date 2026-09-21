@@ -1,7 +1,7 @@
 - type: entity
   id: SeedAnalyzer
-  name: seed analyser
-  description: A machine that scans the seeds attributes.
+  name: analyseur de graines
+  description: Une machine qui analyse les attributs des graines.
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   components:
   - type: Sprite

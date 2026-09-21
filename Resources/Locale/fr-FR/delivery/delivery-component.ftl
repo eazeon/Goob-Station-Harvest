@@ -4,8 +4,10 @@ delivery-earnings-examine = Livrer ceci rapportera à la station [color=yellow]{
 delivery-recipient-no-name = Sans nom
 delivery-recipient-no-job = Inconnu
 
-delivery-unlocked = Vous déverrouillez {$delivery} avec votre empreinte digitale.
-delivery-opened = Vous ouvrez {$delivery}.
+delivery-unlocked-self = Vous déverrouillez {$delivery} avec votre empreinte digitale.
+delivery-unlocked-others = {$recipient} {$possadj} déverrouille {$delivery} avec son empreinte digitale.
+delivery-opened-self = Vous ouvrez {$delivery}.
+delivery-opened-others = {$recipient} {$possadj} ouvre {$delivery}.
 
 delivery-unlock-verb = Déverrouiller
 delivery-open-verb = Ouvrir

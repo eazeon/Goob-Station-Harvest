@@ -24,9 +24,9 @@ lobby-state-player-status-ready = Prêt
 lobby-state-player-status-observer = Observeur
 lobby-state-player-status-round-not-started = La partie n'a pas encore commencé
 lobby-state-player-status-round-time =
-    The round time is: {$hours} {$hours ->
+    La durée de la partie est : {$hours} {$hours ->
     [1]heure
-    *[other]ehures
+    *[other]heures
     } et {$minutes} {$minutes ->
     [1]minute
     *[other]minutes

@@ -237,7 +237,7 @@
   parent: BasePlushie
   id: PlushieNuke
   name: peluche nukie
-  description: Un jouet en peluche qui ressemble à un opératif nucléaire du Syndicat. L'étiquette prétend que les opératifs sont purement fictifs.
+  description: Un jouet en peluche qui ressemble à un opérateur nucléaire du Syndicat. L'étiquette prétend que les opérateurs sont purement fictifs.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/nukie.rsi

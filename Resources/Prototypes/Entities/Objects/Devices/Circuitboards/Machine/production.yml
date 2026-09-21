@@ -615,8 +615,8 @@
 - type: entity # HarvestStation - Brua
   id: SeedAnalyzerMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: seed analyzer machine board
-  description: A machine printed circuit board for a seed analyzer.
+  name: circuit pour analyseur de graines
+  description: Un circuit imprimé pour un analyseur de graines.
   components:
     - type: Sprite
       state: service

@@ -362,7 +362,7 @@
 - type: entity
   parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
   id: DrinkRootBeerJug
-  name: bidon de bière de racine
+  name: bidon de root beer
   description: Cette boisson fait rire les Australiens.
   components:
   - type: SolutionContainerManager

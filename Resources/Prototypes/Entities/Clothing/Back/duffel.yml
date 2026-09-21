@@ -140,7 +140,7 @@
 - type: entity
   parent: ClothingBackpackDuffel
   id: ClothingBackpackDuffelHydroponics
-  name: sac de sport d'hydroponique
+  name: sac de sport de botaniste
   description: Un grand sac de sport pour transporter des outils de jardinage supplémentaires.
   components:
     - type: Sprite

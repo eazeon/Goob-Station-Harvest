@@ -1,0 +1,29 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+plant-health-analyzer-window-title = Analyseur de santé des plantes
+plant-health-analyzer-empty = Le bac sélectionné ne contient aucune plante.
+plant-health-analyzer-status-dead = MORT
+plant-health-analyzer-status-healthy = EN BONNE SANTÉ
+plant-health-analyzer-status-critical = CRITIQUE
+plant-health-analyzer-status-attention = ATTENTION REQUISE
+plant-health-analyzer-ready = Prêt
+plant-health-analyzer-not-ready = Pas prêt
+plant-health-analyzer-section-status = État de la plante
+plant-health-analyzer-section-stress = Stress de la plante
+plant-health-analyzer-section-diagnostic = Diagnostic
+plant-health-analyzer-label-growth = Croissance
+plant-health-analyzer-label-age = Âge
+plant-health-analyzer-label-harvest = Récolte
+plant-health-analyzer-label-toxins = Toxines
+plant-health-analyzer-label-pests = Parasites
+plant-health-analyzer-label-weeds = Mauvaises herbes
+plant-health-analyzer-tolerance-percent = { $current } / { $limit } ({ $percent }%)
+plant-health-analyzer-diagnostic-none = Aucun problème détecté. Les conditions de la plante sont stables.
+plant-health-analyzer-diagnostic-dead = La plante est morte.
+plant-health-analyzer-diagnostic-critical-health = La santé de la plante est critique.
+plant-health-analyzer-diagnostic-low-health = La santé de la plante est faible.
+plant-health-analyzer-diagnostic-toxins = Le niveau de toxines dépasse la tolérance de cette plante.
+plant-health-analyzer-diagnostic-pests = L'infestation de parasites dépasse la tolérance de cette plante.
+plant-health-analyzer-diagnostic-weeds = Le niveau de mauvaises herbes dépasse la tolérance de cette plante.
+plant-health-analyzer-diagnostic-old-age = La plante a dépassé sa durée de vie naturelle.
+plant-health-analyzer-diagnostic-unknown = Diagnostic inconnu.

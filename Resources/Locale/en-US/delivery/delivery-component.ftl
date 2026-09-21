@@ -4,8 +4,10 @@ delivery-earnings-examine = Delivering this will earn the station [color=yellow]
 delivery-recipient-no-name = Unnamed
 delivery-recipient-no-job = Unknown
 
-delivery-unlocked = You unlock the {$delivery} with your fingerprint.
-delivery-opened = You open the {$delivery}.
+delivery-unlocked-self = You unlock the {$delivery} with your fingerprint.
+delivery-unlocked-others = {$recipient} {$possadj} unlocks the {$delivery} with their fingerprint.
+delivery-opened-self = You open the {$delivery}.
+delivery-opened-others = {$recipient} {$possadj} opens the {$delivery}.
 
 delivery-unlock-verb = Unlock
 delivery-open-verb = Open

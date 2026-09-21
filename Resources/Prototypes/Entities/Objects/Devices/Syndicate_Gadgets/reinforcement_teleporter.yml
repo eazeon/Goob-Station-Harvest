@@ -41,8 +41,8 @@
 - type: entity
   parent: ReinforcementRadio
   id: ReinforcementRadioSyndicateNukeops # Reinforcement radio exclusive to nukeops uplink
-  name: radio d'opératif nucléaire
-  description: Appelez un opérateur nucléaire de qualité douteuse, instantanément ! Équipement basique d'opératif nucléaire fourni.
+  name: radio d'opérateur nucléaire
+  description: Appelez un opérateur nucléaire de qualité douteuse, instantanément ! Équipement basique d'opérateur nucléaire fourni.
   suffix: NukeOps
   components:
   - type: GhostRole

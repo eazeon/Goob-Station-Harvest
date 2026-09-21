@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: mini binette
+  name: binette
   parent: BaseItem
   id: HydroponicsToolMiniHoe
   description: Utilisée pour enlever les mauvaises herbes ou se gratter le dos.

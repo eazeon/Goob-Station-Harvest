@@ -191,8 +191,8 @@
 - type: entity
   parent: DrinkCanBaseFull
   id: DrinkRootBeerCan
-  name: canette de bière de racine
-  description: Un peu de cette bonne bière de racine savoureuse, maintenant dans une canette portable !
+  name: canette de root beer
+  description: Un peu de cette bonne root beer savoureuse, maintenant dans une canette portable !
   components:
   - type: SolutionContainerManager
     solutions:

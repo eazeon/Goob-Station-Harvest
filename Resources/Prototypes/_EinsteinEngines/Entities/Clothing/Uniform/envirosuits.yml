@@ -150,7 +150,7 @@
 - type: entity
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitHydroponics
-  name: "envirocombinaison d'hydroponique"
+  name: "envirocombinaison de botaniste"
   description: Une envirocombinaison verte et bleue conçue pour protéger les Plasmamens des blessures mineures liées aux plantes.
   components:
   - type: Sprite

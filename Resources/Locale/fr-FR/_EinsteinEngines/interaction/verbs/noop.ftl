@@ -6,9 +6,9 @@ interaction-LookAt-success-others-popup = {THE($user)} fixe {THE($target)}.
 
 interaction-Hug-name = Câliner
 interaction-Hug-description = Un câlin par jour éloigne les horreurs psychologiques au-delà de votre compréhension.
-interaction-Hug-success-self-popup = Vous câlinez {THE($target)}.
-interaction-Hug-success-target-popup = {THE($user)} vous câline.
-interaction-Hug-success-others-popup = {THE($user)} câline {THE($target)}.
+interaction-Hug-success-self-popup = Vous faites un câlin à {THE($target)}.
+interaction-Hug-success-target-popup = {THE($user)} vous fait un câlin.
+interaction-Hug-success-others-popup = {THE($user)} fais un câlin {THE($target)}.
 
 interaction-KnockOn-name = Frapper
 interaction-KnockOn-description = Frapper sur la cible pour attirer l'attention.
@@ -19,15 +19,15 @@ interaction-KnockOn-success-others-popup = {THE($user)} frappe sur {THE($target)
 # The below includes conditionals for if the user is holding an item
 interaction-WaveAt-name = Saluer
 interaction-WaveAt-description = Saluer la cible. Si vous tenez un objet, vous l'agitiez.
-interaction-WaveAt-success-self-popup = You wave {$hasUsed ->
-    [false] at {THE($target)}.
-    *[true] your {$used} at {THE($target)}.
+interaction-WaveAt-success-self-popup = Vous saluez {$hasUsed ->
+    [false] {THE($target)}.
+    *[true] votre {$used} à {THE($target)}.
 }
-interaction-WaveAt-success-target-popup = {THE($user)} waves {$hasUsed ->
-    [false] at you.
-    *[true] {POSS-PRONOUN($user)} {$used} at you.
+interaction-WaveAt-success-target-popup = {THE($user)} vous salue {$hasUsed ->
+    [false] .
+    *[true] en agitant votre {$used}.
 }
-interaction-WaveAt-success-others-popup = {THE($user)} waves {$hasUsed ->
-    [false] at {THE($target)}.
-    *[true] {POSS-PRONOUN($user)} {$used} at {THE($target)}.
+interaction-WaveAt-success-others-popup = {THE($user)} salut {THE($target)} {$hasUsed ->
+    [false] .
+    *[true] en agitant {POSS-PRONOUN($user)} {$used}.
 }

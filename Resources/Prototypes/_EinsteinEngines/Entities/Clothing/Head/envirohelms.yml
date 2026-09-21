@@ -181,7 +181,7 @@
 - type: entity
   parent: ClothingHeadEnvirohelmBase
   id: ClothingHeadEnvirohelmHydroponics
-  name: "casque d'envirocombinaison d'hydroponique"
+  name: "casque d'envirocombinaison de botaniste"
   description: Un envirohelmet vert et bleu désignant son porteur comme botaniste.
   components:
   - type: Sprite

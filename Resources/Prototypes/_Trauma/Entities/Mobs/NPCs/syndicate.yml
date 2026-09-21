@@ -1,8 +1,8 @@
 - type: entity
   parent: [ MobMouse, MobCombat ]
   id: MobNukieMouse
-  name: souris opératif nucléaire
-  description: Un opératif nucléaire... SOURIS?!
+  name: souris opérateur nucléaire
+  description: Un opérateur nucléaire... SOURIS?!
   suffix: Syndicat
   components:
   - type: GhostRole
@@ -58,7 +58,7 @@
 - type: entity
   parent: MobGiantSpiderAngry
   id: MobNukieSpider
-  name: tarentule opératif nucléaire
+  name: tarentule opérateur nucléaire
   description: Une araignée? UNE ARAIGNÉE NUKIE?!
   suffix: Syndicat
   components:

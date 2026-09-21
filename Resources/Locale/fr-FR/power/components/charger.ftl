@@ -8,7 +8,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-charger-examine = Charges at [color={$color}]{$chargeRate}W[/color].
-charger-component-charge-rate = Charge rate
-charger-content = Current charge is at [color=#5E7C16]{$chargePercentage}[/color]%.
-charger-empty = There is nothing in the charger.
+charger-examine = Charge à [color={$color}]{$chargeRate}W[/color].
+charger-component-charge-rate = Taux de charge
+charger-content = Le niveau de charge actuel est de [color=#5E7C16]{$chargePercent}[/color] %.
+charger-empty = Il n'y a rien dans le chargeur.

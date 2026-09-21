@@ -140,7 +140,7 @@ public sealed class PartStatusSystem : EntitySystem
                 !TryComp<BoneComponent>(woundable.Comp.Bone.ContainedEntities.FirstOrNull(), out var bone))
                 continue;
 
-            var partName = bodyPartComponent.ParentSlot?.Id ?? bodyPartComponent.PartType.ToString().ToLower();
+            var partName = bodyPartComponent.ParentSlot?.Id?.Replace(" ", "_") ?? bodyPartComponent.PartType.ToString().ToLower();
             var (damageSeverities, isBleeding) = AnalyzeWounds(woundable);
 
             partStatusSet.Add(new PartStatus(

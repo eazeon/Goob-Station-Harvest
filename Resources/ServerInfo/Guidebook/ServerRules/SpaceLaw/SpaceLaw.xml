@@ -4,71 +4,77 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 <Document>
   # Loi Spatiale
-  Goob Station opère sous une Loi Spatiale abrégée. Tout l'équipage, passagers, et visiteurs à bord de la station sont censés connaître et suivre ces lois.
+  Goob Station opère sous une version abrégée de la Loi Spatiale. Tout l'équipage, les passagers et les visiteurs à bord de la station sont tenus de la connaître et de la respecter.
 
-  - [color=red][bold]Chef de la Sécu[/bold][/color] et surtout [color=red][bold]Gardien[/bold][/color] devraient très bien connaître la loi spatiale.
-  - Les joueurs sécu devraient s'efforcer de comprendre pleinement la Loi Spatiale.
-  - Les joueurs sécu ne peuvent pas utiliser de contrebande qui ne leur est pas assignée sauf s'il y a une menace fin-de-station, inspecte un objet pour voir sa légalité.
-  - [bold]Ignorer ou mal utiliser la Loi Spatiale peut être puni sous incompétence. Ne joue pas sécu si tu ne comptes pas suivre les règles[/bold]
+  - [color=red][bold]Chef de la Sécu[/bold][/color] et surtout [color=red][bold]Gardien[/bold][/color] doivent la connaître parfaitement.
+  - Les joueurs Sécurité doivent s'efforcer de la comprendre pleinement.
+  - Les joueurs Sécurité ne peuvent pas utiliser de contrebande qui ne leur est pas assignée, sauf en cas de menace critique pour la station. Inspectez un objet pour vérifier sa légalité.
+  - [bold]Ignorer ou mal appliquer la Loi Spatiale peut être sanctionné pour incompétence. Ne jouez pas Sécurité si vous n'avez pas l'intention de suivre les règles.[/bold]
 
-  ## Traitement Des Prisonniers
+  ## Traitement des Prisonniers
 
-  Les prisonniers ont encore des droits qui doivent être respectés par les forces de l'ordre :
+  Les prisonniers conservent des droits que les forces de l'ordre doivent respecter :
 
-  - Les prisonniers doivent recevoir des soins médicaux adéquats. Ils devraient aussi recevoir un soutien psychiatrique et spirituel si demandé.
-  - Les prisonniers doivent avoir accès à l'équipement de communication (Radios) tant qu'ils n'en abusent pas.
-  - Les prisonniers doivent recevoir vêtements, nourriture, eau, abri et sécurité. Si le brig n'est plus sûr, la détention doit être établie ailleurs.
-  - Les prisonniers doivent avoir accès à un avocat pendant un interrogatoire si demandé et dispo.
-  - Les prisonniers doivent avoir leur PDA de shift pendant la détention. Sauf preuve solide de trafic de PDA, auquel cas le PDA est sécurisé et remplacé par un neuf.
-  - Les prisonniers doivent avoir liberté de mouvement, et ne devraient pas être entravés avec menottes ou autres dispositifs après incarcération sauf risque déraisonnable pour la vie et l'intégrité. De même, les prisonniers détenus pour détention prolongée ou permanente devraient être au brig commun, et pas en cellule d'isolement sauf s'ils posent un risque pour la vie et l'intégrité.
+  - Les prisonniers doivent recevoir des soins médicaux appropriés. Un soutien psychiatrique et spirituel doit leur être fourni s'ils le demandent.
+  - Les prisonniers doivent avoir accès aux équipements de communication (radios) tant qu'ils n'en font pas un usage abusif.
+  - Les prisonniers doivent recevoir vêtements, nourriture, eau, abri et sécurité. Si le quartier de détention n'est plus sûr, la détention doit être déplacée.
+  - Les prisonniers doivent avoir accès à un avocat lors d'un interrogatoire, si demandé et disponible.
+  - Les prisonniers conservent leur PDA de shift pendant la détention, sauf preuve solide de trafic de PDA, auquel cas il est confisqué et remplacé.
+  - Les prisonniers bénéficient de la liberté de mouvement et ne doivent pas être entravés (menottes, etc.) après leur incarcération, sauf risque déraisonnable pour la vie ou l'intégrité physique. De même, les détenus pour une longue durée ou permanente doivent être placés au quartier commun, et non en isolement, sauf s'ils représentent un danger.
 
   ## Fouilles
 
-  - Une fouille de personnel est une saisie des objets dans le sac à dos, mains, manteau, ceinture, poches, et chapeau d'une personne. Si de la contrebande est trouvée durant une fouille l'officier peut choisir d'approfondir en détention ou simplement confisquer les objets restreints. Après la fouille tous les objets légaux doivent être rendus à la personne.
+  - Une fouille de personnel consiste à saisir les objets présents dans le sac à dos, les mains, le manteau, la ceinture, les poches et le chapeau d'une personne. Si de la contrebande est découverte, l'officier peut choisir de placer la personne en détention ou de simplement confisquer les objets illicites. Après la fouille, tous les objets légaux doivent être restitués.
 
-  - Un membre d'équipage peut légalement refuser toute fouille sans mandat pendant que le niveau d'alerte est vert. Noter que si le niveau d'alerte est bleu ou plus, toutes les fouilles de personnel sont légales et ne requièrent plus de mandat.
+  - Un membre d'équipage peut légalement refuser toute fouille sans mandat tant que le niveau d'alerte est vert. Notez qu'aux niveaux bleu ou supérieur, toutes les fouilles de personnel sont légales et ne requièrent plus de mandat.
 
   ## Implantation
-  - Tout prisonnier en détention peut être soumis à des procédures d'implantation ou extraction d'implant, tant que c'est dans la raison. Le processus d'ajout ou extraction d'implant ne doit pas prolonger la peine du détenu, ce qui veut dire que tu peux pas les garder plus longtemps pour faire la procédure, sauf mention contraire. Un ancien détenu peut être demandé de subir implantation/extraction plus tard dans le temps ; s'ils correspondaient aux circonstances pendant leur détention, ils doivent se conformer. Les suivants ont été listés avec circonstances spéciales, tout ce qui n'est pas dans cette liste peut quand même être appliqué, vu le contexte légal proper. Un prisonnier peut quand même recevoir des procédures d'implantation/extraction sans rencontrer les circonstances s'il donne sa permission claire.
 
-  [color=#a4885c]Implants de Traçage :[/color] Les traqueurs peuvent être appliqués à tout suspect condamné pour un crime violent (les crimes liés en rouge).
+  - Tout prisonnier en détention peut être soumis à des procédures d'implantation ou d'extraction d'implant, dans la mesure du raisonnable. La procédure ne doit pas prolonger la peine du détenu : vous ne pouvez pas le garder plus longtemps pour la réaliser, sauf indication contraire. Un ancien détenu peut se voir demander de subir une implantation/extraction ultérieurement ; si les conditions étaient réunies pendant sa détention, il doit s'y conformer. Les cas suivants sont listés avec circonstances particulières, mais d'autres peuvent s'appliquer selon le contexte légal approprié. Un prisonnier peut aussi subir une implantation/extraction sans remplir les conditions s'il donne son accord explicite.
 
-  [color=#a4885c]Boucliers Mentaux :[/color] Les Boucliers Mentaux peuvent être administrés à tout suspect accusé d'un crime s'il y a suspicion raisonnable et articulable qu'ils ont commis le crime sous contrôle mental. S'il y a preuve indéniable de contrôle mental en cours sur la station, comme une déconversion réussie, toutes les déclarations suivantes s'appliquent :
+  [color=#a4885c]Implants de Traçage :[/color] Peuvent être appliqués à tout suspect condamné pour un crime violent (crimes surlignés en rouge).
 
-  - Le crew peut être requis d'être shield et peut être implanté de force s'ils refusent.
-  - Si un suspect refuse de coopérer ou l'implant échoue ils peuvent être accusés de Refus de Blindage Mental.
-  - Contrairement à l'implantation standard tu peux indéfiniment prolonger la durée de la peine d'un prisonnier jusqu'à ce que tu finisses d'émettre des Boucliers Mentaux, tant que des tentatives actives sont faites pour se procurer des implants et compléter la procédure.
+  [color=#a4885c]Boucliers Mentaux :[/color] Peuvent être administrés à tout suspect s'il existe une suspicion raisonnable et articulable qu'il a agi sous contrôle mental. S'il y a une preuve indéniable de contrôle mental en cours sur la station (ex: déconversion réussie), les règles suivantes s'appliquent :
 
-  ## Retrait
-  - Un suspect peut être forcé à recevoir un retrait d'implant s'il y a forte preuve raisonnable qu'ils ont été implantés, genre un officier les voyant en utiliser un ou leurs empreintes sur un injecteur jeté. Contrairement à la procédure d'implantation un prisonnier peut avoir sa peine entièrement retardée ou prolongée jusqu'à ce qu'il se conforme à la procédure, tant que la sécu fait activement des tentatives pour la faire. Pareil pour l'implantation, si un détenu donne sa permission claire, le retrait d'implant peut procéder sans preuve.
+  - L'équipage peut être requis de porter un bouclier mental et peut y être forcé en cas de refus.
+  - Si un suspect refuse de coopérer ou si l'implantation échoue, il peut être accusé de Refus de Blindage Mental.
+  - Contrairement à l'implantation standard, vous pouvez prolonger indéfiniment la peine d'un prisonnier jusqu'à la pose des Boucliers Mentaux, tant que des tentatives actives sont effectuées pour s'en procurer et réaliser la procédure.
 
-  ## Test sanguin
-  - Le test sanguin est une procédure qui peut déterminer si une personne est un [textlink="Changeling" link="Changelings"]. Le test sanguin ne peut être forcé que quand il y a eu confirmation de l'existence de changelings sur la station.
+  ## Retrait d'Implant
+
+  - Un suspect peut être forcé à subir un retrait d'implant s'il existe de fortes preuves qu'il en porte un (ex: un officier l'a vu en utiliser un, ou ses empreintes sont sur un injecteur abandonné). Contrairement à l'implantation, la peine du prisonnier peut être entièrement suspendue ou prolongée jusqu'à sa conformité, tant que la Sécurité tente activement de réaliser la procédure. De même, si le détenu donne son accord explicite, le retrait peut se faire sans preuve.
+
+  ## Test Sanguin
+
+  - Le test sanguin permet de déterminer si une personne est un [textlink="Changeling" link="Changelings"]. Il ne peut être imposé que si l'existence de changelings sur la station a été confirmée.
 
   ## Peines
-  - Toutes les peines sont gérées par le Gardien, si pas de Gardien dispo le HoS reprend ce devoir, s'il y a pas de HoS ça tombe sur le membre du command le plus haut gradé.
 
-  - Utilise le sens commun et l'humanité quand tu donnes des punitions. Tu devrais pas toujours chercher la punition max, tu dois pas toujours donner le temps max ou toujours chercher à démettre quelqu'un. Prends toujours en compte la sévérité et accuse seulement de ce qu'il faut pour que quelqu'un apprenne sa leçon.
+  - Toutes les peines sont gérées par le Gardien ; à défaut, le Chef de la Sécu reprend ce rôle, à défaut de Chef de la Sécu, le membre du commandement le plus haut gradé.
 
-  - [bold]Complicité, Tentative, Et Intention :[/bold] Si quelqu'un intentionnellement, sciemment et substantiellement aide quelqu'un à commettre un crime il peut être accusé des crimes pertinents, genre un ingénieur donnant des outils à quelqu'un qui dit qu'il va forcer une zone. Pareil pour une tentative claire et solide d'un crime, ou une personne qui montre une intention claire de commettre un crime, genre un opératif nucléaire du Syndicat armant une nuke mais se faisant arrêter avant qu'elle parte, il peut quand même être accusé de terrorisme. Ne s'applique pas aux crimes qui ont déjà une entrée "tentative", comme tentative de meurtre.
+  - Faites preuve de bon sens et d'humanité dans l'application des peines. Ne cherchez pas systématiquement le maximum, n'infligez pas toujours la durée maximale et ne cherchez pas systématiquement à révoquer un poste. Tenez toujours compte de la gravité et n'accusez que du nécessaire pour que la leçon soit comprise.
 
-  - [bold]Crimes Cumulables :[/bold] Les crimes sont considérés 'cumulables' dans le sens que si tu accus à quelqu'un deux crimes différents ou plus, tu dois combiner les temps que tu leur donnerais pour chaque crime.
+  - [bold]Complicité, Tentative et Intention :[/bold] Quiconque aide intentionnellement, sciemment et substantiellement à commettre un crime peut être accusé des infractions correspondantes (ex: un ingénieur donnant des outils à quelqu'un qui compte forcer une zone). De même pour une tentative avérée ou une intention manifeste de commettre un crime (ex: un opérateur nucléaire du Syndicat armant une ogive mais arrêté avant détonation, il peut être accusé de terrorisme). Ne s'applique pas aux crimes ayant déjà une entrée "tentative", comme la tentative de meurtre.
 
-  # TU NE PEUX PAS DÉPASSER 10 MINUTES COMME TEMPS DE BRIG
+  - [bold]Crimes Cumulatifs :[/bold] Les crimes sont cumulatifs : si vous inculpez quelqu'un pour plusieurs infractions, vous devez additionner les peines correspondantes.
 
-  Perma peut être donné à des crewmembers exceptionnellement problématiques dans la raison, même si le crime max ne permet pas la perma.
+  # LA DURÉE DE DÉTENTION NE PEUT EXCÉDER 10 MINUTES
+
+  Une détention permanente peut être prononcée contre des membres d'équipage exceptionnellement problématiques, dans la mesure du raisonnable, même si le crime maximal ne la prévoit pas.
 
 
   # Exécution
-  - [bold]Toutes les exécutions doivent être confirmées et supervisées par le Capitaine. Des exceptions à cette règle existent. Un prisonnier peut demander une méthode d'exécution spécifique, si raisonnable. Sinon la méthode la plus humaine est préférée. Réfère-toi à la Procédure Opérationnelle Standard pour comprendre plus en détail les guidelines appliquées à l'exécution.[/bold]
+
+  - [bold]Toute exécution doit être confirmée et supervisée par le Capitaine. Des exceptions existent. Un prisonnier peut demander une méthode spécifique, si raisonnable. Sinon, la méthode la plus humaine est privilégiée. Référez-vous à la Procédure Opérationnelle Standard pour les directives applicables.[/bold]
 
   # Exceptions
-  - [bold]Si un changeling est découvert il est kill on sight.[/bold]
-  - [bold]Toute utilisation de magie non autorisée doit être traitée sérieusement et peut être kill on sight[/bold]
-  - [bold]Tous les cas d'armes de destruction massive, terrorisme extrême ou intention claire de détruire la station sont kill on sight[/bold]
 
-  ## Guidelines SOP
-  - [textlink="Légal" link="Legal SOP"] à consulter pour guidelines plus approfondies.
-  ## Liste Des Crimes
-  - [textlink="Liste Des Crimes" link="SpaceLawCrimeList"]
+  - [bold]Tout changeling découvert est à abattre sur le champ.[/bold]
+  - [bold]Toute utilisation de magie non autorisée doit être traitée avec la plus grande sévérité et peut justifier une élimination immédiate.[/bold]
+  - [bold]Tous les cas d'armes de destruction massive, de terrorisme extrême ou de volonté manifeste de détruire la station justifient une élimination immédiate.[/bold]
+
+  ## Directives SOP
+  - [textlink="Légal" link="Legal SOP"] à consulter pour des directives plus approfondies.
+  ## Liste des Crimes
+  - [textlink="Liste des Crimes" link="SpaceLawCrimeList"]
 </Document>

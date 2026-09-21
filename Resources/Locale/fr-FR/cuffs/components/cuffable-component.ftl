@@ -12,18 +12,18 @@ cuffable-component-cannot-interact-message = Vous ne pouvez pas faire ça !
 cuffable-component-cannot-remove-cuffs-too-far-message = Vous êtes trop loin pour retirer les entraves.
 
 cuffable-component-start-uncuffing-self = Vous commencez à vous débattre douloureusement pour sortir de vos entraves.
-cuffable-component-start-uncuffing-observer = {$user} starts unrestraining {$target}!
-cuffable-component-start-uncuffing-self-observer = {$user} starts unrestraining {REFLEXIVE($target)}!
+cuffable-component-start-uncuffing-observer = {$user} commence à libérer {$target} !
+cuffable-component-start-uncuffing-self-observer = {$user} commence à se libérer {REFLEXIVE($target)} !
 cuffable-component-start-uncuffing-target-message = Vous commencez à libérer {$targetName}.
 cuffable-component-start-uncuffing-by-other-message = {$otherName} commence à vous libérer !
 
 cuffable-component-remove-cuffs-success-message = Vous retirez avec succès les entraves.
 cuffable-component-remove-cuffs-push-success-message = Vous retirez avec succès les entraves et poussez {$otherName} à terre.
 cuffable-component-remove-cuffs-by-other-success-message = {$otherName} libère vos mains.
-cuffable-component-remove-cuffs-to-other-partial-success-message = You successfully remove the restraints. {$cuffedHandCount} of {$otherName}'s hands remain restrained.
-cuffable-component-remove-cuffs-by-other-partial-success-message = {$otherName} removes your restraints. {$cuffedHandCount} of your hands remain restrained.
-cuffable-component-remove-cuffs-partial-success-message = You successfully remove the restraints. {$cuffedHandCount} of your hands remain restrained.
-cuffable-component-remove-cuffs-fail-message = You fail to remove the restraints.
+cuffable-component-remove-cuffs-to-other-partial-success-message = Vous retirez avec succès les entraves. {$cuffedHandCount} mains de {$otherName} restent entravées.
+cuffable-component-remove-cuffs-by-other-partial-success-message = {$otherName} retire vos entraves. {$cuffedHandCount} de vos mains restent entravées.
+cuffable-component-remove-cuffs-partial-success-message = Vous retirez avec succès les entraves. {$cuffedHandCount} de vos mains restent entravées.
+cuffable-component-remove-cuffs-fail-message = Vous échouez à retirer les entraves.
 
 # UnrestrainVerb
-uncuff-verb-get-data-text = Unrestrain
+uncuff-verb-get-data-text = Libérer

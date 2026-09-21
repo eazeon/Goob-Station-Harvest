@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: PlantHealthAnalyzer
-  name: plant scanner
-  description: Scans the plants health and needs.
+  name: scanner de plante
+  description: Analyse la santé et les besoins de la plante.
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/Equipment/plant_analyzer.rsi

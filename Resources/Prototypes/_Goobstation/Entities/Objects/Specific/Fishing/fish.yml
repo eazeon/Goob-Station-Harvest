@@ -208,7 +208,7 @@
 - type: entity
   id: FishNuker
   parent: BaseFishRare
-  name: poisson opératif nucléaire
+  name: poisson opérateur nucléaire
   description: Prédateur du poisson disque nucléaire.
   components:
   - type: Sprite

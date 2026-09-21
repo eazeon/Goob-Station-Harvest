@@ -160,7 +160,7 @@
 - type: entity
   parent: BaseMedicalPatch
   id: MedicalPatchMakeshift
-  name: patch bricolé
+  name: patch improvisé
   description: Ça n'a pas l'air hygiénique. Espérons que ça fasse le travail.
   components:
   - type: Sprite

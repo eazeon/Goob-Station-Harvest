@@ -1119,7 +1119,7 @@
   parent: PosterBase
   id: PosterLegitTyrone
   name: "Guide de l'espace par Tyrone"
-  description: "Une affiche faisant la publicité de cours en ligne sur l'espace. Les cours listés semblent couvrir des sujets allant de l'utilisation basique de l'équipement de la station à des sujets complexes comme la fabrication de bombes à tuyaux ou le recouvrement de couloirs entiers de lubrifiant spatial. Une clause de non-responsabilité indique \"Ce n'est jamais AUSSI grave, et à la fin vous pourriez même obtenir une tortilla.\""
+  description: "Une affiche faisant la publicité de cours en ligne sur l'espace. Les cours listés semblent couvrir des sujets allant de l'utilisation basique de l'équipement de la station à des sujets complexes comme la fabrication de bombes tuyaux ou le recouvrement de couloirs entiers de lubrifiant spatial. Une clause de non-responsabilité indique \"Ce n'est jamais AUSSI grave, et à la fin vous pourriez même obtenir une tortilla.\""
   components:
   - type: Sprite
     state: poster54_legit

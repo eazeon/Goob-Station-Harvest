@@ -166,7 +166,7 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackHydroponics
-  name: sac à dos d'hydroponique
+  name: sac à dos de botaniste
   description: Un sac à dos en fibres naturelles.
   components:
   - type: Sprite

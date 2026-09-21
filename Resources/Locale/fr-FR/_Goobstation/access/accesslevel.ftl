@@ -1,2 +1,2 @@
-id-card-access-level-xenomorph = Xenomorph
-id-card-access-level-journalism = Journalism
+id-card-access-level-xenomorph = Xenomorphe
+id-card-access-level-journalism = Journalisme
