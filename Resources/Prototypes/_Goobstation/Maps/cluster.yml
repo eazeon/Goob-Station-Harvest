@@ -4,7 +4,7 @@
   id: Cluster
   mapName: 'Cluster'
   mapPath: /Maps/_Goobstation/cluster.yml
-  minPlayers: 5
+  minPlayers: 0 #Harvest: for ultralowpop preround (was 5)
   maxPlayers: 35
   stations:
     Cluster:
