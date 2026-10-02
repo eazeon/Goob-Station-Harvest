@@ -29,7 +29,7 @@ Ce code est un fork du code utilisé sur GoobStation.
 
 Lien du Discord : https://discord.gg/kxvDB9HwZx
 
-<p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://github.com/eazeon/Goob-Station-Harvest)Goob-Station-Harvest/Resources/Textures/Logo/logo.png" /></p>
+<p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://github.com/eazeon/Goob-Station-Harvest/Resources/Textures/Logo/logo.png" /></p>
 
 
 
