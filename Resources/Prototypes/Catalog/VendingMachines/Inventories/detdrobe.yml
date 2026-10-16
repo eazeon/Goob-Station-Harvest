@@ -18,6 +18,7 @@
     ClothingHandsGlovesLatex: 2
     ClothingHeadsetAltSecurityRegular: 2 # Goobstation
     ClothingHeadsetSecurity: 2
+    ClothingHeadHatBowlerHat: 2 # Harvest
   contrabandInventory:
     ToyFigurineDetective: 1
   emaggedInventory: # Goobstation
