@@ -22,6 +22,7 @@ changelog-button = Changelog
 changelog-button-new-entries = Changelog (new!)
 
 # Goobstation
+changelog-tab-title-Harvestlog = Harvest
 changelog-tab-title-Changelog = Wizden
 changelog-tab-title-Admin = Admin
 changelog-tab-title-Maps = Maps
