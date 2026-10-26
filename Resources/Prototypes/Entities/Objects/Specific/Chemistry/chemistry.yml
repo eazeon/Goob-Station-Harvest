@@ -308,7 +308,7 @@
           Quantity: 50
 
 - type: entity
-  name: large beaker
+  name: grand bécher
   parent: BaseBeaker
   description: Utilisé pour contenir une grande quantité de produits chimiques ou de solutions.
   id: LargeBeaker
