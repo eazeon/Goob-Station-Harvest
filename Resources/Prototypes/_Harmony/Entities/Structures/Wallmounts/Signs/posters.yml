@@ -1,0 +1,210 @@
+# posters
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyEnrico
+  name: "Salazar dit WEH !"
+  description: "Une affiche représentant un capitaine distingué de la Station Harmony - Salazar Snek."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster1_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyHarmony
+  name: "Station Harmony"
+  description: "Affiche motivationnelle pour l'équipage de la Station Harmony."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster2_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyManOfWeh
+  name: "Un Homme de Weh"
+  description: "Une peinture représentant une figure historique de l'Église de Weh."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster3_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyMoney
+  name: "HarMoney"
+  description: "Station Harmony. Chaque année, les profits augmentent et les gains sont maximisés, tout cela grâce à notre cher département Cargo. Weh !"
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster4_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyWorkHard
+  name: "Travaillez Dur"
+  description: "Si vous travaillez assez dur, VOUS pourriez gagner votre propre Nanotrasen Plunger Plus ! Assurez-vous simplement de survivre assez longtemps pour l'échanger !.."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster5_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyMakeshiftClown
+  name: "Affiche de Clown de Fortune"
+  description: "Une affiche de fortune consistant en un dessin au crayon sur un papier collé au mur avec un horrible mélange de colle et de pâte de banane. Y est inscrit : 'Clowne was herE !!'."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster6_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyCan
+  name: "Canette Tombée"
+  description: "Une affiche vous rappelant de nettoyer derrière vous, personne n'aime les déchets ! Ou du moins, c'est probablement ce que ça veut dire. Elle est là depuis si longtemps que le sens original a peut-être disparu…"
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster8_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyFaded
+  name: "Affiche Décolorée"
+  description: "Était-ce une affiche de recherche ? Une prime sur un humain ? Ce n'est pas très clair. On peut dire, cependant, que la cible n'est probablement plus en liberté..."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster9_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyMagicCandle
+  name: "Bougie Magique"
+  description: "Le feu en vous brûle brillamment. Entretenez-le et prospérez. Négligez-le et fanez."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster10_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonySuperMatter
+  name: "Super-Matière"
+  description: "Nanotrasen fait vraiment preuve de créativité avec ces affiches motivationnelles. Utiliser la cause de mort de milliers de personnes comme source de motivation ? Brillant. Maintenant, si seulement c'était vraiment efficace..."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster11_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyAlwaysWatching
+  name: "Toujours en Surveillance"
+  description: "Un bon rappel que l'IA de la Station assure la sécurité de tous en éliminant toute apparence de vie privée ! N'êtes-vous pas ravi qu'elle vous regarde probablement en ce moment même ?"
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster12_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonySpaceAsshole
+  name: "Connard Spatial"
+  description: "Une affiche faisant la promotion du film historique sur ce qu'on appelle de nos jours 'L'Incident de 2125'. Le nom de l'affiche vous rappelle quelque chose."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster13_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonySmokeBreak
+  name: "Pause Clope"
+  description: "Une affiche vous rappelant l'heure 'optimale' pour les pauses cigarette approuvées par Nanotrasen. Ils la jugeaient assez longue grâce à un officier de sécurité qui a apparemment consommé environ 500 cigarettes en 5 minutes. Elle a été mal modifiée pour tenir compte de sa récente augmentation de 10 minutes, comme demandé à quasi-unanimité par les capitaines de station sondés. La couleur de fond est légèrement irritante, mais vous ne savez pas trop pourquoi."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster14_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyWallMeat
+  name: "Viande dans les Murs"
+  description: "La meilleure façon objective de stocker la nourriture est de la cacher dans les murs où personne ne la trouvera jamais ! Si pratique ! Si utile ! Si discret ! Si cool ! Approuvé par les vampires du monde entier."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster15_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyMissing
+  name: "Personne Disparue"
+  description: "Il semble que quelqu'un ait arraché cette affiche d'une personne disparue, masquant les détails de sa disparition plutôt étrange."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster16_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonySafetyLizz
+  name: "La Sécurité avec Lizz - Apportez toujoursss un manteau d'hiver avec vous !"
+  description: "Publicité du numéro 3 de Sssécurité Lizz, détaillant l'importance d'emporter des vêtements d'hiver pour ceussses lézards qui voyagent souvent autour des ssstations ssSpaciales."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster17_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyMuhrinePropagandaSprayed
+  name: "Publicité UNMC couverte de graffitis"
+  description: "Les graffitis en question ne semblent faire référence qu'à une opération UNMC numérotée '1217' avec un texte écrit à côté qui dit : 'souvenez-vous d'eux'."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster18_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyMuhrinePropaganda
+  name: "REJOIGNEZ L'UNMC ! OORAH !"
+  description: "Une publicité présentant les multiples opérations réussies auxquelles l'UNMC a participé, invitant le spectateur à s'engager chez les Marines."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster19_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyMaintsSlasher
+  name: "LE CORPS D'UN TUEUR EN SÉRIE DISPARAÎT !"
+  description: "Un article de journal détaillant comment le corps d'un tueur en série portant un masque de soudure et rodent dans les tunnels de maintenance a mystérieusement disparu de la morgue. Le surnom donné au tueur est surligné en rouge, 'L'Éventreur des Maintes.'"
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster20_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyDoNotGamble
+  name: "PSA: DO NOT GAMBLE"
+  description: "Inserting your Nanotrasen issued work ID in to a microwave is a SERIOUS offense. If you are caught 'gambling' with your ID you could be given 30 minutes of brig time or face EXECUTION for this most heinous crime."
+  components:
+    - type: Sprite
+      sprite: _Harmony/Structures/Wallmounts/posters.rsi
+      state: harmony_poster21_legit
+
+- type: entity
+  parent: PosterBase
+  id: PosterHarmonyArnold
+  name: "Missing Dog Poster"
+  description: "A missing poster for a small white dog named Arnold. The owner appears to be extremely distraught over his disappearance."
+  components:
+  - type: Sprite
+    sprite: _Harmony/Structures/Wallmounts/posters.rsi
+    state: harmony_poster22_legit
