@@ -87,3 +87,16 @@ slasher-cannot-use-guns = Votre forme surnaturelle rejette les armes à feu.
 
 alerts-slasher-seen-name = Statut d'observateur
 alerts-slasher-seen-desc = Montre si quelqu'un vous observe actuellement. Vous ne pouvez pas entrer ni sortir de la forme incorporelle en étant observé.
+
+alerts-slasher-fear-name = Peur
+alerts-slasher-fear-desc = La terreur que vous avez répandue. Plus elle monte, plus vous devenez fort et plus votre présence se fait entendre. Cliquez pour activer ou désactiver votre musique thème.
+slasher-fear-music-muted = Vous réduisez votre thème au silence. Vos victimes l'entendent toujours.
+slasher-fear-music-unmuted = Votre thème reprend.
+
+alerts-slasher-fear-victim-name = Peur
+alerts-slasher-fear-victim-desc = La terreur qui vous ronge l'esprit tandis que le slasheur vous traque. Plus elle monte, plus elle vous ralentit et vous blesse. Brisez leur ligne de vue pour la faire disparaître.
+
+slasher-kit-boogeyman = Croque-mitaine
+slasher-kit-boogeyman-desc = « Je me demande, si peut-être.. le Croque-mitaine est capable de se déplacer à travers les ombres.. »
+
+slasher-kit-guide-button = Cette variante joue différemment - ouvrez sa page du guidebook.
