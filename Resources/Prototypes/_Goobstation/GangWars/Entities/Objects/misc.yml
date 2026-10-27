@@ -1,9 +1,9 @@
 - type: entity
   id: CigarGoldenGang
   parent: CigarGold
-  name: golden cigar
+  name: cigare doré
   suffix: Gang
-  description: A luxurious gold-leafed cigar laced with a soothing medicinal blend. Only the finest from the boss.
+  description: Un cigare luxueux à feuille d'or infusé d'un mélange médicinal apaisant. Que le meilleur pour le patron.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -18,9 +18,9 @@
 - type: entity
   parent: EmergencyMedipen
   id: OmnizineMedipen
-  name: omnizine medipen
+  name: medipen d'omnizine
   suffix: Gang
-  description: A syringe of omnizine. Heals most damage types quickly.
+  description: Une seringue d'omnizine. Soigne la plupart des types de dégâts rapidement.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -32,9 +32,9 @@
 
 - type: entity
   id: GangBeginnerBundle
-  name: gang beginner bundle
+  name: pack débutant de gang
   suffix: Gang
-  description: A duffel bag packed with everything a new gang member needs to get started.
+  description: Un sac de sport rempli de tout ce dont un nouveau membre de gang a besoin pour commencer.
   parent: ClothingBackpackDuffel
   components:
   - type: StorageFill
@@ -60,9 +60,9 @@
 
 - type: entity
   id: GangClothesBundle
-  name: gang clothes bundle
+  name: pack vêtements de gang
   suffix: Gang
-  description: A duffel bag containing a fresh set of gang threads. Rep your colors.
+  description: Un sac de sport contenant un ensemble flambant neuf de fringues de gang. Porte tes couleurs.
   parent: ClothingBackpackDuffel
   components:
   - type: StorageFill
@@ -86,9 +86,9 @@
 - type: entity
   id: GangGL06Bundle
   parent: ClothingBackpackSatchel
-  name: GL-06 RGL kit
+  name: kit GL-06 RGL
   suffix: Gang
-  description: A satchel bag containing a GL-06 riot grenade launcher pre-loaded with two flash grenade shells.
+  description: Un sacoche contenant un lance-grenades anti-émeute GL-06 préchargé avec deux grenades flash.
   components:
   - type: StorageFill
     contents:
@@ -100,7 +100,7 @@
   parent: [BaseItem, BaseMajorContraband]
   id: Quickhack
   name: quickhack
-  description: A covert device that fakes AI 'open' signals to unlock unbolted doors. Comes charged for 5 uses.
+  description: Un dispositif covert qui simule les signaux d'ouverture d'IA pour déverrouiller les portes non verrouillées. Livré avec 5 charges.
   components:
   - type: Quickhack
   - type: UseDelay
@@ -119,9 +119,9 @@
 - type: entity
   parent: [EncryptionKey, BaseMajorContraband]
   id: EncryptionKeyGang
-  name: gang encryption key
+  name: clé de chiffrement de gang
   suffix: Gang
-  description: An encryption key used to communicate with gangs.
+  description: Une clé de chiffrement utilisée pour communiquer avec les gangs.
   components:
   - type: EncryptionKey
     channels:
@@ -134,9 +134,9 @@
 
 - type: entity
   id: GangSprayCan
-  name: gang spray can
+  name: bombe de peinture de gang
   suffix: Gang
-  description: A spray can used to mark territory for your gang. Only works if you belong to a gang.
+  description: Une bombe de peinture utilisée pour marquer le territoire de ton gang. Ne fonctionne que si tu appartiens à un gang.
   parent: [BaseItem, BaseMinorContraband]
   components:
   - type: Sprite
@@ -152,11 +152,11 @@
     maxCharges: 5
 
 - type: entity
-  name: gang machete
+  name: machette de gang
   suffix: Gang
   parent: Machete
   id: GangMachete
-  description: A large, vicious looking blade.
+  description: Une grande lame vicieuse.
   components:
   - type: SlasherMassacreMachete
     baseDamagePenalty: 12

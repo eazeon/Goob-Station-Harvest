@@ -98,7 +98,7 @@
 - type: entity
   parent: BaseMindRoleAntag
   id: MindRoleGangLeader
-  name: Gang Leader Role
+  name: Rôle Chef de Gang
   components:
   - type: MindRole
     antagPrototype: GangLeader
@@ -110,7 +110,7 @@
 - type: entity
   parent: MindRoleGangLeader
   id: MindRoleGangMember
-  name: Gang Member Role
+  name: Rôle Membre de Gang
   components:
   - type: MindRole
     antagPrototype: GangMember

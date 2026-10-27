@@ -2,8 +2,8 @@
   parent: BaseSign
   id: GangSignBase
   abstract: true
-  name: gang sign
-  description: A gang sign, used by gang members to mark their territory. Its not a good idea to stand here, probably.
+  name: panneau de gang
+  description: Un panneau de gang, utilisé par les membres pour marquer leur territoire. Pas une bonne idée de rester là, probablement.
   components:
   - type: Sprite
     drawdepth: WallMountedItems
@@ -181,10 +181,10 @@
 
 - type: entity
   id: GangLocker
-  name: gang locker
+  name: casier de gang
   suffix: Gang
   parent: BaseStructure
-  description: A locker belonging to a gang.
+  description: Un casier appartenant à un gang.
   components:
   - type: InteractionOutline
   - type: Transform
@@ -238,8 +238,8 @@
 - type: entity
   parent: CrateGeneric
   id: CrateGang
-  name: gang crate
-  description: A locked crate containing various goodies. Can only be opened next to a gang locker.
+  name: caisse de gang
+  description: Une caisse verrouillée contenant divers trucs. Ne peut être ouverte qu'à côté d'un casier de gang.
   suffix: Gang
   components:
   - type: Icon
@@ -379,8 +379,8 @@
 - type: entity # Functions as a more common version of the crate. Odds are way lower for everything.
   id: GangDuffelBag
   parent: CrateGeneric
-  name: gang duffel bag
-  description: A battered duffel bag with a suspicious bulge inside. Looks like it's been rigged.
+  name: sac de sport de gang
+  description: Un sac de sport abîmé avec une bosse suspecte à l'intérieur. On dirait qu'il a été piégé.
   suffix: Gang
   components:
   - type: Icon

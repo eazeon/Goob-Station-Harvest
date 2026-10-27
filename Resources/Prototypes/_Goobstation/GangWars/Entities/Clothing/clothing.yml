@@ -7,8 +7,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingNeckGangTophatBase
-  name: gang tophat
-  description: A stylish tophat. use a spray can to bare your gangs colors.
+  name: haut-de-forme de gang
+  description: Un haut-de-forme stylé. Utilise une bombe de peinture pour afficher les couleurs de ton gang.
   abstract: true
   components:
   - type: GangClothing
@@ -92,9 +92,9 @@
 - type: entity
   parent: ClothingShoesDameDane
   id: ClothingShoesGangDameDane
-  name: gang yakuza shoes
+  name: chaussures yakuza de gang
   suffix: Gang
-  description: At last... your gang's colors are finally showing.
+  description: Enfin... les couleurs de ton gang s'affichent enfin.
   components:
   - type: GangClothing
 
@@ -102,9 +102,9 @@
 - type: entity
   parent: ClothingOuterDameDane
   id: ClothingOuterGangDameDane
-  name: gang yakuza coat
+  name: manteau yakuza de gang
   suffix: Gang
-  description: Friday... done in your gang's style.
+  description: Vendredi... fait dans le style de ton gang.
   components:
   - type: GangClothing
 
@@ -112,8 +112,8 @@
 - type: entity
   parent: ClothingUniformJumpsuitDameDane
   id: ClothingUniformGangDameDane
-  name: gang yakuza outfit
+  name: tenue yakuza de gang
   suffix: Gang
-  description: Baka mitai... dressed in your gang's colors.
+  description: Baka mitai... vêtu aux couleurs de ton gang.
   components:
   - type: GangClothing

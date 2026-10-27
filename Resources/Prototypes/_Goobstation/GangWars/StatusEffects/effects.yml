@@ -1,7 +1,7 @@
 - type: entity
   parent: StatusEffectSlowdown
   id: GangDuffelBagTrappedStatusEffect
-  name: gang duffel bag trapped slowdown
+  name: ralentissement piège sac de sport
   components:
   - type: MovementModStatusEffect
     walkSpeedModifier: 0.5
