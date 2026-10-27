@@ -97,6 +97,22 @@ blob-chem-electromagneticweb-info = Toile Électromagnétique
                                     Les dalles blob déclenchent une impulsion IEM lorsqu'elles sont détruites.
                                     Vous subissez 25% de dégâts contondants et thermiques supplémentaires.
 
+blob-chem-comatosefiber-info = Fibre Comateuse
+                                Inflige 22 dégâts d'asphyxie et 150 dégâts structurels.
+blob-chem-chaincoating-info = Revêtement en Chaîne
+                                Inflige 12 dégâts tranchants et contondants, et 150 dégâts structurels.
+                                Le blob devient plus résistant à tous les types de dégâts.
+                                La production de ressources est réduite.
+blob-chem-sinewytendons-info = Tendons Sinueux
+                                Soigne 8 dégâts contondants, tranchants, de poison, de perforation, d'asphyxie, de froid et de brûlure par coup.
+                                La fréquence des impulsions augmente, le nombre maximum de pods passe de 3 à 5.
+                                Les usines et les blobs de ressources sont moins chers.
+blob-chem-corrosiveslime-info = Glu Corrosif
+                                Inflige 320 dégâts structurels, 2 dégâts cellulaires et 13 dégâts d'acide.
+                                Le prix du nœud blob est passé de 50 à 100.
+blob-chem-cryogenicpoison-info = Poison Cryogénique
+                                Inflige 16 dégâts de froid, 4 dégâts tranchants et 100 dégâts structurels.
+
 blob-alert-out-off-station = Le blob a été retiré car il était en dehors de la station !
 
 # Announcment
