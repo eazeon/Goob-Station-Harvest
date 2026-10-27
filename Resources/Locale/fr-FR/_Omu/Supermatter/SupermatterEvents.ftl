@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+gas-spill-plasma = Les systèmes de surveillance ont détecté une libération imminente de plasma par le Cristal de Supermatière. L'équipe d'ingénierie doit s'assurer que la surtension secondaire reste dans les paramètres attendus.
+gas-spill-oxygen = Les systèmes de surveillance ont détecté une libération imminente d'oxygène par le Cristal de Supermatière. L'équipe d'ingénierie est invitée à surveiller et à intervenir si nécessaire.
+gas-spill-nitrium = Les systèmes de surveillance ont détecté une libération imminente de nitrium par le Cristal de Supermatière. L'équipe d'ingénierie est invitée à surveiller et à intervenir si nécessaire.
+gas-spill-nitrogen = Les systèmes de surveillance ont détecté une libération imminente d'azote par le Cristal de Supermatière. L'équipe d'ingénierie est invitée à surveiller et à intervenir si nécessaire.
+gas-spill-carbondioxide = Les systèmes de surveillance ont détecté une libération imminente de dioxyde de carbone par le Cristal de Supermatière. L'équipe d'ingénierie doit s'assurer que la surtension secondaire reste dans les paramètres attendus.
+gas-spill-frezon = Les systèmes de surveillance ont détecté une libération imminente de fréon par le Cristal de Supermatière. L'équipe d'ingénierie est invitée à corriger l'anomalie de température instable.
+supermatter-energy-surge = Les systèmes de sécurité passifs prédisent une émission d'énergie substantielle du Cristal de Supermatière. L'équipe d'ingénierie est invitée à surveiller et à intervenir si nécessaire.
+supermatter-surge = Les systèmes de sécurité actifs ont signalé une forte poussée d'activité dans le Cristal de Supermatière. L'équipe d'ingénierie doit contenir la poussée. Le personnel restant doit évacuer les environs de la Supermatière immédiatement.
