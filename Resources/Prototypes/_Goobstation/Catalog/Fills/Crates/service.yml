@@ -419,8 +419,8 @@
 - type: entity
   id: CrateCargoWalkieTalkie
   parent: CratePlastic
-  name: handheld radio crate
-  description: Contains 5 handheld radios.
+  name: caisse de talkies-walkies
+  description: Contient 5 talkies-walkies.
   components:
     - type: StorageFill
       contents:

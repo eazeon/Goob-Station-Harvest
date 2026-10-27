@@ -14,8 +14,8 @@
 - type: entity
   id: CrateScienceResearchServerFilled
   parent: CrateScienceSecure
-  name: R&D server crate
-  description: Contains a flatpack of a R&D server and a few R&D computers. Requires Science access to open.
+  name: caisse de serveur R&D
+  description: Contient un kit à plat d'un serveur R&D et quelques ordinateurs R&D. Nécessite un accès Science pour l'ouvrir.
   components:
   - type: StorageFill
     contents:
