@@ -266,9 +266,9 @@
 - type: entity
   parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseCentcommContraband]
   id: ClothingBeltMilitaryWebbingBSO
-  name: blueshield chest rig
+  name: harnais blueshield
   suffix: Empty
-  description: A set of tactical webbing worn by Central Command support units.
+  description: Un ensemble de sangles tactiques porté par les unités de soutien du Commandement Central.
   components:
   - type: Sprite
     sprite: Clothing/Belt/militarywebbing.rsi
@@ -446,8 +446,8 @@
 - type: entity
   parent: ClothingBeltStorageBase
   id: ClothingBeltUtilityAtmos
-  name: atmospherics belt
-  description: Holds all the tools needed for a growing (middle-aged) atmosian catgirl.
+  name: ceinture d'atmosphérique
+  description: Contient tous les outils nécessaires à un atmosphérique en herbe (d'âge moyen).
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Belt/atmosbelt.rsi

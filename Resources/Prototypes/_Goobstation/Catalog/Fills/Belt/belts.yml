@@ -22,8 +22,8 @@
   parent: [ ClothingBeltDeathsquadWebbing, BaseCentcommContraband ]
   suffix: Filled, DO NOT MAP
   id: ClothingBeltDeathsquadWebbingFilled
-  name: deathsquad operative chestrig
-  description: "A robust and durable chestrig, containing everything you need to keep you in the fight. You probably won't need to use it."
+  name: harnais d'agent de l'escadron de la mort
+  description: "Un harnais robuste et durable, contenant tout ce dont vous avez besoin pour rester dans la course. Vous n'aurez probablement pas besoin de vous en servir."
   components:
   - type: StorageFill
     contents:
@@ -117,8 +117,8 @@
 - type: entity
   id: ClothingBeltHolsterFilledChaplain
   parent: ClothingBeltBase
-  name: Chaplains' Holster
-  description: A shoulder holster from the Gods. Contains a set of dual pistols.
+  name: étui des chapelains
+  description: Un étui d'épaule venu des Dieux. Contient un ensemble de pistolets jumeaux.
   suffix: Filled, Chaplain
   components:
   - type: Item
@@ -252,7 +252,7 @@
 - type: entity
   id: ClothingBeltMilitaryRigGrenadierFilled
   parent: ClothingBeltMilitaryRigGrenadier
-  suffix: Grenadier bundle, filled
+  suffix: paquet grenadier, rempli
   components:         # How many nades do you want?
   - type: StorageFill # Yes.
     contents:         # If seriously this is like 100 TC worth of explosives.
