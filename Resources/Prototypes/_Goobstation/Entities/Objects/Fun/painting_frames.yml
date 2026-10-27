@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseItem
   id: BasePaintingFrame
-  description: Put it on a finished painting to frame it.
+  description: Placez-le sur une peinture finie pour l'encadrer.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Fun/painting_frames.rsi
@@ -12,7 +12,7 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameWood
-  name: wooden painting frame
+  name: cadre de peinture en bois
   components:
   - type: Sprite
     state: 19x19frame_simple
@@ -27,7 +27,7 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameIron
-  name: iron painting frame
+  name: cadre de peinture en fer
   components:
   - type: Sprite
     state: 19x19frame_iron
@@ -42,7 +42,7 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameBamboo
-  name: bamboo painting frame
+  name: cadre de peinture en bambou
   components:
   - type: Sprite
     state: 19x19frame_bamboo
@@ -57,7 +57,7 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameBones
-  name: bone painting frame
+  name: cadre de peinture en os
   components:
   - type: Sprite
     state: 19x19frame_bones
@@ -72,7 +72,7 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameBronze
-  name: bronze painting frame
+  name: cadre de peinture en bronze
   components:
   - type: Sprite
     state: 19x19frame_bronze
@@ -87,7 +87,7 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameClown
-  name: clown painting frame
+  name: cadre de peinture clown
   components:
   - type: Sprite
     state: 19x19frame_clown
@@ -99,7 +99,7 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameFrog
-  name: frog painting frame
+  name: cadre de peinture grenouille
   components:
   - type: Sprite
     state: 19x19frame_frog
@@ -111,7 +111,7 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameSilver
-  name: silver painting frame
+  name: cadre de peinture en argent
   components:
   - type: Sprite
     state: 19x19frame_silver
@@ -126,7 +126,7 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameNecropolis
-  name: necropolis painting frame
+  name: cadre de peinture nécropole
   components:
   - type: Sprite
     state: 19x19frame_necropolis
@@ -138,7 +138,7 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameGold
-  name: gold painting frame
+  name: cadre de peinture en or
   components:
   - type: Sprite
     state: 19x19frame_gold
@@ -153,7 +153,7 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameDiamond
-  name: diamond painting frame
+  name: cadre de peinture en diamant
   components:
   - type: Sprite
     state: 19x19frame_diamond
@@ -168,7 +168,7 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameRainbow
-  name: rainbow painting frame
+  name: cadre de peinture arc-en-ciel
   components:
   - type: Sprite
     state: 19x19frame_rainbow
@@ -180,8 +180,8 @@
 - type: entity
   parent: BasePaintingFrame
   id: PaintingFrameSupermatter
-  name: supermatter painting frame
-  description: Put it on a finished painting to frame it. It hums faintly.
+  name: cadre de peinture en supermatière
+  description: Placez-le sur une peinture finie pour l'encadrer. Il émet un faible bourdonnement.
   components:
   - type: Sprite
     state: 19x19frame_supermatter

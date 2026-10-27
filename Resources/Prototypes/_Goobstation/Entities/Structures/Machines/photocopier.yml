@@ -1,8 +1,8 @@
 - type: entity
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   id: Photocopier
-  name: photocopier
-  description: Copies a painting onto a blank canvas of the same size. Insert both, then switch it on.
+  name: photocopieur
+  description: Copie une peinture sur une toile vierge de la même taille. Insérez les deux, puis allumez.
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/Machines/photocopier.rsi

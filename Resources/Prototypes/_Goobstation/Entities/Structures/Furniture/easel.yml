@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructureDynamic
   id: PaintEasel
-  name: easel
-  description: A wooden stand that holds a canvas while you paint on it.
+  name: chevalet
+  description: Un chevalet en bois qui maintient une toile pendant que vous peignez dessus.
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/Furniture/easel.rsi

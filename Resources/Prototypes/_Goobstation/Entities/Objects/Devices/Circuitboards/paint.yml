@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: PhotocopierMachineCircuitboard
-  name: photocopier machine board
-  description: A machine printed circuit board for a photocopier.
+  name: plaque de machine photocopieur
+  description: Une carte de circuit imprimé pour une photocopieuse.
   components:
   - type: Sprite
     state: service
