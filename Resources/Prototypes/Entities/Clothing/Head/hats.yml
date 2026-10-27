@@ -834,7 +834,7 @@
   abstract: true
   parent: [ClothingHeadBase, BaseMagicalContraband]
   id: ClothingHeadHatWizardBase
-  suffix: Wizard Clothes # Goobstation
+  suffix: Vêtements de sorcier # Goobstation
   components:
   - type: WizardClothes
   - type: Tag # Goobstation
