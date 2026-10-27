@@ -8,6 +8,7 @@ player-panel-rolebans = Total bans de rôle : {$totalRoleBans}
 player-panel-notes = Total notes : {$totalNotes}
 player-panel-playtime = Temps de jeu total : {$days}j:{$hours}h:{$minutes}m
 player-panel-shared-connections = Connexions partagées : {$sharedConnections}
+player-panel-trust-score = Score de confiance : {TOSTRING($trustScore, "P0")}
 
 player-panel-copy-username = Copier
 player-panel-show-notes = Notes
