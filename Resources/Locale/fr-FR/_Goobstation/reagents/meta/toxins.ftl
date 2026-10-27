@@ -1,8 +1,3 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-#
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 reagent-name-triclor = triclor
@@ -28,3 +23,9 @@ reagent-desc-nevcottapowder = Une poudre hautement toxique créée en broyant l'
 
 reagent-name-microplastics = microplastiques
 reagent-desc-microplastics = Un polluant légèrement toxique présent dans de nombreux objets du quotidien. Ses effets toxiques ne semblent pas affecter les Vox.
+
+reagent-name-caffeine = caféine
+reagent-desc-caffeine = Augmente la vitesse de déplacement à faible dose, mais provoque des tremblements, des douleurs thoraciques et un ralentissement du mouvement si trop de caféine est présente dans le sang.
+
+reagent-name-junk-food = malbouffe
+reagent-desc-junk-food = Vous rend lent si vous en mangez trop.
