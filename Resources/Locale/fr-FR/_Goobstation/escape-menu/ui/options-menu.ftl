@@ -6,6 +6,7 @@ ui-options-coalesce-identical-messages = Fusionner les messages identiques dans 
 ui-options-detailed-examine = Afficher le texte d'examen détaillé
 ui-options-auto-focus-search-on-build-menu = Placer automatiquement le curseur dans le champ de recherche à l'ouverture du menu de construction
 ui-options-lock-action-bar-drag = Autoriser le déplacement des actions dans la barre de raccourcis uniquement lorsque le menu des actions est ouvert
+ui-options-inhand-interaction-particle-scale = Taille de l'icône d'interaction au-dessus de la tête
 
 ui-options-hud-theme-coscult = Culte cosmique
 
