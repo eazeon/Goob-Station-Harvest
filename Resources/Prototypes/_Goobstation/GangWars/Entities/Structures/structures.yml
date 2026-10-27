@@ -239,7 +239,7 @@
   parent: CrateGeneric
   id: CrateGang
   name: caisse de gang
-  description: Une caisse verrouillée contenant divers trucs. Ne peut être ouverte qu'à côté d'un casier de gang.
+  description: Une caisse verrouillée contenant divers trucs.
   suffix: Gang
   components:
   - type: Icon
