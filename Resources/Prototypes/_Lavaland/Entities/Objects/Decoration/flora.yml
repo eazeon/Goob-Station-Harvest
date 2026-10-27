@@ -105,10 +105,10 @@
     loot: MaterialFlowersPale1
 
 - type: entity
-  name: yellow flowers
+  name: fleurs jaunes
   id: FloraAshYellowFlowers
   parent: BaseLavalandFlora
-  description: A group of yellow flowers. They look weak, and yet still manage to survive in this place.
+  description: Un groupe de fleurs jaunes. Elles semblent fragiles, et pourtant parviennent à survivre en cet endroit.
   components:
   - type: Sprite
     sprite: _Lavaland/Objects/Decoration/Flora/Misc/yellow_flowers.rsi

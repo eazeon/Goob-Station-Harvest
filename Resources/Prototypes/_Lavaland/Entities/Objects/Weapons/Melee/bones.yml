@@ -58,10 +58,10 @@
   - type: UndetectableContraband
 
 - type: entity
-  name: incomplete bone axe
+  name: hache en os inachevée
   parent: [ BaseItem, BaseMajorContraband ]
   id: IncompleteBoneAxe
-  description: A few bones tied together with pieces of cloth.
+  description: Quelques os attachés ensemble avec des morceaux de tissu.
   components:
   - type: Sprite
     sprite: _Lavaland/Objects/Weapons/Melee/bone_axe.rsi

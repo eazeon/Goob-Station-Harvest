@@ -89,10 +89,10 @@
 
 - type: entity
   id: BulletSuperPlasmaCutter
-  name: super cutter bolt
+  name: projectile de super coupeur
   parent: BulletPlasmaCutter
   categories: [ HideSpawnMenu ]
-  description: Not too bad, but you still don't want to get hit by it.
+  description: Pas trop méchant, mais vous ne voulez quand même pas vous le prendre.
   components:
   - type: Fixtures
     fixtures:

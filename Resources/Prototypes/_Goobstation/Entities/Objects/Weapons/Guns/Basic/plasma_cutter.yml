@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: plasma cutter
+  name: coupeur plasma
   parent: BaseWeaponBatterySmall
   id: WeaponPlasmaCutter
-  description: A mining weapon that can mine an entire tunnel with a single shot.
+  description: Une arme minière capable de creuser un tunnel entier en un seul tir.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Battery/cutter.rsi
@@ -41,10 +41,10 @@
     startingCharge: 0
 
 - type: entity
-  name: super plasma cutter
+  name: super coupeur plasma
   parent: [ WeaponPlasmaCutter, BaseSalvageContraband ]
   id: WeaponSuperPlasmaCutter
-  description: A strong mining weapon that can mine even bigger tunnels through rocks.
+  description: Une puissante arme minière capable de creuser des tunnels encore plus grands à travers la roche.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Battery/super_cutter.rsi

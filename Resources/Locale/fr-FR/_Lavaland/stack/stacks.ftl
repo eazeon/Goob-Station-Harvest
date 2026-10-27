@@ -35,3 +35,23 @@ stack-legion-skull = {$amount ->
 [1] crâne de légion
 *[other] crânes de légion
 }
+
+stack-ashwood-stick = {$amount ->
+[1] bâton de bois de cendre
+*[other] bâtons de bois de cendre
+}
+
+stack-wood-stick = {$amount ->
+[1] bâton de bois
+*[other] bâtons de bois
+}
+
+stack-flowers-ash = {$amount ->
+[1] fleur de cendre
+*[other] fleurs de cendre
+}
+
+stack-flowers-pale = {$amount ->
+[1] fleur pâle
+*[other] fleurs pâles
+}

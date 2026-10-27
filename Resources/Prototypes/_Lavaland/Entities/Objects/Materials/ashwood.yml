@@ -59,7 +59,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialAshwoodStick
-  name: ashwood stick
+  name: bâton de bois de cendre
   suffix: Full
   components:
   - type: Material
@@ -120,7 +120,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialWoodStick
-  name: wood stick
+  name: bâton de bois
   suffix: Full
   components:
   - type: Material

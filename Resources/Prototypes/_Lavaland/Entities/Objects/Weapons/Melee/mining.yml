@@ -1,8 +1,8 @@
 - type: entity
-  name: wooden pickaxe
+  name: pioche en bois
   parent: Pickaxe
   id: PickaxeWood
-  description: A couple strong sticks stuck together. Decent at breaking rocks.
+  description: Quelques bâtons solides assemblés. Correct pour casser des rochers.
   components:
   - type: Sprite
     sprite: _Lavaland/Objects/Weapons/Melee/wood_pickaxe.rsi
@@ -28,10 +28,10 @@
     node: pickaxe
 
 - type: entity
-  name: ashwooden pickaxe
+  name: pioche en bois de cendre
   parent: Pickaxe
   id: PickaxeAshwood
-  description: A couple strong sticks stuck together. Decent at breaking rocks, and also people.
+  description: Quelques bâtons solides assemblés. Correct pour casser des rochers, et aussi des gens.
   components:
   - type: Sprite
     sprite: _Lavaland/Objects/Weapons/Melee/ashwood_pickaxe.rsi
@@ -57,10 +57,10 @@
     node: pickaxe
 
 - type: entity
-  name: diamond pickaxe
+  name: pioche en diamant
   parent: [ Pickaxe, BaseSalvageContraband ]
   id: PickaxeDiamond
-  description: Covered with diamond to reduce weight, notched to perfection for jamming it into rocks.
+  description: Revêtue de diamant pour réduire le poids, taillée à la perfection pour l'enfoncer dans la roche.
   components:
   - type: Sprite
     sprite: _Lavaland/Objects/Weapons/Melee/diamond_pickaxe.rsi
@@ -83,10 +83,10 @@
       Wood: 125
 
 - type: entity
-  name: super mining drill
+  name: super foreuse minière
   parent: [ MiningDrill, BaseSalvageContraband ]
   id: MiningDrillSuper
-  description: An even more efficient mining drill with faster mining speed and range.
+  description: Une foreuse minière encore plus efficace, avec une vitesse et une portée de minage accrues.
   components:
   - type: Sprite
     sprite: _Lavaland/Objects/Tools/handdrill_super.rsi

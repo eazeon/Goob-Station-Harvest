@@ -1,9 +1,9 @@
 - type: entity
   abstract: true
-  name: base cudgel
+  name: gourdin de base
   parent: [ BaseItem, BaseMinorContraband ]
   id: WeaponCudgelBase
-  description: A piece of wood sharpened for easier grip. A primitive hunters favorite, perfect for barbaric destruction!
+  description: Un morceau de bois affûté pour une meilleure prise. L'arme favorite des chasseurs primitifs, parfaite pour la destruction barbare !
   components:
   - type: MeleeWeapon
     animationRotation: -135
@@ -29,7 +29,7 @@
   - type: UndetectableContraband
 
 - type: entity
-  name: wood cudgel
+  name: gourdin en bois
   parent: WeaponCudgelBase
   id: WeaponCudgelWood
   components:
@@ -60,7 +60,7 @@
     node: cudgel
 
 - type: entity
-  name: ashwood cudgel
+  name: gourdin en bois de cendre
   parent: WeaponCudgelBase
   id: WeaponCudgelAshwood
   components:
@@ -92,10 +92,10 @@
     node: cudgel
 
 - type: entity
-  name: incomplete wooden cudgel
+  name: gourdin en bois inachevé
   parent: [ BaseItem, BaseMinorContraband ]
   id: IncompleteWoodCudgel
-  description: A few planks of wood stuck together.
+  description: Quelques planches de bois assemblées.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/incomplete_bat.rsi
@@ -113,10 +113,10 @@
     node: incompleteCudgel
 
 - type: entity
-  name: incomplete ashwood cudgel
+  name: gourdin en bois de cendre inachevé
   parent: [ BaseItem, BaseMinorContraband ]
   id: IncompleteAshwoodCudgel
-  description: A few planks of wood stuck together.
+  description: Quelques planches de bois assemblées.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/incomplete_bat.rsi
