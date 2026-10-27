@@ -33,7 +33,7 @@ rcd-component-must-build-on-subfloor-message = Vous ne pouvez construire ça que
 rcd-component-cannot-build-on-subfloor-message = Vous ne pouvez pas construire ça sur un sous-plancher exposé !
 rcd-component-cannot-build-on-occupied-tile-message = Vous ne pouvez pas construire ici, l'espace est déjà occupé !
 rcd-component-cannot-build-identical-tile = Cette tuile existe déjà là !
-rcd-component-cannot-build-identical-entity = That already exists there!
+rcd-component-cannot-build-identical-entity = Cela existe déjà ici !
 
 
 ### Category names
@@ -45,7 +45,7 @@ rcd-component-electrical = Électrique
 rcd-component-lighting = Éclairage
 rcd-component-piping = Tuyauterie
 rcd-component-atmosphericutility = Utilitaire atmosphérique
-rcd-component-pumps = Pompes et vannes
+rcd-component-pumpsvalves = Pompes et vannes
 rcd-component-vents = Évents
 
 

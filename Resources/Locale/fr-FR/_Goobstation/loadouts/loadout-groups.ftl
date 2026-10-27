@@ -67,6 +67,7 @@ loadout-group-technical-assistant-envirogloves = Gants enviro de l'assistant tec
 loadout-group-atmos-envirohelm = Casque enviro du technicien atmos
 loadout-group-atmos-envirosuit = Combinaison enviro du technicien atmos
 loadout-group-atmos-envirogloves = Gants enviro du technicien atmos
+loadout-group-atmospheric-technician-belt = Ceinture du technicien atmosphérique
 
 # Chief Engineer
 loadout-group-chief-engineer-envirohelm = Casque enviro de l'ingénieur en chef
