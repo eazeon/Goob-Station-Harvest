@@ -1,8 +1,8 @@
 - type: entity
-  name: hellfire chili
+  name: chili feu d'enfer
   parent: FoodBowlBase
   id: FoodSoupChiliHotCold
-  description: Ever wondered what hellfire tastes like?
+  description: Vous êtes-vous déjà demandé quel goût a le feu d'enfer ?
   components:
   - type: FlavorProfile
     flavors:

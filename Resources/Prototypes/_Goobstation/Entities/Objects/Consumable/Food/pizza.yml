@@ -1,8 +1,8 @@
 - type: entity
-  name: flamin hot cotton pizza
+  name: pizza coton flamin hot
   parent: FoodPizzaBase
   id: FoodPizzaCottonHot
-  description: Flat fabric cotton dough with super spicy cotton topping. Flamin hot!
+  description: Pâte plate en coton tissu avec garniture coton super épicée. Flamin hot !
   components:
   - type: FlavorProfile
     flavors:
@@ -35,10 +35,10 @@
           Quantity: 5
 
 - type: entity
-  name: slice of flamin hot cotton pizza
+  name: tranche de pizza coton flamin hot
   parent: FoodPizzaSliceBase
   id: FoodPizzaCottonHotSlice
-  description: A slice of hot cotton pizza. Extra spicy!
+  description: Une tranche de pizza coton chaude. Extra épicée !
   components:
   - type: FlavorProfile
     flavors:
