@@ -2,7 +2,7 @@
 - type: breed
   parent: BaseMutation
   id: GreyMutation
-  breedName: grey slime
+  breedName: slime gris
   producedExtract: GreySlimeExtract
   components:
   - type: Slime

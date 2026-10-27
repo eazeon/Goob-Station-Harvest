@@ -1,7 +1,7 @@
 - type: breed
   id: BaseMutation
   abstract: true
-  breedName: base mutation
+  breedName: mutation de base
   components:
   - type: Slime
     breed: GreyMutation

@@ -1,7 +1,7 @@
 - type: entity
   parent: MarkerBase
   id: MobSlimeXenobioBabyGreySpawner
-  name: grey slime spawner
+  name: générateur de slime gris
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
@@ -12,7 +12,7 @@
 - type: entity
   parent: MarkerBase
   id: XenobioSlimeBabySpawner
-  name: random T1 xenobio slime spawner
+  name: générateur de slime xénobio T1 aléatoire
   components:
   - type: Sprite
     layers:

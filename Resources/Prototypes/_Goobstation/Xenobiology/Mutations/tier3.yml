@@ -1,7 +1,7 @@
 - type: breed
   parent: BaseMutation
   id: RedMutation
-  breedName: red slime
+  breedName: slime rouge
   producedExtract: RedSlimeExtract
   components:
   - type: Slime
@@ -16,7 +16,7 @@
 - type: breed
   parent: BaseMutation
   id: GreenMutation
-  breedName: green slime
+  breedName: slime vert
   producedExtract: GreenSlimeExtract
   components:
   - type: Slime
@@ -31,7 +31,7 @@
 - type: breed
   parent: BaseMutation
   id: PinkMutation
-  breedName: pink slime
+  breedName: slime rose
   producedExtract: PinkSlimeExtract
   components:
   - type: Slime
@@ -46,7 +46,7 @@
 - type: breed
   parent: BaseMutation
   id: GoldMutation
-  breedName: gold slime
+  breedName: slime doré
   producedExtract: GoldSlimeExtract
   components:
   - type: Slime
