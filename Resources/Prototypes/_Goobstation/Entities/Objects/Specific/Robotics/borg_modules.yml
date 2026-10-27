@@ -132,8 +132,8 @@
 - type: entity
   id: BorgModuleSECNonLethal
   parent: BaseSECborgModule
-  name: S.E.C. non-lethal module
-  description: The standard-issue compliance module for the S.E.C. cyborg. Comes with a stun baton, a disabler and a combat knife, as well as storage slots for bolas and restraints.
+  name: module cyborg non-léthal S.E.C.
+  description: Module de conformité standard pour le cyborg S.E.C. Il comprend une matraque électrique, un désactivateur et un couteau de combat, ainsi que des rangements pour les bolas et les menottes.
   components:
   - type: Sprite
     layers:
@@ -162,8 +162,8 @@
 - type: entity
   id: BorgModuleSECLethal
   parent: BaseSECborgModule
-  name: S.E.C. lethal module
-  description: The lethal-response module for the S.E.C. cyborg. Its slots accept either a Lecter or its ammunition, to be provided by security.
+  name: module cyborg létal S.E.C.
+  description: Module de réponse létal pour le cyborg S.E.C. Ses emplacements acceptent soit un Lecter ou ses munitions, fournis par la sécurité.
   components:
   - type: Sprite
     layers:

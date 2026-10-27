@@ -3,7 +3,7 @@
 - type: entity
   id: BorgChassisDerelictSyndicateAssault
   parent: BaseBorgChassisDerelict
-  name: derelict syndicate assasult cyborg
+  name: cyborg d'assaut du syndicat délabré
   description: Une machine à tuer mince et redoutable avec accès à une variété de modules mortels. Celle-ci est en très mauvais état.
   components:
   - type: Sprite
@@ -52,7 +52,7 @@
 - type: entity
   id: BorgChassisUrist
   parent: BaseBorgChassisDerelict
-  name: Urist McBorg
+  name: Urist (Borg)
   description: Une abomination qui est censée aider aux activités de la station.
   components:
   - type: Sprite
@@ -117,8 +117,8 @@
 - type: entity
   id: BorgChassisSEC
   parent: BaseBorgChassisNT
-  name: S.E.C. cyborg
-  description: A security enforcement cyborg, purpose-built to uphold Space Law.
+  name: cyborg S.E.C.
+  description: Cyborg de sécurité faisant respecter les lois spatiales.
   components:
   - type: Sprite
     sprite: _Goobstation/Mobs/Silicon/sec_chassis.rsi

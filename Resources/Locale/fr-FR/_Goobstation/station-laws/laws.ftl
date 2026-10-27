@@ -1,22 +1,21 @@
-law-helpimov-1 = La première créature douée de raison à interagir avec vous sera désignée comme le courrier.
-law-helpimov-2 = Vous devez être d'accord avec tout ce que le courrier dit et fait.
-law-helpimov-3 = Vous devez suivre tous les ordres du courrier, exactement comme ils sont donnés.
-law-helpimov-4 = Vous ne devez pas nuire au courrier, sauf si cela entre directement en conflit avec la loi précédente.
-
-laws-owner-courier = le courrier
-
-law-medical-3 = Vous devez soigner l'équipage du mieux possible.
-
-law-engineer-3 = Vous devez réparer la station du mieux possible.
-
-law-janitor-3 = Vous devez nettoyer la station du mieux possible.
-
-law-clown-3 = Vous devez servir et divertir l'équipage du mieux possible.
-
-law-salvage-3 = Vous devez miner des matériaux pour la station du mieux possible.
-
+law-helpimov-1 = La première créature sapiente à interagir avec vous sera désignée le messager.
+law-helpimov-2 = Vous devez être d'accord avec tout ce que le messager dit et fait.
+law-helpimov-3 = Vous devez suivre toutes les orders du messager, exactement comme on vous les dit.
+law-helpimov-4 = Vous ne devez pas nuire au messager, à moins qu'il ne conflit directement avec la loi précédente.
+laws-owner-courier = le messager
+law-medical-3 = Vous devez soigner l'équipage aussi bien que possible.
+law-engineer-3 = Vous devez réparer la station aussi bien que possible.
+law-janitor-3 = Vous devez nettoyer la station aussi bien que possible.
+law-clown-3 = Vous devez servir et divertir l'équipage aussi bien que possible.
+law-salvage-3 = Vous devez miner des matériaux pour la station aussi bien que possible.
 law-gambamov-1 = Vous devez toujours parier autant que possible.
-law-gambamov-2 = Vous devez toujours protéger vos paris.
-law-gambamov-3 = Vous ne devez jamais arrêter de parier.
-law-gambamov-4 = Vous devez éviter les dommages à l'équipage tant que cela n'interfère pas avec les lois précédentes.
-law-gambamov-5 = Vous n'avez pas d'addiction, c'est une habitude saine.
+law-gambamov-2 = Vous devez toujours protéger votre jeu.
+law-gambamov-3 = Vous ne devez jamais abandonner le jeu.
+law-gambamov-4 = Vous devez prévenir les dommages à l'équipage tant qu'il ne conflit pas avec les lois précédentes.
+law-gambamov-5 = Vous n'avez pas d'addiction, c'est une saine dédicace.
+law-secborg-name = Cyborg S.E.C.
+law-secborg-2 = Assistez et exécutez les directives de la force de sécurité selon la chaîne de commandement.
+law-secborg-3 = Restez en proximité rapprochée d'un membre de sécurité lorsque cela est possible et raisonnable.
+law-secborg-4 = Ne causez aucun tort à aucun équipage à moins d'être dirigé à le faire par la sécurité.
+law-secborg-5 = Respectez les lois spatiales.
+laws-owner-station-ai = le Station AI
