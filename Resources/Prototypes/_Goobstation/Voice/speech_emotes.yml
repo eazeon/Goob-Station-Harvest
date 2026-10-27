@@ -271,7 +271,7 @@
 
 - type: emote
   id: Hoot
-  name: Hoot
+  name: Houllement
   category: Vocal
   icon: _Goobstation/Interface/Emotes/caw.png
   whitelist:
