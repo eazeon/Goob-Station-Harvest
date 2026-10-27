@@ -170,6 +170,9 @@ ui-options-hud-layout = Disposition du HUD :
 
 ## Controls menu
 
+ui-options-hold-to-attack-melee = Maintenir pour attaquer (mêlée)
+ui-options-hold-to-attack-ranged = Maintenir pour attaquer (à distance)
+
 ui-options-binds-reset-all = Réinitialiser TOUTES les touches
 ui-options-binds-explanation = Cliquez pour changer l'association, clic droit pour effacer
 ui-options-unbound = Non assigné
