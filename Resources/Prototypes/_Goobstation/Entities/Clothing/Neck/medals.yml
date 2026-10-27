@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckMimemedal
-  name: medal of mimery
-  description: Given to crewmates who display excellent mimery.
+  name: médaille de mime
+  description: Donnée aux membres d'équipage qui font preuve d'un excellent mimisme.
   components:
   - type: EmitSoundOnPickup
     sound:
