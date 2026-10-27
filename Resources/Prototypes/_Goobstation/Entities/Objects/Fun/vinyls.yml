@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: BaseVinylDisk
-  name: vinyl disk
-  description: A vinyl disk containing music.
+  name: disque vinyle
+  description: Un disque vinyle contenant de la musique.
   parent: BaseItem
   components:
   - type: Vinyl
@@ -45,8 +45,8 @@
 - type: entity
   abstract: true
   id: BaseVinylSleeve
-  name: vinyl sleeve
-  description: A vinyl sleeve, perfect for storing your vinyls.
+  name: pochette vinyle
+  description: Une pochette vinyle, parfaite pour ranger vos vinyles.
   parent: BaseItem
   components:
   - type: Sprite
@@ -74,7 +74,7 @@
 # Vinyls
 
 - type: entity
-  name: "vinyl disk: space jazz"
+  name: "disque vinyle : space jazz"
   id: VinylDiskAI
   parent: BaseVinylDisk
   components:
@@ -85,8 +85,8 @@
       path: /Audio/_Goobstation/RadioStation/music/SpaceJazz.ogg
 
 - type: entity
-  name: "vinyl disk: airport lounge"
-  description: A vinyl disk containing HELLISH music.
+  name: "disque vinyle : salon d'aéroport"
+  description: Un disque vinyle contenant une musique INFERNALE.
   id: VinylDiskDevil
   parent: BaseVinylDisk
   components:
@@ -97,8 +97,8 @@
       path: /Audio/_Goobstation/RadioStation/music/AirportLounge.ogg
 
 - type: entity
-  name: "vinyl disk: boogie party"
-  description: A vinyl disk containing music, smells like tomatoes.
+  name: "disque vinyle : boogie party"
+  description: Un disque vinyle contenant de la musique, sent la tomate.
   id: VinylDiskPizza
   parent: BaseVinylDisk
   components:
@@ -109,8 +109,8 @@
       path: /Audio/_Goobstation/RadioStation/music/BoogieParty.ogg
 
 - type: entity
-  name: "vinyl disk: corncob"
-  description: A vinyl disk containing music, has a matt gloss finish.
+  name: "disque vinyle : corncob"
+  description: Un disque vinyle contenant de la musique, a une finition mate brillante.
   id: VinylDiskGlossy
   parent: BaseVinylDisk
   components:
@@ -121,7 +121,7 @@
       path: /Audio/_Goobstation/RadioStation/music/Corncob.ogg
 
 - type: entity
-  name: "vinyl disk: night in Venice"
+  name: "disque vinyle : night in Venice"
   id: VinylDiskRed
   parent: BaseVinylDisk
   components:
@@ -132,7 +132,7 @@
       path: /Audio/_Goobstation/RadioStation/music/NightInVenice.ogg
 
 - type: entity
-  name: "vinyl disk: distant star"
+  name: "disque vinyle : distant star"
   id: VinylDiskLightBlue
   parent: BaseVinylDisk
   components:
@@ -143,8 +143,8 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/distant_star.ogg
 
 - type: entity
-  name: "vinyl disk: banana"
-  description: A vinyl disk contains the clowns favorite music!
+  name: "disque vinyle : banane"
+  description: Un disque vinyle contenant la musique préférée des clowns !
   id: VinylDiskBanana
   parent: BaseVinylDisk
   components:
@@ -173,8 +173,8 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/honkmas.ogg
 
 - type: entity
-  name: "vinyl disk: atlas"
-  description: A vinyl disk containing music, has a disclaimer on the side warning that the disk is not edible.
+  name: "disque vinyle : atlas"
+  description: Un disque vinyle contenant de la musique, avec un avertissement sur le côté indiquant que le disque n'est pas comestible.
   id: VinylDiskCarrot
   parent: BaseVinylDisk
   components:
@@ -185,7 +185,7 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/atlas.ogg
 
 - type: entity
-  name: "vinyl disk: beaches"
+  name: "disque vinyle : beaches"
   id: VinylDiskCyan
   parent: BaseVinylDisk
   components:
@@ -196,7 +196,7 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/beaches.ogg
 
 - type: entity
-  name: "vinyl disk: vibing over venus"
+  name: "disque vinyle : vibing over venus"
   id: VinylDiskBlue
   parent: BaseVinylDisk
   components:
@@ -207,7 +207,7 @@
       path: /Audio/_Goobstation/RadioStation/music/VibingOverVenus.ogg
 
 - type: entity
-  name: "vinyl disk: deadly roulette"
+  name: "disque vinyle : deadly roulette"
   id: VinylDiskYellow
   parent: BaseVinylDisk
   components:
@@ -218,7 +218,7 @@
       path: /Audio/_Goobstation/RadioStation/music/DeadlyRoulette.ogg
 
 - type: entity
-  name: "vinyl disk: late night radio"
+  name: "disque vinyle : late night radio"
   id: VinylDiskGreen
   parent: BaseVinylDisk
   components:
@@ -229,9 +229,9 @@
       path: /Audio/_Goobstation/RadioStation/music/LateNightRadio.ogg
 
 - type: entity
-  name: "vinyl disk: adventure 3"
+  name: "disque vinyle : adventure 3"
   id: VinylDiskPurple
-  description: lets see it purple!
+  description: voyons-le en violet !
   parent: BaseVinylDisk
   components:
   - type: Sprite
@@ -241,7 +241,7 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/adventure_3.ogg
 
 - type: entity
-  name: "vinyl disk: everyone is so alive"
+  name: "disque vinyle : everyone is so alive"
   id: VinylDiskOrange
   parent: BaseVinylDisk
   components:
@@ -252,7 +252,7 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/everyone_is_so_alive.ogg
 
 - type: entity
-  name: "vinyl disk: groovy"
+  name: "disque vinyle : groovy"
   id: VinylDiskWhite
   parent: BaseVinylDisk
   components:
@@ -263,9 +263,9 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/groovy.ogg
 
 - type: entity
-  name: "vinyl disk: fart elise"
+  name: "disque vinyle : fart elise"
   id: VinylDiskLightRed
-  description: it's not pink, it's a lightish red.
+  description: ce n'est pas rose, c'est un rouge clair.
   parent: BaseVinylDisk
   components:
   - type: Sprite
@@ -275,7 +275,7 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/fart_elise.ogg
 
 - type: entity
-  name: "vinyl disk: dance on a space volcano"
+  name: "disque vinyle : dance on a space volcano"
   id: VinylDiskDarkBlue
   parent: BaseVinylDisk
   components:
@@ -286,7 +286,7 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/dance_on_a_space_volcano.ogg
 
 - type: entity
-  name: "vinyl disk: floaty"
+  name: "disque vinyle : floaty"
   id: VinylDiskFloaty
   parent: BaseVinylDisk
   components:
@@ -297,7 +297,7 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/floaty.ogg
 
 - type: entity
-  name: "vinyl disk: key lime"
+  name: "disque vinyle : key lime"
   id: VinylDiskLime
   parent: BaseVinylDisk
   components:
@@ -308,7 +308,7 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/key_lime.ogg
 
 - type: entity
-  name: "vinyl disk: christmassong"
+  name: "disque vinyle : christmassong"
   id: VinylDiskPink
   parent: BaseVinylDisk
   components:
@@ -319,7 +319,7 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/christmassong.ogg
 
 - type: entity
-  name: "vinyl disk: burn the world waltz"
+  name: "disque vinyle : burn the world waltz"
   id: VinylDiskBurnTheWorld
   parent: BaseVinylDisk
   components:
@@ -330,7 +330,7 @@
       path: /Audio/_Goobstation/RadioStation/music/BurnTheWorldWaltz.ogg
 
 - type: entity
-  name: "vinyl disk: feral angel waltz"
+  name: "disque vinyle : feral angel waltz"
   id: VinylDiskFeralAngel
   parent: BaseVinylDisk
   components:
@@ -341,7 +341,7 @@
       path: /Audio/_Goobstation/RadioStation/music/FeralAngelWaltz.ogg
 
 - type: entity
-  name: "vinyl disk: Also sprach Zarathustra"
+  name: "disque vinyle : Ainsi parlait Zarathoustra"
   id: VinylDiskAlsoSprach
   parent: BaseVinylDisk
   components:
@@ -352,7 +352,7 @@
       path: /Audio/_Goobstation/RadioStation/music/PMMUSIC/Also-Sprach-Zarathustra-PM-Music.ogg
 
 - type: entity
-  name: "vinyl disk: Ride of the Valkyries"
+  name: "disque vinyle : La Chevauchée des Valkyries"
   id: VinylDiskValkyries
   parent: BaseVinylDisk
   components:
@@ -363,7 +363,7 @@
       path: /Audio/_Goobstation/RadioStation/music/PMMUSIC/Ride-of-the-Valkyries-PM-Music.ogg
 
 - type: entity
-  name: "vinyl disk: Romeo and Juliet"
+  name: "disque vinyle : Roméo et Juliette"
   id: VinylDiskRomeoJuliet
   parent: BaseVinylDisk
   components:
@@ -374,7 +374,7 @@
       path: /Audio/_Goobstation/RadioStation/music/PMMUSIC/Romeo-and-Juliet-PM-Music.ogg
 
 - type: entity
-  name: "vinyl disk: Russian Dance"
+  name: "disque vinyle : Danse russe"
   id: VinylDiskRussian
   parent: BaseVinylDisk
   components:
@@ -385,7 +385,7 @@
       path: /Audio/_Goobstation/RadioStation/music/PMMUSIC/Russian-Dance-PM-Music.ogg
 
 - type: entity
-  name: "vinyl disk: The Flower Duet"
+  name: "disque vinyle : Le Duo des fleurs"
   id: VinylDiskFlowerDuet
   parent: BaseVinylDisk
   components:
@@ -396,7 +396,7 @@
       path: /Audio/_Goobstation/RadioStation/music/PMMUSIC/The-Flower-Duet-PM-Music.ogg
 
 - type: entity
-  name: "vinyl disk: Winter Vivaldi"
+  name: "disque vinyle : L'Hiver de Vivaldi"
   id: VinylDiskWinterVivaldi
   parent: BaseVinylDisk
   components:
@@ -407,7 +407,7 @@
       path: /Audio/_Goobstation/RadioStation/music/PMMUSIC/Winter-Vivaldi-PM-Music.ogg
 
 - type: entity
-  name: "vinyl disk: Bach Cello"
+  name: "disque vinyle : Suite pour violoncelle de Bach"
   id: VinylDiskBachCello
   parent: BaseVinylDisk
   components:
@@ -418,7 +418,7 @@
       path: /Audio/_Goobstation/RadioStation/music/PMMUSIC/Bach-Cello-Suite-PM-Music.ogg
 
 - type: entity
-  name: "vinyl disk: Get that antag!"
+  name: "disque vinyle : Get that antag!"
   id: VinylDiskGetThatAntag
   parent: BaseVinylDisk
   components:
@@ -429,7 +429,7 @@
       path: /Audio/_Goobstation/RadioStation/music/GetThatAntag!.ogg
 
 - type: entity
-  name: "vinyl disk: Want you gone"
+  name: "disque vinyle : Want you gone"
   id: VinylDiskWantYouGone
   parent: BaseVinylDisk
   components:
@@ -440,7 +440,7 @@
       path: /Audio/_Goobstation/RadioStation/music/WantYouGone.ogg
 
 - type: entity
-  name: "vinyl disk: Law 2, open armory"
+  name: "disque vinyle : Law 2, open armory"
   id: VinylDiskLaw2
   parent: BaseVinylDisk
   components:
@@ -451,7 +451,7 @@
       path: /Audio/_Goobstation/RadioStation/music/LAW2OPENARMORY.ogg
 
 - type: entity
-  name: "vinyl disk: Ephedrine Overdose"
+  name: "disque vinyle : Ephedrine Overdose"
   id: VinylDiskEphedrine
   parent: BaseVinylDisk
   components:
@@ -462,7 +462,7 @@
       path: /Audio/_Goobstation/RadioStation/music/EphedrineOverdose.ogg
 
 - type: entity
-  name: "vinyl disk: Running Out Cover"
+  name: "disque vinyle : Running Out Cover"
   id: VinylDiskRunningOut
   parent: BaseVinylDisk
   components:
@@ -473,7 +473,7 @@
       path: /Audio/_Goobstation/RadioStation/music/RunningOutCover.ogg
 
 - type: entity
-  name: "vinyl disk: Journey"
+  name: "disque vinyle : Journey"
   id: VinylDiskJourney
   parent: BaseVinylDisk
   components:
@@ -484,7 +484,7 @@
       path: /Audio/_Goobstation/RadioStation/music/OpenTTDJourney.ogg
 
 - type: entity
-  name: "vinyl disk: Traitorous Intent"
+  name: "disque vinyle : Traitorous Intent"
   id: VinylDiskTraitorousIntent
   parent: BaseVinylDisk
   components:
@@ -495,7 +495,7 @@
       path: /Audio/_Goobstation/RadioStation/music/TraitorousIntent.ogg
 
 - type: entity
-  name: "vinyl disk: Violet"
+  name: "disque vinyle : Violet"
   id: VinylDiskViolet
   parent: BaseVinylDisk
   components:
@@ -506,7 +506,7 @@
       path: /Audio/_Goobstation/RadioStation/music/violet.ogg
 
 - type: entity
-  name: "vinyl disk: lay egg is true"
+  name: "disque vinyle : lay egg is true"
   id: VinylDiskEgg
   parent: BaseVinylDisk
   components:
@@ -517,7 +517,7 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/lay_egg_is_true.ogg
 
 - type: entity
-  name: "vinyl disk: We are number two"
+  name: "disque vinyle : We are number two"
   id: VinylDiskWeAreNumberTwo
   parent: BaseVinylDisk
   components:
@@ -528,7 +528,7 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/we_are_number_two.ogg
 
 - type: entity
-  name: "vinyl disk: EXTRA METAL"
+  name: "disque vinyle : EXTRA METAL"
   id: VinylDiskExtraMetal
   parent: BaseVinylDisk
   components:
@@ -539,7 +539,7 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/xtra.ogg
 
 - type: entity
-  name: "vinyl disk: trap ops"
+  name: "disque vinyle : trap ops"
   id: VinylDiskTuff
   parent: BaseVinylDisk
   components:
@@ -550,10 +550,10 @@
       path: /Audio/_Goobstation/RadioStation/music/NUKIES_TRAP.ogg
 
 - type: entity
-  name: forgotten vinyl disk
+  name: disque vinyle oublié
   id: VinylDiskForgotten
   parent: BaseVinylDisk
-  description: some pieces are missing but something tell you that this is still playable, but should you?
+  description: quelques morceaux manquent mais quelque chose vous dit qu'il est encore jouable, mais devriez-vous ?
   components:
   - type: Sprite
     state: forgotten-vinyl-disk
@@ -564,7 +564,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskSpaceAsshole
-  name: "vinyl disk: Space Asshole"
+  name: "disque vinyle : Space Asshole"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -575,7 +575,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskAdventure1
-  name: "vinyl disk: adventure 1"
+  name: "disque vinyle : adventure 1"
   components:
   - type: Sprite
     state: purple-vinyl-disk
@@ -586,7 +586,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskAdventure2
-  name: "vinyl disk: adventure 2"
+  name: "disque vinyle : adventure 2"
   components:
   - type: Sprite
     state: blue-vinyl-disk
@@ -597,7 +597,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskAdventure4
-  name: "vinyl disk: adventure 4"
+  name: "disque vinyle : adventure 4"
   components:
   - type: Sprite
     state: cyan-vinyl-disk
@@ -608,7 +608,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskAdventure5
-  name: "vinyl disk: adventure 5"
+  name: "disque vinyle : adventure 5"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -619,7 +619,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskAdventure6
-  name: "vinyl disk: adventure 6"
+  name: "disque vinyle : adventure 6"
   components:
   - type: Sprite
     state: red-vinyl-disk
@@ -630,7 +630,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskAfterParty
-  name: "vinyl disk: after party"
+  name: "disque vinyle : after party"
   components:
   - type: Sprite
     state: lightishred-vinyl-disk
@@ -641,7 +641,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskAnonymous
-  name: "vinyl disk: anonymous"
+  name: "disque vinyle : anonymous"
   components:
   - type: Sprite
     state: white-vinyl-disk
@@ -652,7 +652,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskApril
-  name: "vinyl disk: april"
+  name: "disque vinyle : april"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -663,7 +663,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskAtmosphere
-  name: "vinyl disk: atmosphere"
+  name: "disque vinyle : atmosphere"
   components:
   - type: Sprite
     state: yellow-vinyl-disk
@@ -674,7 +674,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskAugust
-  name: "vinyl disk: august"
+  name: "disque vinyle : august"
   components:
   - type: Sprite
     state: red-vinyl-disk
@@ -685,7 +685,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskBanjo1
-  name: "vinyl disk: Banjo 1"
+  name: "disque vinyle : Banjo 1"
   components:
   - type: Sprite
     state: pink-vinyl-disk
@@ -696,7 +696,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskBiodome
-  name: "vinyl disk: biodome"
+  name: "disque vinyle : biodome"
   components:
   - type: Sprite
     state: green-vinyl-disk
@@ -707,7 +707,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskBlackWing
-  name: "vinyl disk: black wing interface"
+  name: "disque vinyle : black wing interface"
   components:
   - type: Sprite
     state: lime-vinyl-disk
@@ -718,7 +718,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskBumblebee
-  name: "vinyl disk: bumblebee"
+  name: "disque vinyle : bumblebee"
   components:
   - type: Sprite
     state: red-vinyl-disk
@@ -729,7 +729,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskButtris
-  name: "vinyl disk: buttris"
+  name: "disque vinyle : buttris"
   components:
   - type: Sprite
     state: carrot-vinyl-disk
@@ -740,7 +740,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskChill1
-  name: "vinyl disk: chill 1"
+  name: "disque vinyle : chill 1"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -751,7 +751,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskChill2
-  name: "vinyl disk: chill 2"
+  name: "disque vinyle : chill 2"
   components:
   - type: Sprite
     state: red-vinyl-disk
@@ -762,7 +762,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskChill3
-  name: "vinyl disk: chill 3"
+  name: "disque vinyle : chill 3"
   components:
   - type: Sprite
     state: darkblue-vinyl-disk
@@ -773,7 +773,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskChill4
-  name: "vinyl disk: chill 4"
+  name: "disque vinyle : chill 4"
   components:
   - type: Sprite
     state: cyan-vinyl-disk
@@ -784,7 +784,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskCloudMan
-  name: "vinyl disk: cloud sky man guy"
+  name: "disque vinyle : cloud sky man guy"
   components:
   - type: Sprite
     state: yellow-vinyl-disk
@@ -795,7 +795,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskCoreOfPoo
-  name: "vinyl disk: core of poo"
+  name: "disque vinyle : core of poo"
   components:
   - type: Sprite
     state: blue-vinyl-disk
@@ -806,7 +806,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskDecember
-  name: "vinyl disk: December"
+  name: "disque vinyle : December"
   components:
   - type: Sprite
     state: green-vinyl-disk
@@ -817,7 +817,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskDiscoPoo
-  name: "vinyl disk: disco poo"
+  name: "disque vinyle : disco poo"
   components:
   - type: Sprite
     state: earth-vinyl-disk
@@ -828,7 +828,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskEggShell
-  name: "vinyl disk: eggshell"
+  name: "disque vinyle : eggshell"
   components:
   - type: Sprite
     state: red-vinyl-disk
@@ -839,7 +839,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskFebruary
-  name: "vinyl disk: February"
+  name: "disque vinyle : February"
   components:
   - type: Sprite
     state: greenish-vinyl-disk
@@ -850,7 +850,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskFunkadelic
-  name: "vinyl disk: Funkadelic"
+  name: "disque vinyle : Funkadelic"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -861,7 +861,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskGiga
-  name: "vinyl disk: Giga"
+  name: "disque vinyle : Giga"
   components:
   - type: Sprite
     state: lightblue-vinyl-disk
@@ -872,7 +872,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskGraveyard
-  name: "vinyl disk: Graveyard"
+  name: "disque vinyle : Graveyard"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -883,7 +883,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskTechnologicBeat
-  name: "vinyl disk: high technologic beat"
+  name: "disque vinyle : high technologic beat"
   components:
   - type: Sprite
     state: blue-vinyl-disk
@@ -894,7 +894,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskItFeelsGood
-  name: "vinyl disk: it feels good to be alive too"
+  name: "disque vinyle : it feels good to be alive too"
   components:
   - type: Sprite
     state: lime-vinyl-disk
@@ -905,7 +905,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskJanuary
-  name: "vinyl disk: january"
+  name: "disque vinyle : january"
   components:
   - type: Sprite
     state: cyan-vinyl-disk
@@ -916,7 +916,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskJuly
-  name: "vinyl disk: july"
+  name: "disque vinyle : july"
   components:
   - type: Sprite
     state: green-vinyl-disk
@@ -927,7 +927,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskJune
-  name: "vinyl disk: june"
+  name: "disque vinyle : june"
   components:
   - type: Sprite
     state: lime-vinyl-disk
@@ -938,7 +938,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskLunch
-  name: "vinyl disk: lunch"
+  name: "disque vinyle : lunch"
   components:
   - type: Sprite
     state: red-vinyl-disk
@@ -949,7 +949,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskMarch
-  name: "vinyl disk: march"
+  name: "disque vinyle : march"
   components:
   - type: Sprite
     state: greenish-vinyl-disk
@@ -960,7 +960,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskMaxi
-  name: "vinyl disk: maxi"
+  name: "disque vinyle : maxi"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -971,7 +971,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskMay
-  name: "vinyl disk: may"
+  name: "disque vinyle : may"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -982,7 +982,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskMonkeyRiot
-  name: "vinyl disk: monkey riot"
+  name: "disque vinyle : monkey riot"
   components:
   - type: Sprite
     state: darkblue-vinyl-disk
@@ -993,7 +993,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskNovember
-  name: "vinyl disk: November"
+  name: "disque vinyle : November"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -1004,7 +1004,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskOctober
-  name: "vinyl disk: October"
+  name: "disque vinyle : October"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -1015,7 +1015,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskEvilStar
-  name: "vinyl disk: oh no evil star"
+  name: "disque vinyle : oh no evil star"
   components:
   - type: Sprite
     state: lime-vinyl-disk
@@ -1026,7 +1026,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskPlanets
-  name: "vinyl disk: planets"
+  name: "disque vinyle : planets"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -1037,7 +1037,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskRepose
-  name: "vinyl disk: repose"
+  name: "disque vinyle : repose"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -1048,7 +1048,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskRiverdancer
-  name: "vinyl disk: river dancer"
+  name: "disque vinyle : river dancer"
   components:
   - type: Sprite
     state: blue-vinyl-disk
@@ -1059,7 +1059,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskSecondReality
-  name: "vinyl disk: second reality"
+  name: "disque vinyle : second reality"
   components:
   - type: Sprite
     state: white-vinyl-disk
@@ -1070,7 +1070,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskSeptember
-  name: "vinyl disk: September"
+  name: "disque vinyle : September"
   components:
   - type: Sprite
     state: earth-vinyl-disk
@@ -1081,7 +1081,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskSpaceGardener
-  name: "vinyl disk: Space Gardener"
+  name: "disque vinyle : Space Gardener"
   components:
   - type: Sprite
     state: floaty-vinyl-disk
@@ -1092,7 +1092,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskSpaceUguu
-  name: "vinyl disk: uguu"
+  name: "disque vinyle : uguu"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -1103,7 +1103,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskUpbeat1
-  name: "vinyl disk: upbeat 1"
+  name: "disque vinyle : upbeat 1"
   components:
   - type: Sprite
     state: white-vinyl-disk
@@ -1114,7 +1114,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskUpbeat2
-  name: "vinyl disk: upbeat 2"
+  name: "disque vinyle : upbeat 2"
   components:
   - type: Sprite
     state: white-vinyl-disk
@@ -1125,7 +1125,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskWarriorsHonk
-  name: "vinyl disk: warriors honk"
+  name: "disque vinyle : warriors honk"
   components:
   - type: Sprite
     state: yellow-vinyl-disk
@@ -1136,7 +1136,7 @@
 - type: entity
   parent: BaseVinylDisk
   id: VinylDiskWayStations
-  name: "vinyl disk: waystations"
+  name: "disque vinyle : waystations"
   components:
   - type: Sprite
     state: orange-vinyl-disk
@@ -1145,10 +1145,10 @@
       path: /Audio/_Goobstation/RadioStation/music/goonstation/waystations.ogg
 
 - type: entity
-  name: broken vinyl disk
+  name: disque vinyle cassé
   id: VinylDiskBroken
   parent: BaseItem
-  description: Like most vinyls this one ended up broken.
+  description: Comme la plupart des vinyles, celui-ci s'est retrouvé cassé.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Misc/RadioStation/vinyls.rsi
@@ -1157,7 +1157,7 @@
 # Sleeves
 
 - type: entity
-  name: AI vinyl sleeve
+  name: pochette vinyle IA
   id: VinylSleeveAI
   parent: BaseVinylSleeve
   components:
@@ -1165,7 +1165,7 @@
     state: ai-vinyl-sleeve
 
 - type: entity
-  name: devil vinyl sleeve
+  name: pochette vinyle diable
   id: VinylSleeveDevil
   parent: BaseVinylSleeve
   components:
@@ -1173,7 +1173,7 @@
     state: devil-vinyl-sleeve
 
 - type: entity
-  name: pizza vinyl sleeve
+  name: pochette vinyle pizza
   id: VinylSleevePizza
   parent: BaseVinylSleeve
   components:
@@ -1181,7 +1181,7 @@
     state: pizza-vinyl-sleeve
 
 - type: entity
-  name: fart vinyl sleeve
+  name: pochette vinyle pet
   id: VinylSleeveFart
   parent: BaseVinylSleeve
   components:
@@ -1189,7 +1189,7 @@
     state: fart-vinyl-sleeve
 
 - type: entity
-  name: sunny side of lava land vinyl sleeve
+  name: pochette vinyle sunny side of lava land
   id: VinylSleeveLavaLand
   parent: BaseVinylSleeve
   components:
@@ -1197,7 +1197,7 @@
     state: sunnysideoflavaland-vinyl-sleeve
 
 - type: entity
-  name: hockey vinyl sleeve
+  name: pochette vinyle hockey
   id: VinylSleeveHockey
   parent: BaseVinylSleeve
   components:
@@ -1205,7 +1205,7 @@
     state: hockey-vinyl-sleeve
 
 - type: entity
-  name: rat vinyl sleeve
+  name: pochette vinyle rat
   id: VinylSleeveRat
   parent: BaseVinylSleeve
   components:
@@ -1213,8 +1213,8 @@
     state: rat-vinyl-sleeve
 
 - type: entity
-  name: sneaky vinyl sleeve
-  description: Kept you waiting huh?
+  name: pochette vinyle furtive
+  description: Vous attendiez ça, hein ?
   id: VinylSleeveMgs
   parent: BaseVinylSleeve
   components:
@@ -1222,8 +1222,8 @@
     state: mgs-vinyl-sleeve
 
 - type: entity
-  name: questionable vinyl sleeve
-  description: Abstract art, it's everyone's favorite.
+  name: pochette vinyle douteuse
+  description: Art abstrait, c'est le préféré de tout le monde.
   id: VinylSleeveQuestionable
   parent: BaseVinylSleeve
   components:
@@ -1231,8 +1231,8 @@
     state: questional-vinyl-sleeve
 
 - type: entity
-  name: janitor vinyl sleeve
-  description: The unsung hero, now sung about!
+  name: pochette vinyle concierge
+  description: Le héros méconnu, maintenant chanté !
   id: VinylSleeveJanitor
   parent: BaseVinylSleeve
   components:
@@ -1240,7 +1240,7 @@
     state: janitor-vinyl-sleeve
 
 - type: entity
-  name: weird vinyl sleeve
+  name: pochette vinyle bizarre
   id: VinylSleeveWeird
   parent: BaseVinylSleeve
   components:
@@ -1248,8 +1248,8 @@
     state: weird-vinyl-sleeve
 
 - type: entity
-  name: DJ clown vinyl sleeve
-  description: DJ clown a galactic sensation, his galactic tour lists sol as the only star system.
+  name: pochette vinyle DJ clown
+  description: DJ clown, une sensation galactique, sa tournée galactique liste sol comme le seul système stellaire.
   id: VinylSleeveDJClown
   parent: BaseVinylSleeve
   components:
@@ -1257,7 +1257,7 @@
     state: djclown-vinyl-sleeve
 
 - type: entity
-  name: vampire vinyl sleeve
+  name: pochette vinyle vampire
   id: VinylSleeveVampire
   parent: BaseVinylSleeve
   components:
@@ -1265,7 +1265,7 @@
     state: vampire-vinyl-sleeve
 
 - type: entity
-  name: shulker vinyl sleeve
+  name: pochette vinyle shulker
   id: VinylSleeveShulker
   parent: BaseVinylSleeve
   components:
@@ -1273,7 +1273,7 @@
     state: shulker-vinyl-sleeve
 
 - type: entity
-  name: red sun vinyl sleeve
+  name: pochette vinyle soleil rouge
   id: VinylSleeveRedSun
   parent: BaseVinylSleeve
   components:
@@ -1281,8 +1281,8 @@
     state: redsun-vinyl-sleeve
 
 - type: entity
-  name: skull vinyl sleeve
-  description: Rock on!!
+  name: pochette vinyle crâne
+  description: Rock on !!
   id: VinylSleeveSkull
   parent: BaseVinylSleeve
   components:
@@ -1290,7 +1290,7 @@
     state: skull-vinyl-sleeve
 
 - type: entity
-  name: fisherman vinyl sleeve
+  name: pochette vinyle pêcheur
   id: VinylSleeveFisherman
   parent: BaseVinylSleeve
   components:
@@ -1298,8 +1298,8 @@
     state: fisherman-vinyl-sleeve
 
 - type: entity
-  name: Heisenbee vinyl sleeve
-  description: The famous mascot of goonstation returns, in cardboard form.
+  name: pochette vinyle Heisenbee
+  description: La célèbre mascotte de goonstation revient, en forme de carton.
   id: VinylSleeveHeisenbee
   parent: BaseVinylSleeve
   components:
@@ -1307,8 +1307,8 @@
     state: heisenbee-vinyl-sleeve
 
 - type: entity
-  name: space station 13 vinyl sleeve
-  description: The famous space station, unlucky 13
+  name: pochette vinyle space station 13
+  description: La célèbre station spatiale, malchanceuse 13
   id: VinylSleeveStation13
   parent: BaseVinylSleeve
   components:
@@ -1316,8 +1316,8 @@
     state: station13-vinyl-sleeve
 
 - type: entity
-  name: space station 14 vinyl sleeve
-  description: The famous space station, lucky 14
+  name: pochette vinyle space station 14
+  description: La célèbre station spatiale, chanceuse 14
   id: VinylSleeveStation14
   parent: BaseVinylSleeve
   components:
@@ -1325,7 +1325,7 @@
     state: station14-vinyl-sleeve
 
 - type: entity
-  name: reactor vinyl sleeve
+  name: pochette vinyle réacteur
   id: VinylSleeveReactor
   parent: BaseVinylSleeve
   components:
@@ -1333,7 +1333,7 @@
     state: reactor-vinyl-sleeve
 
 - type: entity
-  name: pda vinyl sleeve
+  name: pochette vinyle PDA
   id: VinylSleevePda
   parent: BaseVinylSleeve
   components:
@@ -1341,8 +1341,8 @@
     state: pda-vinyl-sleeve
 
 - type: entity
-  name: nuke disk vinyl sleeve
-  description: Although it may look like one this doesn't actually work as a nuke disk.
+  name: pochette vinyle disque nucléaire
+  description: Bien qu'il puisse ressembler à l'un d'eux, celui-ci ne fonctionne pas réellement comme un disque nucléaire.
   id: VinylSleeveNukeDisk
   parent: BaseVinylSleeve
   components:
@@ -1350,8 +1350,8 @@
     state: nukedisk-vinyl-sleeve
 
 - type: entity
-  name: blocky craft vinyl sleeve
-  description: The hit 2457 video game blocky craft's soundtrack comes to vinyl!
+  name: pochette vinyle blocky craft
+  description: La bande originale du jeu vidéo à succès de 2457, blocky craft, arrive en vinyle !
   id: VinylSleeveBlockyCraft
   parent: BaseVinylSleeve
   components:
@@ -1359,7 +1359,7 @@
     state: blockycraft-vinyl-sleeve
 
 - type: entity
-  name: eye vinyl sleeve
+  name: pochette vinyle œil
   id: VinylSleeveEye
   parent: BaseVinylSleeve
   components:
@@ -1367,8 +1367,8 @@
     state: eye-vinyl-sleeve
 
 - type: entity
-  name: th vinyl sleeve
-  description: Somehow this indie band decided that naming themselves "th" was a good idea
+  name: pochette vinyle th
+  description: D'une manière ou d'une autre, ce groupe indie a décidé que s'appeler "th" était une bonne idée
   id: VinylSleeveTh
   parent: BaseVinylSleeve
   components:
@@ -1376,8 +1376,8 @@
     state: th-vinyl-sleeve
 
 - type: entity
-  name: clown vinyl sleeve
-  description: The clown always wins.
+  name: pochette vinyle clown
+  description: Le clown gagne toujours.
   id: VinylSleeveClown
   parent: BaseVinylSleeve
   components:
@@ -1385,8 +1385,8 @@
     state: clown-vinyl-sleeve
 
 - type: entity
-  name: New Nano York vinyl sleeve
-  description: The cover art depicts New Nano York after the corporate takeover of 2333.
+  name: pochette vinyle New Nano York
+  description: L'art de la pochette représente New Nano York après la prise de contrôle corporate de 2333.
   id: VinylSleeveNanoYork
   parent: BaseVinylSleeve
   components:
@@ -1394,8 +1394,8 @@
     state: newnanoyork-vinyl-sleeve
 
 - type: entity
-  name: JD tider vinyl sleeve
-  description: DJ tider a galactic sensation, his galactic tour lists Sol and alpha centauri as stops.
+  name: pochette vinyle JD tider
+  description: DJ tider, une sensation galactique, sa tournée galactique liste Sol et Alpha Centauri comme arrêts.
   id: VinylSleeveDJTider
   parent: BaseVinylSleeve
   components:
@@ -1403,7 +1403,7 @@
     state: djtider-vinyl-sleeve
 
 - type: entity
-  name: coffee vinyl sleeve
+  name: pochette vinyle café
   id: VinylSleeveCoffee
   parent: BaseVinylSleeve
   components:
@@ -1411,8 +1411,8 @@
     state: coffee-vinyl-sleeve
 
 - type: entity
-  name: welcome to SS13 vinyl sleeve
-  description: Shame that they nuked that place.
+  name: pochette vinyle welcome to SS13
+  description: Dommage qu'ils aient nucléarisé cet endroit.
   id: VinylSleeveWelcomeSS13
   parent: BaseVinylSleeve
   components:
@@ -1420,8 +1420,8 @@
     state: welcometoss13-vinyl-sleeve
 
 - type: entity
-  name: peace vinyl sleeve
-  description: The art depicts the events of space station 12 where a captain and syndicate insurgent agreed to a truce on christmas day.
+  name: pochette vinyle paix
+  description: L'art représente les événements de space station 12 où un capitaine et un insurgé du syndicat ont accepté une trêve le jour de Noël.
   id: VinylSleevePeace
   parent: BaseVinylSleeve
   components:
@@ -1429,7 +1429,7 @@
     state: peace-vinyl-sleeve
 
 - type: entity
-  name: japan vinyl sleeve
+  name: pochette vinyle japon
   id: VinylSleeveJapan
   parent: BaseVinylSleeve
   components:
@@ -1437,7 +1437,7 @@
     state: japan-vinyl-sleeve
 
 - type: entity
-  name: christmas vinyl sleeve
+  name: pochette vinyle noël
   id: VinylSleeveChristmas
   parent: BaseVinylSleeve
   components:
@@ -1445,8 +1445,8 @@
     state: christmas-vinyl-sleeve
 
 - type: entity
-  name: pickle vinyl sleeve
-  description: Many artists have tried to figure out what this art depicts, our greatest minds are agreed that it most likely depicts 3 pickles on a road.
+  name: pochette vinyle cornichon
+  description: De nombreux artistes ont essayé de comprendre ce que cet art représente, nos plus grands esprits s'accordent à dire qu'il s'agit très probablement de 3 cornichons sur une route.
   id: VinylSleevePickle
   parent: BaseVinylSleeve
   components:
@@ -1454,7 +1454,7 @@
     state: pickle-vinyl-sleeve
 
 - type: entity
-  name: flash vinyl sleeve
+  name: pochette vinyle flash
   id: VinylSleeveFlash
   parent: BaseVinylSleeve
   components:
@@ -1462,7 +1462,7 @@
     state: flash-vinyl-sleeve
 
 - type: entity
-  name: beige vinyl sleeve
+  name: pochette vinyle beige
   id: VinylSleeveBeige
   parent: BaseVinylSleeve
   components:
@@ -1470,7 +1470,7 @@
     state: plainbeige-vinyl-sleeve
 
 - type: entity
-  name: black vinyl sleeve
+  name: pochette vinyle noire
   id: VinylSleeveBlack
   parent: BaseVinylSleeve
   components:
@@ -1478,7 +1478,7 @@
     state: plainblack-vinyl-sleeve
 
 - type: entity
-  name: white vinyl sleeve
+  name: pochette vinyle blanche
   id: VinylSleeveWhite
   parent: BaseVinylSleeve
   components:
