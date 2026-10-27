@@ -8,5 +8,6 @@ encryption-keys-are-locked = Les emplacements de clés de chiffrement sont verro
 encryption-keys-panel-locked = Ouvrez d'abord le panneau de maintenance !
 
 examine-encryption-channels-prefix = Fréquences disponibles :
-examine-encryption-channel = [color={$color}]{$key} pour {$id} ({NATURALFIXED($freq, 1)}) {$deviceType}[/color]
-examine-encryption-default-channel = Le canal par défaut est [color={$color}]{$channel}[/color].
+# Goob - radiochannel tags so players can customize channel colors
+examine-encryption-channel = [radiochannel="{$channelId}"]{$key} pour {$id} ({NATURALFIXED($freq, 1)}) {$deviceType}[/radiochannel]
+examine-encryption-default-channel = Le canal par défaut est [radiochannel="{$channelId}"]{$channel}[/radiochannel].

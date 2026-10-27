@@ -1,0 +1,11 @@
+ui-options-interaction-outline-header = Paramètres de la contour d'interaction
+ui-options-use-custom-interaction-outline-color = Utiliser des couleurs de contour d'interaction personnalisées
+ui-options-interaction-outline-color-expand = Développer les paramètres de couleur du contour d'interaction
+ui-options-interaction-outline-color-valid = Couleur du contour pour les objets à portée d'interaction
+ui-options-interaction-outline-color-invalid = Couleur du contour pour les objets hors de portée d'interaction
+ui-options-interaction-outline-color-example = Ceci est la couleur du contour.
+ui-options-color-slider-default-button = Réinitialiser à la valeur par défaut
+ui-options-radio-channel-colors-header = Couleurs des canaux radio
+ui-options-use-custom-radio-channel-colors = Utiliser des couleurs de canaux radio personnalisées
+ui-options-radio-channel-colors-expand = Développer les paramètres de couleur des canaux radio
+ui-options-radio-channel-colors-example = [{$channel}] Ceci est la couleur du canal.
