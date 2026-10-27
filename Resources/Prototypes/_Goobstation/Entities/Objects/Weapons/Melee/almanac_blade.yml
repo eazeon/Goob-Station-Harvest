@@ -1,8 +1,8 @@
 - type: entity
-  name: almanac blade
+  name: lame almanac
   parent: [ BaseSword, BaseMajorContraband ]
   id: WeaponAlmanacBlade
-  description: lasagna.
+  description: lasagne.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/katana.rsi
