@@ -277,7 +277,7 @@
       collection: Explosion
 
 - type: entity
-  name: Taiwan Pond
+  name: Taiwan Pond # Réf à China Lake, ne pas traduire
   parent: [BaseWeaponLauncher, BaseGunWieldable]
   id: WeaponLauncherTaiwanPond
   description: PLOUP.
@@ -1079,8 +1079,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieRouge
-  name: rouge plushie
-  description: A cute stuffed toy resembling the humble and always drunk CCO of CCO's. Its eyebrows seem glued to be permanently furrowed.
+  name: peluche Rouge
+  description: Une peluche mignonne ressemblant au humble et toujours ivre CCO des CCO. Ses sourcils semblent collés pour être permanemment froncés.
   components:
   - type: Sprite
     scale: 0.8,0.8
@@ -1172,8 +1172,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieDoremyZerg
-  name: Aya plushie
-  description: A shiny toy stained with ink and tea.
+  name: peluche Aya
+  description: Un jouet brillant taché d'encre et de thé.
   components:
     - type: Sprite
       sprite: _Goobstation/Objects/Fun/toys.rsi
@@ -1215,8 +1215,8 @@
 - type: entity
   parent: PlushieLizard
   id: PlushieSanyati
-  name: Nyxoma plushie
-  description: Smells like ag'hsj'saje'sh.
+  name: peluche Nyxoma
+  description: Sent l'ag'hsj'saje'sh.
   components:
     - type: Sprite
       sprite: _Goobstation/Objects/Fun/toys.rsi
@@ -1257,8 +1257,8 @@
 - type: entity
   parent: PlushieLizard
   id: PlushieHarel
-  name: Harel plushie
-  description: Smells like fresh plasma.
+  name: peluche Harel
+  description: Sent le plasma frais.
   components:
     - type: Sprite
       sprite: _Goobstation/Objects/Fun/toys.rsi
@@ -1378,25 +1378,25 @@
   suffix: Evil
   
 - type: entity
-  name: evil Rouge plush
+  name: peluche Rouge maléfique
   parent: PlushieRouge
   id: EvilPlushieRouge
   suffix: Evil
 
 - type: entity
-  name: evil Aya plush
+  name: peluche Aya maléfique
   parent: PlushieDoremyZerg
   id: EvilPlushieDoremyZerg
   suffix: Evil
 
 - type: entity
-  name: evil Nyxoma plush
+  name: peluche Nyxoma maléfique
   parent: PlushieSanyati
   id: EvilPlushieSanyati
   suffix: Evil
 
 - type: entity
-  name: evil Harel plush
+  name: peluche Harel maléfique
   parent: PlushieHarel
   id: EvilPlushieHarel
   suffix: Evil
