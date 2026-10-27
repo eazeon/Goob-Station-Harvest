@@ -22,7 +22,7 @@
 
 - type: entity
   parent: SeedBase
-  name: packet of spaceshroom spores
+  name: sachet de graines de champispace
   id: SpaceshroomSeeds
   components:
     - type: Seed
