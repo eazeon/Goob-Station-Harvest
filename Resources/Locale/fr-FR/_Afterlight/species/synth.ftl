@@ -4,3 +4,5 @@ synth-battery-emp = Attention ! Surge électromagnétique détecté ! Batteries 
 
 surgery-popup-procedure-SurgeryRemoveSynthPowerCell-step-SurgeryStepRemoveOrgan = {$user} retire la cellule d'énergie de {$part} de {$target} !
 surgery-popup-procedure-SurgeryInsertSynthPowerCell-step-SurgeryStepInsertOrgan = {$user} insère une cellule d'énergie dans {$part} de {$target} !
+
+synth-injection-denied = Le placage synthétique n'a pas de port d'injection !
