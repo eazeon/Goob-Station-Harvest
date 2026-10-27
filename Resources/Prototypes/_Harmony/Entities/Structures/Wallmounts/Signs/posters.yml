@@ -192,8 +192,8 @@
 - type: entity
   parent: PosterBase
   id: PosterHarmonyDoNotGamble
-  name: "PSA: DO NOT GAMBLE"
-  description: "Inserting your Nanotrasen issued work ID in to a microwave is a SERIOUS offense. If you are caught 'gambling' with your ID you could be given 30 minutes of brig time or face EXECUTION for this most heinous crime."
+  name: "PSA : NE JOUEZ PAS"
+  description: "Insérer votre badge de travail Nanotrasen dans un micro-ondes est une offense GRAVE. Si vous êtes pris à 'jouer' avec votre badge, vous pourriez écoper de 30 minutes de prison ou faire face à l'EXÉCUTION pour ce crime des plus odieux."
   components:
     - type: Sprite
       sprite: _Harmony/Structures/Wallmounts/posters.rsi
@@ -202,8 +202,8 @@
 - type: entity
   parent: PosterBase
   id: PosterHarmonyArnold
-  name: "Missing Dog Poster"
-  description: "A missing poster for a small white dog named Arnold. The owner appears to be extremely distraught over his disappearance."
+  name: "Affiche Chien Disparu"
+  description: "Une affiche de recherche pour un petit chien blanc nommé Arnold. Le propriétaire semble extrêmement angoissé par sa disparition."
   components:
   - type: Sprite
     sprite: _Harmony/Structures/Wallmounts/posters.rsi
