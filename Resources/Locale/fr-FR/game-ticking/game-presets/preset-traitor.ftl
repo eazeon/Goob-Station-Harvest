@@ -47,7 +47,8 @@ traitor-death-match-end-round-description-entry = Le PDA de {$originalName}, ave
 # TraitorRole
 traitor-role-greeting =
     Vous êtes un agent envoyé par [color=darkred]Le Syndicat[/color] au nom de {$corporation}.
-    Vos objectifs et mots de passe sont listés dans le menu de personnage. Utilisez votre uplink pour acheter les outils dont vous aurez besoin pour cette mission.
+    Vos objectifs et mots de passe sont listés dans le menu de personnage.
+    Utilisez votre uplink pour acheter les outils dont vous aurez besoin pour cette mission.
     Mort à Nanotrasen !
 traitor-role-codewords =
     Les noms de code sont : [color = lightgray]
