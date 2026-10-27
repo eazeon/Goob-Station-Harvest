@@ -120,8 +120,8 @@
 - type: entity
   id: DiseaseBehaviorBlindness
   parent: DiseaseBehaviorBase
-  name: Blindness
-  description: Rare disease symptom that causes complete blindness.
+  name: Cécité
+  description: Symptôme de maladie rare qui provoque une cécité complète.
   components:
   - type: DiseaseEffect
     complexity: 12
@@ -149,8 +149,8 @@
 - type: entity
   id: DiseaseBehaviorDeaf
   parent: DiseaseBehaviorBase
-  name: Deafness
-  description: Rare disease symptom that causes complete deafness.
+  name: Surdité
+  description: Symptôme de maladie rare qui provoque une surdité complète.
   components:
   - type: DiseaseEffect
     complexity: 14 # VERY annoying
@@ -163,8 +163,8 @@
 - type: entity
   id: DiseaseBehaviorAnxiety
   parent: DiseaseBehaviorBase
-  name: Anxiety
-  description: Causes anxiety and fear of hugs.
+  name: Anxiété
+  description: Provoque de l'anxiété et la peur des câlins.
   components:
   - type: DiseaseEffect
     complexity: 2
@@ -175,8 +175,8 @@
 - type: entity
   id: DiseaseBehaviorDrowsiness
   parent: DiseaseBehaviorBase
-  name: Drowsiness
-  description: Causes a strong desire to sleep.
+  name: Somnolence
+  description: Provoque un fort désir de dormir.
   components:
   - type: DiseaseEffect
     complexity: 10
@@ -195,8 +195,8 @@
 - type: entity
   id: DiseaseBehaviorEuphoria
   parent: DiseaseBehaviorBase
-  name: Euphoria
-  description: Symptom that causes happiness!
+  name: Euphorie
+  description: Symptôme qui procure du bonheur !
   components:
   - type: DiseaseEffect
     complexity: 5
@@ -215,8 +215,8 @@
 - type: entity
   id: DiseaseBehaviorApathy
   parent: DiseaseBehaviorBase
-  name: Apathy
-  description: Symptom that makes the world progressively lose its range of colors.
+  name: Apathie
+  description: Symptôme qui fait progressivement perdre au monde sa gamme de couleurs.
   components:
   - type: DiseaseEffect
     complexity: 5
@@ -229,8 +229,8 @@
 - type: entity
   id: DiseaseBehaviorBS
   parent: DiseaseBehaviorBase
-  name: Bluespace Instability
-  description: Extremely rare symptom that causes you to teleport erratically.
+  name: Instabilité bluespace
+  description: Symptôme extrêmement rare qui vous fait vous téléporter de façon erratique.
   components:
   - type: DiseaseEffect
     complexity: 40 #there is a chance of ending up in a wall or in space

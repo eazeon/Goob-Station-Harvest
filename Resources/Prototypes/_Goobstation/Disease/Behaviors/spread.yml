@@ -45,8 +45,8 @@
 - type: entity
   id: DiseaseBehaviorPneumonia
   parent: DiseaseBehaviorBase
-  name: Pneumonia
-  description: Makes you cough. Painful to cough.
+  name: Pneumonie
+  description: Vous fait tousser. Douleureux à tousser.
   components:
   - type: DiseaseEffect
     complexity: 20
@@ -76,8 +76,8 @@
 - type: entity
   id: DiseaseBehaviorSneeze
   parent: DiseaseBehaviorBase
-  name: Sneeze
-  description: Makes you sneeze. VERY infective.
+  name: Éternuement
+  description: Vous fait éternuer. TRÈS infectieux.
   components:
   - type: DiseaseEffect
     complexity: 20 #very infective
@@ -98,8 +98,8 @@
 - type: entity
   id: DiseaseBehaviorSkinLesion
   parent: DiseaseBehaviorBase
-  name: Skin lesion
-  description: Deals slash damage. Infective.
+  name: Lésion cutanée
+  description: Inflige des dégâts de tranchant. Infectieux.
   components:
   - type: DiseaseEffect
     complexity: 20
@@ -128,8 +128,8 @@
 - type: entity
   id: DiseaseBehaviorAbscesses
   parent: DiseaseBehaviorBase
-  name: Abscesses
-  description: In the final stages deals heavy slash damage. Infective.
+  name: ABCès
+  description: Dans les stades finals, inflige de lourds dégâts de tranchant. Infectieux.
   components:
   - type: DiseaseEffect
     complexity: 40
