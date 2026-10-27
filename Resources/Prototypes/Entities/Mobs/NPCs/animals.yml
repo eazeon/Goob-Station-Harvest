@@ -2978,7 +2978,7 @@
   name: araignée sorcier
   parent: MobGiantSpider
   id: MobGiantSpiderWizard
-  description: This spider looks a little magical
+  description: Cette araignée a l'air un peu magique
   suffix: Wizard
   components:
   - type: LanguageKnowledge # Einstein Engines - Language
