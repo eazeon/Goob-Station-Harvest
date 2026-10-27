@@ -337,7 +337,7 @@ uplink-capoeira-name = Manuel de capoeira
 uplink-capoeira-desc = Un manuel enseignant la capoeira à un unique utilisateur avant de s'autodétruire. La capoeira repose sur des attaques rapides qui s'enchaînent en combos fluides, chaque mouvement étant plus rapide et plus puissant que le précédent grâce à un élan incessant.
 
 uplink-sleeping-carp-name = Parchemin de la Voie de la Carpe Endormie
-uplink-sleeping-carp-desc = Ce parchemin à usage unique renferme les secrets d'un ancien art martial. Vous maîtriserez le combat à mains nues, dévierez les tirs d'armes à distance et les carpes spatiales deviendront amicales envers vous. En contrepartie, vous refuserez d'utiliser des armes à distance, jugées déshonorantes. Les changelins sont incapables de comprendre son contenu.
+uplink-sleeping-carp-desc = Ce parchemin à usage unique renferme les secrets d'un ancien art martial. Vous maîtriserez le combat à mains nues, esquiverez sans effort les tirs d'armes à distance et les carpes spatiales deviendront amicales envers vous. En contrepartie, vous refuserez d'utiliser des armes à distance, jugées déshonorantes. Les changelins sont incapables de comprendre son contenu.
 
 
 # Misc

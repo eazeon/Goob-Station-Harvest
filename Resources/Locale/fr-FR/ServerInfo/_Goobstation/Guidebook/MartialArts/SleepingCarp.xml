@@ -1,0 +1,57 @@
+<Document>
+
+  # Voie de la Carpe Endormie
+
+  <Box>
+    <GuideEntityEmbed Entity="SleepingCarpScroll" Caption=""/>
+  </Box>
+
+  La Voie de la Carpe Endormie, ou simplement la Carpe Endormie, est un art martial ancestral appris par l'étude et la méditation intensives.
+  Elle est modelée sur le mouvement gracieux, le combat et le flux de la Carpe Spatiale. Les maîtres anciens de cet art sont réputés avoir étudié parmi de grandes écoles de carpes spatiales et survécu, certains se sont même liés d'amitié avec ces créatures agressives. Cet art est souvent utilisé par les zélotes et les extrémistes, en particulier parmi le Syndicat.
+
+  ## Capacités spéciales
+
+  Les utilisateurs de la Carpe Endormie sont meilleurs en intention de Blessure, car leurs attaques à mains nues infligeront des dégâts supplémentaires à l'adversaire.
+
+  ### Réflexes de Récif
+
+  En raison de la nature gracieuse de cet art martial, les utilisateurs de la Carpe Endormie sont capables d'esquiver sans effort presque tous les projectiles entrants. Que ce soient des projectiles balistiques ou à énergie, ou des tirs hitscan, leur corps se retire simplement de la trajectoire du tir et le laisse passer inoffensivement. Cependant, les explosifs, les couteaux et les seringues échappent à leur contrôle, se faufilant à travers le flux serein de leur défense.
+
+  ### Compagnons Poissons
+
+  Les utilisateurs du style de la Carpe Endormie se déplacent avec la grâce des eaux, en parfaite harmonie avec la Carpe Spatiale. Ces créatures, sentant le lien paisible, les traiteront le plus souvent comme des alliés, sans les attaquer. Cette connexion s'étend aux autres êtres semblables aux carpes, y compris les Requin-Ménés et même les puissants Dragons Spatiaux.
+
+  ### Refus des Armes à Feu
+
+  Devenir Maître de la Carpe Endormie implique de prêter serment de s'abstenir d'utiliser des armes à feu. Cela inclut les armes à feu classiques et les armes à feu fixées sur du matériel tel que les méchas. Il n'est pas tout à fait clair pourquoi, mais on pense que cela permet à l'utilisateur d'intensifier sa concentration sur le flux parfait et l'évasion. D'autres croient que cela fait partie de l'impulsion du maître à imiter davantage la Voie de la Carpe, à se concentrer entièrement sur l'attaque de la Carpe : sa Morsure. Cela n'empêche pas les pratiquants de la Carpe Endormie de lancer des objets, des bolas, des dalles de sol, ou même des personnes, toutes des armes à distance utiles.
+
+  ## Attaques combinées
+
+  ### Keelhaul
+
+  <Box>
+    <GuideEntityEmbed Entity="GuidebookHarm" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
+  </Box>
+
+  Donne un coup de pied à la tête d'un adversaire, le renversant et lui infligeant des dégâts Tranchants et d'Endurance, sauf s'il est déjà étourdi. Dans ce cas, il le désarme également complètement.
+
+  ### Coup de Pied des Vagues Déferlantes
+
+  <Box>
+    <GuideEntityEmbed Entity="GuidebookHarm" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
+  </Box>
+
+  Donne un coup de pied en pleine poitrine à l'adversaire, l'envoyant voler et lui infligeant des dégâts Tranchants. Ne fonctionne que sur les adversaires debout.
+
+  ### Dents Grincantes
+
+  <Box>
+    <GuideEntityEmbed Entity="GuidebookHarm" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookHarm" Caption=""/>
+  </Box>
+
+  Inflige des dégâts Tranchants supplémentaires, et pousse l'utilisateur à crier pour inspirer la peur à son adversaire.
+
+</Document>
