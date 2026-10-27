@@ -41,7 +41,7 @@
 - type: entity
   parent: ClothingBackpackStasisBatteryUnremoveable
   id: ClothingBackpackStasisBatteryUnremoveableFilled
-  suffix: Filled, Unremoveable
+  suffix: Rempli, Inamovible
   components:
   - type: StorageFill
     contents:
@@ -61,7 +61,7 @@
 - type: entity
   parent: ClothingBackpackMerc
   id: ClothingBackpackMercFilledHECU
-  suffix: Filled, HECU
+  suffix: Rempli, HECU
   components:
   - type: StorageFill
     contents:
