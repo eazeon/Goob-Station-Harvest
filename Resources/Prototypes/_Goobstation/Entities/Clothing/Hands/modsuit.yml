@@ -399,8 +399,8 @@
 - type: entity
   parent: ClothingHandModsuitBase
   id: ClothingModsuitGauntletsBrigMed
-  name: trauma modsuit gauntlets
-  description: Cool gauntlets.
+  name: gants de modsuit médecin de brigade
+  description: Des gants pratiques.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance

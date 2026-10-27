@@ -657,8 +657,8 @@
 - type: entity
   parent: ClothingOuterBase
   id: ClothingModsuitChestplateBrigMed
-  name: trauma modsuit chestplate
-  description: A robust modular suit cover with white ceramic inserts for extra drip.
+  name: plastron de modsuit médecin de brigade
+  description: Une housse de combinaison modulaire robuste avec inserts céramiques blancs pour plus de style.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance

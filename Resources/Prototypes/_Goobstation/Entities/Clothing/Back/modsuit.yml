@@ -460,8 +460,8 @@
 - type: entity
   parent: [ClothingModsuitStandard, BaseSecurityContraband]
   id: ClothingModsuitBrigMed
-  name: security trauma modsuit control unit
-  description: A robust modular hardsuit control module unit for healing commies in space.
+  name: unité de contrôle de modsuit médecin de brigade
+  description: Un module de contrôle de hardsuit modulaire robuste pour soigner les camarades dans l'espace.
   components:
   - type: Appearance
   - type: Sprite

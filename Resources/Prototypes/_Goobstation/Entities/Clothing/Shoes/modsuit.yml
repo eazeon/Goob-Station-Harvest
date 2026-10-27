@@ -336,8 +336,8 @@
 - type: entity
   parent: ClothingShoesBase
   id: ClothingModsuitBootsBrigMed
-  name: trauma modsuit boots
-  description: Cool boots.
+  name: bottes de modsuit médecin de brigade
+  description: Des bottes cool.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance

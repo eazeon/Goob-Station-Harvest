@@ -93,8 +93,8 @@
 #Brigmedic suits
 - type: entity
   id: UndeterminedVoidsuitBrigMed
-  name: brigmedic hardsuit selector
-  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  name: sélecteur de combinaison rigide de médecin de brigade
+  description: Une petite télécommande utilisant la technologie bluespace pour vous livrer une combinaison de votre choix.
   parent: [ BaseItem, BaseSetSelector, BaseCommandContraband ]
   components:
   - type: Sprite

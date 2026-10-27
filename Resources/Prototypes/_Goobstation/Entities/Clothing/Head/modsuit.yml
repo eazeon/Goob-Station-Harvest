@@ -899,8 +899,8 @@
 - type: entity
   parent: BaseClothingModsuitHelmet
   id: ClothingModsuitHelmetBrigMed
-  name: trauma modsuit helmet
-  description: Cool helmet without eye lenses. Eyes aren't needed for surgery.
+  name: casque de modsuit médecin de brigade
+  description: Un casque pratique sans lentilles oculaires. Les yeux ne sont pas nécessaires pour la chirurgie.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
