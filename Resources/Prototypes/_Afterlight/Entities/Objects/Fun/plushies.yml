@@ -1,8 +1,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieSynth
-  name: Synth Plushie
-  description: Marketable and stylish, with built-in speakers to remind everybody why people call Synths "beepers".
+  name: Peluche Synth
+  description: Commercialisable et stylée, avec des haut-parleurs intégrés pour rappeler à tout le monde pourquoi on appelle les Synths des "beepers".
   components:
   - type: Sprite
     sprite: _Afterlight/Objects/Fun/Plushes/synth_plushie.rsi

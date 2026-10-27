@@ -2,7 +2,7 @@
   parent: [BaseInventorySynth, BaseSpeciesDummy]
   id: AppearanceSynth
   categories: [ HideSpawnMenu ]
-  description: A dummy synth meant to be used in character setup.
+  description: Un synth factice destiné à être utilisé lors de la création de personnage.
   components:
   - type: HumanoidAppearance
     species: Synth

@@ -1,9 +1,9 @@
 - type: entity
   parent: BaseHealingItem
   id: SynthBloodpack
-  name: synth blood pack
+  name: pack de sang synth
   suffix: Full
-  description: Contains fullerene, a synthetic, carbon-based blood solution used by Synths.
+  description: Contient du fullerène, une solution sanguine synthétique à base de carbone utilisée par les Synths.
   components:
   - type: Item
     sprite: _Afterlight/Objects/Specific/Medical/medical.rsi

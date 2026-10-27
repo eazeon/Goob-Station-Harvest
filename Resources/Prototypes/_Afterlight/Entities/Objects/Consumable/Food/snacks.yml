@@ -1,8 +1,8 @@
 - type: entity
-  name: coal crunch
+  name: crunch de charbon
   parent: FoodSnackBase
   id: FoodSnackCoalCrunch
-  description: Cracker rounds fashioned from refined coal. Delicious to Synths!
+  description: Rations craquelins fabriquées à partir de charbon raffiné. Délicieuses pour les Synths !
   components:
   - type: FlavorProfile
     flavors:
@@ -35,7 +35,7 @@
   categories: [ HideSpawnMenu ]
   parent: FoodPacketTrash
   id: FoodPacketCoalCrunchTrash
-  name: coal crunch wrapper
+  name: emballage de crunch de charbon
   components:
   - type: Sprite
     sprite: _Afterlight/Objects/Consumable/Food/snacks.rsi
