@@ -1,0 +1,3 @@
+limb-gnaw-verb = Ronger un membre
+limb-gnaw-start = Vous commencez à ronger {THE($target)}...
+limb-gnaw-finish = {CAPITALIZE(THE($user))} arrache {THE($part)} à coups de dents !
