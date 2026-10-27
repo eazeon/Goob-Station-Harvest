@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingOuterArmorBase
   id: ClothingOuterArmorRU6B2Vest
-  name: 6B2 ballistic vest
-  description: A very old vest that was mass produced long ago, calling it a "ballistic" vest is a overstatement as it can only stop shrapnel.
+  name: gilet balistique 6B2
+  description: Un gilet très ancien produit en masse il y a longtemps, l'appeler gilet "balistique" est un euphémisme car il ne peut arrêter que du shrapnel.
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/OuterClothing/Armor/ru6b2vest.rsi
