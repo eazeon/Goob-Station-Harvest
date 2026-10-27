@@ -1,11 +1,11 @@
-obradinn-activate-fail-case = pas de dossier
-obradinn-activate-fail-map = mauvaise carte
-obradinn-activate-fail-no-distance = impossible de déterminer la distance
-obradinn-activate-fail-distance = vous êtes à {$distance} tuiles de la scène
-obradinn-activate-success = la montre s'arrête
+obradinn-activate-fail-case = Aucune affaire n'est actuellement sélectionnée
+obradinn-activate-fail-map = Vous n'êtes pas sur la bonne carte
+obradinn-activate-fail-no-distance = La distance jusqu'à la scène ne peut pas être déterminée
+obradinn-activate-fail-distance = Vous êtes à {$distance} tuiles de la scène. Approchez-vous pour activer la montre
+obradinn-activate-success = La montre cesse de tic-taquer...
 
-obradinn-interact-fail-target = cible invalide
-obradinn-interact-fail-witness = aucun témoin enregistré
-obradinn-interact-success = la montre commence à cocher
+obradinn-interact-fail-target = Ce n'est pas une cible valide pour la montre
+obradinn-interact-fail-witness = Aucun témoin n'a été enregistré pour cette affaire
+obradinn-interact-success = La montre commence à tic-taquer...
 
 obradinn-hologram-name = Inconnu
