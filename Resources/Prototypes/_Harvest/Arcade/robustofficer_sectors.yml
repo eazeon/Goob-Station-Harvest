@@ -1,0 +1,667 @@
+# Robust Officer campaign: five acts of three rooms and a boss. Legend in RobustOfficerSectorPrototype.
+# Generated once, then free to edit by hand.
+
+- type: robustOfficerSector
+  id: RobustOfficerArrivals
+  name: robust-officer-sector-arrivals
+  order: 1
+  theme: 0
+  seconds: 45
+  waves:
+  - from: 0
+    interval: 1.8
+    group: 2
+    enemies: [Greytider]
+  - from: 20
+    interval: 1.35
+    group: 2
+    enemies: [Greytider]
+  - from: 35
+    interval: 1.2
+    group: 4
+    enemies: [Greytider]
+  map:
+  - "#########DD#########"
+  - "#..................#"
+  - "#..................#"
+  - "#..TT..........TT..#"
+  - "#..................#"
+  - "#..................#"
+  - "D..................D"
+  - "D.........P........D"
+  - "#..................#"
+  - "#..................#"
+  - "#..TT..........TT..#"
+  - "#..................#"
+  - "#..................#"
+  - "#..................#"
+  - "##########E#########"
+
+- type: robustOfficerSector
+  id: RobustOfficerCorridors
+  name: robust-officer-sector-corridors
+  order: 2
+  theme: 0
+  seconds: 50
+  waves:
+  - from: 0
+    interval: 1.65
+    group: 2
+    enemies: [Greytider, Greytider, Clown]
+  - from: 20
+    interval: 1.27
+    group: 4
+    enemies: [Greytider, Greytider, Clown]
+  - from: 38
+    interval: 1.12
+    group: 4
+    enemies: [Greytider, Clown]
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#.CC...TTTTTT...CC.#"
+  - "#.CC............CC.#"
+  - "#..................#"
+  - "#....TT......TT....#"
+  - "D..................D"
+  - "D.........P........E"
+  - "#....TT......TT....#"
+  - "#..................#"
+  - "#.CC............CC.#"
+  - "#.CC...TTTTTT...CC.#"
+  - "#..................#"
+  - "#..................#"
+  - "####################"
+
+- type: robustOfficerSector
+  id: RobustOfficerBar
+  name: robust-officer-sector-bar
+  order: 3
+  theme: 0
+  seconds: 55
+  waves:
+  - from: 0
+    interval: 1.5
+    group: 2
+    enemies: [Greytider, Clown]
+  - from: 20
+    interval: 1.2
+    group: 4
+    enemies: [Greytider, Clown, Clown]
+  - from: 40
+    interval: 0.98
+    group: 4
+    enemies: [Greytider, Greytider, Clown]
+  map:
+  - "#####DD######DD#####"
+  - "#..................#"
+  - "#.TTTTTT....TTTTTT.#"
+  - "#..................#"
+  - "#..................#"
+  - "#..T...T....T...T..#"
+  - "D..................D"
+  - "D.........P........D"
+  - "#..T...T....T...T..#"
+  - "#..................#"
+  - "#..................#"
+  - "#....v........v....#"
+  - "#..................#"
+  - "#..................#"
+  - "#########E##########"
+
+- type: robustOfficerSector
+  id: RobustOfficerToolStorage
+  name: robust-officer-sector-toolstorage
+  order: 4
+  theme: 0
+  boss: AssistantKing
+  reward: FoodDonutPink
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#..................#"
+  - "#..C............C..#"
+  - "#..................#"
+  - "#..................#"
+  - "D..................D"
+  - "D..................D"
+  - "#..................#"
+  - "#..................#"
+  - "#..C............C..#"
+  - "#.........P........#"
+  - "#..................#"
+  - "#..................#"
+  - "##########E#########"
+
+- type: robustOfficerSector
+  id: RobustOfficerMedbay
+  name: robust-officer-sector-medbay
+  order: 5
+  theme: 1
+  seconds: 55
+  waves:
+  - from: 0
+    interval: 1.65
+    group: 2
+    enemies: [Greytider, Zombie]
+  - from: 20
+    interval: 1.35
+    group: 4
+    enemies: [Greytider, Zombie, Zombie]
+  - from: 40
+    interval: 1.12
+    group: 4
+    enemies: [Zombie, Greytider]
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#.TT..TT....TT..TT.#"
+  - "#..................#"
+  - "#..................#"
+  - "#.TT............TT.#"
+  - "D..................D"
+  - "D.........P........E"
+  - "#.TT............TT.#"
+  - "#..................#"
+  - "#..................#"
+  - "#.TT..TT....TT..TT.#"
+  - "#..................#"
+  - "#..................#"
+  - "####################"
+
+- type: robustOfficerSector
+  id: RobustOfficerMorgue
+  name: robust-officer-sector-morgue
+  order: 6
+  theme: 1
+  seconds: 60
+  waves:
+  - from: 0
+    interval: 1.5
+    group: 2
+    enemies: [Zombie, Zombie, Greytider]
+  - from: 25
+    interval: 1.2
+    group: 4
+    enemies: [Zombie, Zombie, Slime]
+  - from: 45
+    interval: 1.05
+    group: 4
+    enemies: [Zombie, Slime]
+  map:
+  - "#########E##########"
+  - "#..................#"
+  - "#.CC.CC.CCCC.CC.CC.#"
+  - "#..................#"
+  - "#..................#"
+  - "#..v............v..#"
+  - "D..................D"
+  - "D.........P........D"
+  - "#..................#"
+  - "#..................#"
+  - "#.CC.CC......CC.CC.#"
+  - "#..................#"
+  - "#..................#"
+  - "#..................#"
+  - "#######DD##DD#######"
+
+- type: robustOfficerSector
+  id: RobustOfficerChemistry
+  name: robust-officer-sector-chemistry
+  order: 7
+  theme: 1
+  seconds: 65
+  waves:
+  - from: 0
+    interval: 1.5
+    group: 2
+    enemies: [Slime, Zombie, Greytider]
+  - from: 25
+    interval: 1.2
+    group: 4
+    enemies: [Slime, Slime, Zombie]
+  - from: 45
+    interval: 0.98
+    group: 4
+    enemies: [Slime, Zombie, Clown]
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#..................#"
+  - "#.TTT..........TTT.#"
+  - "#...T..........T...#"
+  - "#..................#"
+  - "D......C....C......D"
+  - "D.........P........D"
+  - "#......C....C......#"
+  - "#..................#"
+  - "#...T..........T...#"
+  - "#.TTT..........TTT.#"
+  - "#..................#"
+  - "#..................#"
+  - "##########E#########"
+
+- type: robustOfficerSector
+  id: RobustOfficerVirology
+  name: robust-officer-sector-virology
+  order: 8
+  theme: 1
+  boss: PatientZero
+  reward: FoodDonutChocolate
+  waves:
+  - from: 0
+    interval: 9.0
+    group: 1
+    enemies: [Zombie]
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#..................#"
+  - "#.C..............C.#"
+  - "#..................#"
+  - "#..................#"
+  - "D..................D"
+  - "D..................D"
+  - "#..................#"
+  - "#..................#"
+  - "#.C..............C.#"
+  - "#.........P........#"
+  - "#..................#"
+  - "#..................#"
+  - "##########E#########"
+
+- type: robustOfficerSector
+  id: RobustOfficerResearch
+  name: robust-officer-sector-research
+  order: 9
+  theme: 2
+  seconds: 60
+  waves:
+  - from: 0
+    interval: 1.5
+    group: 2
+    enemies: [Xeno, Slime, Greytider]
+  - from: 25
+    interval: 1.12
+    group: 4
+    enemies: [Xeno, Xeno, Slime]
+  - from: 45
+    interval: 0.98
+    group: 4
+    enemies: [Xeno, Slime, Zombie]
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#.TT............TT.#"
+  - "#.TT..CC....CC..TT.#"
+  - "#..................#"
+  - "#..................#"
+  - "D...v..........v...D"
+  - "D.........P........D"
+  - "#..................#"
+  - "#..................#"
+  - "#.TT..CC....CC..TT.#"
+  - "#.TT............TT.#"
+  - "#..................#"
+  - "#..................#"
+  - "##########E#########"
+
+- type: robustOfficerSector
+  id: RobustOfficerXenobiology
+  name: robust-officer-sector-xenobiology
+  order: 10
+  theme: 2
+  seconds: 65
+  waves:
+  - from: 0
+    interval: 1.5
+    group: 2
+    enemies: [Slime, Slime, Xeno]
+  - from: 25
+    interval: 1.12
+    group: 4
+    enemies: [Slime, Xeno, Revenant]
+  - from: 45
+    interval: 0.9
+    group: 4
+    enemies: [Xeno, Revenant, Slime]
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#.CCC..........CCC.#"
+  - "#.C..............C.#"
+  - "#.C...v......v...C.#"
+  - "#..................#"
+  - "D..................D"
+  - "D.........P........E"
+  - "#..................#"
+  - "#.C..............C.#"
+  - "#.C..............C.#"
+  - "#.CCC..........CCC.#"
+  - "#..................#"
+  - "#..................#"
+  - "####################"
+
+- type: robustOfficerSector
+  id: RobustOfficerMaintenance
+  name: robust-officer-sector-maintenance
+  order: 11
+  theme: 2
+  seconds: 70
+  waves:
+  - from: 0
+    interval: 1.5
+    group: 2
+    enemies: [Revenant, Xeno, Greytider]
+  - from: 25
+    interval: 1.12
+    group: 4
+    enemies: [Revenant, Xeno, Xeno]
+  - from: 50
+    interval: 0.9
+    group: 4
+    enemies: [Revenant, Xeno, Slime]
+  map:
+  - "##########E#########"
+  - "#..................#"
+  - "#.CC.CCCC..CCCC.CC.#"
+  - "#.C..............C.#"
+  - "#.C.CC.C....C.CC.C.#"
+  - "#...C..C....C..C...#"
+  - "D...C..........C...D"
+  - "D.........P........D"
+  - "#....CC......CC....#"
+  - "#.C..............C.#"
+  - "#.C.CCCC....CCCC.C.#"
+  - "#..................#"
+  - "#....v........v....#"
+  - "#..................#"
+  - "####DD########DD####"
+
+- type: robustOfficerSector
+  id: RobustOfficerXenoNest
+  name: robust-officer-sector-xenonest
+  order: 12
+  theme: 2
+  boss: XenoQueen
+  reward: PlushieXeno
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#..................#"
+  - "#..................#"
+  - "#..................#"
+  - "#..................#"
+  - "D..................D"
+  - "D..................D"
+  - "#..................#"
+  - "#..................#"
+  - "#..................#"
+  - "#.........P........#"
+  - "#..................#"
+  - "#..................#"
+  - "##########E#########"
+
+- type: robustOfficerSector
+  id: RobustOfficerCargo
+  name: robust-officer-sector-cargo
+  order: 13
+  theme: 3
+  seconds: 65
+  waves:
+  - from: 0
+    interval: 1.5
+    group: 2
+    enemies: [Carp, Xeno, Greytider]
+  - from: 25
+    interval: 1.12
+    group: 4
+    enemies: [Carp, Carp, Nukie]
+  - from: 45
+    interval: 0.98
+    group: 4
+    enemies: [Carp, Nukie, Xeno]
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#.CC..CC....CC..CC.#"
+  - "#.CC..CC....CC..CC.#"
+  - "#..................#"
+  - "#..................#"
+  - "D...TT........TT...D"
+  - "D.........P........D"
+  - "#..................#"
+  - "#.CC............CC.#"
+  - "#.CC...CC..CC...CC.#"
+  - "#......CC..CC......#"
+  - "#..................#"
+  - "#..................#"
+  - "##########E#########"
+
+- type: robustOfficerSector
+  id: RobustOfficerSalvage
+  name: robust-officer-sector-salvage
+  order: 14
+  theme: 3
+  seconds: 70
+  waves:
+  - from: 0
+    interval: 1.42
+    group: 2
+    enemies: [Carp, Carp, Nukie]
+  - from: 25
+    interval: 1.05
+    group: 4
+    enemies: [Carp, Nukie, Revenant]
+  - from: 50
+    interval: 0.9
+    group: 4
+    enemies: [Carp, Nukie, Xeno]
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#..T............T..#"
+  - "#..T..C......C..T..#"
+  - "#..T............T..#"
+  - "#..................#"
+  - "D.....CC....CC.....D"
+  - "D.........P........E"
+  - "#..................#"
+  - "#..T............T..#"
+  - "#..T..C......C..T..#"
+  - "#..T............T..#"
+  - "#..................#"
+  - "#..................#"
+  - "####################"
+
+- type: robustOfficerSector
+  id: RobustOfficerHull
+  name: robust-officer-sector-hull
+  order: 15
+  theme: 3
+  seconds: 75
+  waves:
+  - from: 0
+    interval: 1.35
+    group: 4
+    enemies: [Carp, Carp, Xeno]
+  - from: 25
+    interval: 1.05
+    group: 4
+    enemies: [Carp, Nukie, Nukie]
+  - from: 50
+    interval: 0.83
+    group: 4
+    enemies: [Carp, Carp, Nukie, Revenant]
+  map:
+  - "####D##D####D##D####"
+  - "#..................#"
+  - "#.C...C......C...C.#"
+  - "#..................#"
+  - "#....C........C....#"
+  - "#..................#"
+  - "D.C..............C.D"
+  - "#.........P........#"
+  - "#....C........C....#"
+  - "#..................#"
+  - "#.C...C......C...C.#"
+  - "#..................#"
+  - "#..................#"
+  - "#..................#"
+  - "##########E#########"
+
+- type: robustOfficerSector
+  id: RobustOfficerDock
+  name: robust-officer-sector-dock
+  order: 16
+  theme: 3
+  boss: SpaceDragon
+  reward: ToyFigurineSpaceDragon
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#..................#"
+  - "#..................#"
+  - "#..................#"
+  - "#..................#"
+  - "D..................D"
+  - "D..................D"
+  - "#..................#"
+  - "#..................#"
+  - "#..................#"
+  - "#.........P........#"
+  - "#..................#"
+  - "#..................#"
+  - "##########E#########"
+
+- type: robustOfficerSector
+  id: RobustOfficerEngineering
+  name: robust-officer-sector-engineering
+  order: 17
+  theme: 4
+  seconds: 70
+  waves:
+  - from: 0
+    interval: 1.35
+    group: 2
+    enemies: [Nukie, Xeno, Zombie, Slime]
+  - from: 25
+    interval: 1.05
+    group: 4
+    enemies: [Nukie, Revenant, Carp, Xeno]
+  - from: 50
+    interval: 0.83
+    group: 4
+    enemies: [Nukie, Nukie, Revenant, Carp]
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#.CCC..TT..TT..CCC.#"
+  - "#..................#"
+  - "#.TT............TT.#"
+  - "#.....v......v.....#"
+  - "D..................D"
+  - "D.........P........D"
+  - "#..................#"
+  - "#.TT............TT.#"
+  - "#..................#"
+  - "#.CCC..TT..TT..CCC.#"
+  - "#..................#"
+  - "#..................#"
+  - "##########E#########"
+
+- type: robustOfficerSector
+  id: RobustOfficerArmory
+  name: robust-officer-sector-armory
+  order: 18
+  theme: 4
+  seconds: 75
+  waves:
+  - from: 0
+    interval: 1.27
+    group: 4
+    enemies: [Nukie, Clown, Greytider, Xeno]
+  - from: 25
+    interval: 0.98
+    group: 4
+    enemies: [Nukie, Nukie, Revenant, Zombie]
+  - from: 50
+    interval: 0.75
+    group: 4
+    enemies: [Nukie, Carp, Xeno, Revenant]
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#.C.C.C......C.C.C.#"
+  - "#..................#"
+  - "#.C.C.C......C.C.C.#"
+  - "#..................#"
+  - "D..................D"
+  - "D.........P........E"
+  - "#..................#"
+  - "#.C.C.C......C.C.C.#"
+  - "#..................#"
+  - "#.C.C.C......C.C.C.#"
+  - "#..................#"
+  - "#..................#"
+  - "####################"
+
+- type: robustOfficerSector
+  id: RobustOfficerBridge
+  name: robust-officer-sector-bridge
+  order: 19
+  theme: 4
+  seconds: 80
+  waves:
+  - from: 0
+    interval: 1.2
+    group: 4
+    enemies: [Nukie, Xeno, Revenant, Carp]
+  - from: 30
+    interval: 0.9
+    group: 4
+    enemies: [Nukie, Nukie, Slime, Carp]
+  - from: 55
+    interval: 0.75
+    group: 6
+    enemies: [Nukie, Xeno, Revenant, Zombie, Carp]
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#.TTTT........TTTT.#"
+  - "#.T..............T.#"
+  - "#.T....C....C....T.#"
+  - "#..................#"
+  - "D..................D"
+  - "D.........P........D"
+  - "#..................#"
+  - "#.T....C....C....T.#"
+  - "#.T..............T.#"
+  - "#.TTTT........TTTT.#"
+  - "#..................#"
+  - "#..................#"
+  - "##########E#########"
+
+- type: robustOfficerSector
+  id: RobustOfficerVault
+  name: robust-officer-sector-vault
+  order: 20
+  theme: 4
+  boss: NukieCommander
+  reward: ToyNuke
+  map:
+  - "####DD########DD####"
+  - "#..................#"
+  - "#..................#"
+  - "#..C............C..#"
+  - "#..................#"
+  - "#..................#"
+  - "D..................D"
+  - "D..................D"
+  - "#..................#"
+  - "#..................#"
+  - "#..C............C..#"
+  - "#.........P........#"
+  - "#..................#"
+  - "#..................#"
+  - "##########E#########"

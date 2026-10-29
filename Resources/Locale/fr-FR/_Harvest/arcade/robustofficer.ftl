@@ -1,0 +1,122 @@
+robust-officer-menu-title = Robust Officer
+robust-officer-menu-intro = Code rouge ! Tenez chaque salle de la station jusqu'à ce que les ennemis arrêtent d'arriver,
+    puis prenez la sortie. Battez le boss à la fin de chaque acte.
+    Dépensez vos crédits au distributeur de réquisitions : montez en grade de cadet à chef de la sécurité.
+robust-officer-menu-help = WASD : se déplacer · Flèches : tirer · Espace : utiliser l'objet
+robust-officer-menu-level = Salle {$level} : {$name}
+robust-officer-menu-time = Tenir {$seconds} s
+robust-officer-menu-nuke = NUKE {$seconds} s
+robust-officer-menu-exit-open = Sortie ouverte !
+robust-officer-menu-score = Score {$score}
+robust-officer-menu-credits = Crédits {$credits}
+robust-officer-menu-lives = Vies {$lives}
+robust-officer-menu-armor = Armure {$armor}/{$max}
+robust-officer-menu-item = Objet : {$item}
+robust-officer-menu-no-item = Objet : aucun
+robust-officer-menu-effect = {$effect} {$seconds} s
+robust-officer-menu-paused = Pause
+robust-officer-menu-game-over = Fin de service
+robust-officer-menu-quit = Partie arrêtée
+robust-officer-menu-victory = Station sécurisée !
+robust-officer-menu-victory-text = Tous les secteurs sont sûrs. La borne vous remet une récompense spéciale.
+robust-officer-menu-final-score = Score final : {$score}
+robust-officer-menu-round-placement = {$place}e de ce service !
+robust-officer-menu-all-time-placement = {$place}e de tous les temps !
+robust-officer-menu-scores = Meilleurs scores
+robust-officer-menu-round-scores = Ce service
+robust-officer-menu-all-time-scores = De tous les temps
+robust-officer-menu-score-entry = {$place}. {$name} - {$score} (salle {$level})
+robust-officer-menu-no-scores = Personne pour l'instant.
+robust-officer-menu-button-new-standard = Campagne
+robust-officer-menu-button-new-endless = Service sans fin
+robust-officer-menu-mode-standard = Campagne
+robust-officer-menu-mode-endless = Service sans fin
+robust-officer-menu-button-resume = Reprendre
+robust-officer-menu-button-quit = Arrêter la partie
+robust-officer-menu-button-scores = Meilleurs scores
+robust-officer-menu-button-back = Retour
+robust-officer-menu-button-pause = Pause
+robust-officer-menu-button-music = Musique
+robust-officer-menu-music-volume = Volume de la musique
+robust-officer-menu-button-leave-shop = Retour en patrouille
+
+robust-officer-shop-title = Réquisitions SecTech
+robust-officer-shop-intro = Dépensez les crédits ramassés. Survolez un article pour le détail.
+robust-officer-shop-status = Crédits : {$credits} · Grade : {$rank} · Vies : {$lives}
+robust-officer-shop-level = {$level}/{$max}
+robust-officer-shop-buy = Acheter ({$price} cr)
+robust-officer-shop-unavailable = Épuisé
+
+robust-officer-upgrade-promotion = Promotion : {$rank}
+robust-officer-upgrade-promotion-max = Promotion (grade maximum)
+robust-officer-upgrade-promotion-desc = Une meilleure arme et une armure qui encaisse plus de coups par salle. Le warden reçoit une tourelle, le chef de la sécurité un bouclier qui se recharge.
+robust-officer-upgrade-fire-rate = Détente modifiée
+robust-officer-upgrade-fire-rate-desc = Tire 15 % plus vite.
+robust-officer-upgrade-damage = Balles à pointe creuse
+robust-officer-upgrade-damage-desc = Chaque tir inflige un dégât de plus.
+robust-officer-upgrade-boots = Rangers
+robust-officer-upgrade-boots-desc = Se déplace plus vite.
+robust-officer-upgrade-donut = Donut
+robust-officer-upgrade-donut-desc = Une vie de plus.
+robust-officer-upgrade-flashbang = Grenade flash
+robust-officer-upgrade-flashbang-desc = Objet stocké : étourdit tous les ennemis à l'écran et efface leurs tirs.
+
+robust-officer-rank-cadet = Cadet
+robust-officer-rank-officer = Agent de sécurité
+robust-officer-rank-warden = Warden
+robust-officer-rank-head-of-security = Chef de la sécurité
+
+robust-officer-pickup-credit = Crédit
+robust-officer-pickup-credit-bundle = Liasse de crédits
+robust-officer-pickup-stimulants = Stimulants
+robust-officer-pickup-rapid-fire = Tir rapide
+robust-officer-pickup-buckshot = Chevrotine
+robust-officer-pickup-armor-plate = Plaque d'armure
+robust-officer-pickup-donut = Donut
+robust-officer-pickup-flashbang = Grenade flash
+robust-officer-pickup-lube = Lubrifiant spatial
+robust-officer-pickup-holo-barrier = Holobarrière
+robust-officer-pickup-sec-borg = Borg de sécurité
+
+robust-officer-boss-assistantking = Le Roi des Assistants
+robust-officer-boss-patientzero = Le Patient Zéro
+robust-officer-boss-xenoqueen = La Reine Xéno
+robust-officer-boss-spacedragon = Le Dragon de l'Espace
+robust-officer-boss-nukiecommander = Le Commandant Nucléaire
+
+robust-officer-level-endless = Service sans fin
+robust-officer-level-endless-boss = Affrontement : {$boss}
+
+robust-officer-sector-arrivals = Arrivées
+robust-officer-sector-corridors = Couloir central
+robust-officer-sector-bar = Le Bar
+robust-officer-sector-toolstorage = Réserve à outils
+robust-officer-sector-medbay = Infirmerie
+robust-officer-sector-morgue = Morgue
+robust-officer-sector-chemistry = Chimie
+robust-officer-sector-virology = Virologie
+robust-officer-sector-research = Recherche
+robust-officer-sector-xenobiology = Xénobiologie
+robust-officer-sector-maintenance = Maintenance
+robust-officer-sector-xenonest = Nid xéno
+robust-officer-sector-cargo = Soute du cargo
+robust-officer-sector-salvage = Récupération
+robust-officer-sector-hull = Coque extérieure
+robust-officer-sector-dock = Bras d'amarrage
+robust-officer-sector-engineering = Ingénierie
+robust-officer-sector-armory = Armurerie
+robust-officer-sector-bridge = Passerelle
+robust-officer-sector-vault = Coffre-fort
+
+advertisement-robust-officer-1 = Code rouge ! La station a besoin d'un agent robuste !
+advertisement-robust-officer-2 = De cadet à chef de la sécurité en un seul service. Jouez à Robust Officer !
+advertisement-robust-officer-3 = La marée grise arrive. Êtes-vous assez robuste ?
+advertisement-robust-officer-4 = Le donut est le meilleur ami de l'agent de sécurité.
+advertisement-robust-officer-5 = La nuke tourne, agent !
+advertisement-robust-officer-6 = Battez le record de tous les temps et méritez votre insigne.
+
+thankyou-robust-officer-1 = Bon travail, agent. Allez vous reposer.
+thankyou-robust-officer-2 = Rendez votre insigne en sortant.
+thankyou-robust-officer-3 = La station est en sécurité. Pour l'instant.
+thankyou-robust-officer-4 = N'oubliez pas votre donut !
+thankyou-robust-officer-5 = Gloire à la sécurité de NanoTrasen.

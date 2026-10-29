@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created for Goob-Station-Harvest Robust Officer by Kryyto",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "screen_robustofficer",
+      "directions": 4,
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        [
+          2.4
+        ],
+        [
+          2.4
+        ],
+        [
+          2.4
+        ]
+      ]
+    }
+  ]
+}

@@ -35,6 +35,7 @@ astrominer-menu-button-scores = Meilleurs scores
 astrominer-menu-button-back = Retour
 astrominer-menu-button-pause = Pause
 astrominer-menu-button-music = Musique
+astrominer-menu-music-volume = Volume de la musique
 
 astrominer-level-trainingshaft = Puits d'entraînement
 astrominer-level-collapsedtunnels = Tunnels effondrés

@@ -1,0 +1,122 @@
+robust-officer-menu-title = Robust Officer
+robust-officer-menu-intro = Code red! Hold each room of the station until the enemies stop coming,
+    then take the exit. Beat the boss at the end of each act.
+    Spend your credits at the requisitions vendor: get promoted from cadet to head of security.
+robust-officer-menu-help = WASD: move · Arrows: shoot · Space: use the item
+robust-officer-menu-level = Room {$level}: {$name}
+robust-officer-menu-time = Hold {$seconds}s
+robust-officer-menu-nuke = NUKE {$seconds}s
+robust-officer-menu-exit-open = Exit open!
+robust-officer-menu-score = Score {$score}
+robust-officer-menu-credits = Credits {$credits}
+robust-officer-menu-lives = Lives {$lives}
+robust-officer-menu-armor = Armor {$armor}/{$max}
+robust-officer-menu-item = Item: {$item}
+robust-officer-menu-no-item = Item: none
+robust-officer-menu-effect = {$effect} {$seconds}s
+robust-officer-menu-paused = Paused
+robust-officer-menu-game-over = End of watch
+robust-officer-menu-quit = Off duty
+robust-officer-menu-victory = Station secured!
+robust-officer-menu-victory-text = Every sector is safe. The cabinet hands you a special reward.
+robust-officer-menu-final-score = Final score: {$score}
+robust-officer-menu-round-placement = #{$place} this shift!
+robust-officer-menu-all-time-placement = #{$place} of all time!
+robust-officer-menu-scores = High scores
+robust-officer-menu-round-scores = This shift
+robust-officer-menu-all-time-scores = All time
+robust-officer-menu-score-entry = {$place}. {$name} - {$score} (room {$level})
+robust-officer-menu-no-scores = Nobody yet.
+robust-officer-menu-button-new-standard = Campaign
+robust-officer-menu-button-new-endless = Endless shift
+robust-officer-menu-mode-standard = Campaign
+robust-officer-menu-mode-endless = Endless shift
+robust-officer-menu-button-resume = Resume
+robust-officer-menu-button-quit = Stop the game
+robust-officer-menu-button-scores = High scores
+robust-officer-menu-button-back = Back
+robust-officer-menu-button-pause = Pause
+robust-officer-menu-button-music = Music
+robust-officer-menu-music-volume = Music volume
+robust-officer-menu-button-leave-shop = Back on patrol
+
+robust-officer-shop-title = SecTech requisitions
+robust-officer-shop-intro = Spend the credits you picked up. Hover an item for details.
+robust-officer-shop-status = Credits: {$credits} · Rank: {$rank} · Lives: {$lives}
+robust-officer-shop-level = {$level}/{$max}
+robust-officer-shop-buy = Buy ({$price} cr)
+robust-officer-shop-unavailable = Sold out
+
+robust-officer-upgrade-promotion = Promotion to {$rank}
+robust-officer-upgrade-promotion-max = Promotion (top rank)
+robust-officer-upgrade-promotion-desc = A better gun and armor that absorbs more hits in each room. Wardens get a turret, the head of security a recharging shield.
+robust-officer-upgrade-fire-rate = Trigger mod
+robust-officer-upgrade-fire-rate-desc = Shoot 15% faster.
+robust-officer-upgrade-damage = Hollow points
+robust-officer-upgrade-damage-desc = Every shot deals one more damage.
+robust-officer-upgrade-boots = Jackboots
+robust-officer-upgrade-boots-desc = Move faster.
+robust-officer-upgrade-donut = Donut
+robust-officer-upgrade-donut-desc = One more life.
+robust-officer-upgrade-flashbang = Flashbang
+robust-officer-upgrade-flashbang-desc = Stocked item: stuns every enemy on screen and clears their shots.
+
+robust-officer-rank-cadet = Cadet
+robust-officer-rank-officer = Officer
+robust-officer-rank-warden = Warden
+robust-officer-rank-head-of-security = Head of Security
+
+robust-officer-pickup-credit = Credit
+robust-officer-pickup-credit-bundle = Credit bundle
+robust-officer-pickup-stimulants = Stimulants
+robust-officer-pickup-rapid-fire = Rapid fire
+robust-officer-pickup-buckshot = Buckshot
+robust-officer-pickup-armor-plate = Armor plate
+robust-officer-pickup-donut = Donut
+robust-officer-pickup-flashbang = Flashbang
+robust-officer-pickup-lube = Space lube
+robust-officer-pickup-holo-barrier = Holobarrier
+robust-officer-pickup-sec-borg = Security borg
+
+robust-officer-boss-assistantking = The Assistant King
+robust-officer-boss-patientzero = Patient Zero
+robust-officer-boss-xenoqueen = The Xeno Queen
+robust-officer-boss-spacedragon = The Space Dragon
+robust-officer-boss-nukiecommander = The Nuclear Commander
+
+robust-officer-level-endless = Endless shift
+robust-officer-level-endless-boss = Showdown: {$boss}
+
+robust-officer-sector-arrivals = Arrivals
+robust-officer-sector-corridors = Central Hallway
+robust-officer-sector-bar = The Bar
+robust-officer-sector-toolstorage = Tool Storage
+robust-officer-sector-medbay = Medbay
+robust-officer-sector-morgue = Morgue
+robust-officer-sector-chemistry = Chemistry
+robust-officer-sector-virology = Virology
+robust-officer-sector-research = Research
+robust-officer-sector-xenobiology = Xenobiology
+robust-officer-sector-maintenance = Maintenance
+robust-officer-sector-xenonest = Xeno Nest
+robust-officer-sector-cargo = Cargo Bay
+robust-officer-sector-salvage = Salvage
+robust-officer-sector-hull = Outer Hull
+robust-officer-sector-dock = Docking Arm
+robust-officer-sector-engineering = Engineering
+robust-officer-sector-armory = Armory
+robust-officer-sector-bridge = Bridge
+robust-officer-sector-vault = Vault
+
+advertisement-robust-officer-1 = Code red! The station needs a robust officer!
+advertisement-robust-officer-2 = From cadet to head of security in one shift. Play Robust Officer!
+advertisement-robust-officer-3 = The greytide is coming. Are you robust enough?
+advertisement-robust-officer-4 = Donuts are a security officer's best friend.
+advertisement-robust-officer-5 = The nuke is ticking, officer!
+advertisement-robust-officer-6 = Beat the all-time high score and earn your badge.
+
+thankyou-robust-officer-1 = Good work, officer. Get some rest.
+thankyou-robust-officer-2 = Hand in your badge on the way out.
+thankyou-robust-officer-3 = The station is safe. For now.
+thankyou-robust-officer-4 = Don't forget your donut!
+thankyou-robust-officer-5 = Glory to NanoTrasen Security.

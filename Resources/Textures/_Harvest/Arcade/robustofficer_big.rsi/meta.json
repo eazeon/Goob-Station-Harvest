@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created for Goob-Station-Harvest Robust Officer by Kryyto",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "assistant_king",
+      "delays": [
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "patient_zero",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "xeno_queen",
+      "delays": [
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "space_dragon",
+      "delays": [
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "nukie_commander",
+      "delays": [
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    }
+  ]
+}

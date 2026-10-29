@@ -1,0 +1,335 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created for Goob-Station-Harvest Robust Officer by Kryyto",
+  "size": {
+    "x": 16,
+    "y": 16
+  },
+  "states": [
+    {
+      "name": "player_cadet",
+      "directions": 4,
+      "delays": [
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.18
+        ]
+      ]
+    },
+    {
+      "name": "player_officer",
+      "directions": 4,
+      "delays": [
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.18
+        ]
+      ]
+    },
+    {
+      "name": "player_warden",
+      "directions": 4,
+      "delays": [
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.18
+        ]
+      ]
+    },
+    {
+      "name": "player_head_of_security",
+      "directions": 4,
+      "delays": [
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.18
+        ]
+      ]
+    },
+    {
+      "name": "greytider",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "clown",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "zombie",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "nukie",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "slime",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "slime_small",
+      "delays": [
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "xeno",
+      "delays": [
+        [
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "revenant",
+      "delays": [
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "carp",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "bolt_disabler"
+    },
+    {
+      "name": "bullet"
+    },
+    {
+      "name": "pellet"
+    },
+    {
+      "name": "laser"
+    },
+    {
+      "name": "enemy_bullet"
+    },
+    {
+      "name": "toolbox"
+    },
+    {
+      "name": "acid"
+    },
+    {
+      "name": "pickup_credit"
+    },
+    {
+      "name": "pickup_credit_bundle"
+    },
+    {
+      "name": "pickup_stimulants"
+    },
+    {
+      "name": "pickup_rapid_fire"
+    },
+    {
+      "name": "pickup_buckshot"
+    },
+    {
+      "name": "pickup_armor_plate"
+    },
+    {
+      "name": "pickup_donut"
+    },
+    {
+      "name": "pickup_flashbang"
+    },
+    {
+      "name": "pickup_lube"
+    },
+    {
+      "name": "pickup_holo_barrier"
+    },
+    {
+      "name": "pickup_sec_borg"
+    },
+    {
+      "name": "turret",
+      "delays": [
+        [
+          0.4,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "sec_borg",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "puddle",
+      "delays": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "lube_puddle",
+      "delays": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "barrier",
+      "delays": [
+        [
+          0.15,
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "rift",
+      "delays": [
+        [
+          0.12,
+          0.12,
+          0.12
+        ]
+      ]
+    },
+    {
+      "name": "poof",
+      "delays": [
+        [
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "wall"
+    },
+    {
+      "name": "table"
+    },
+    {
+      "name": "crate"
+    },
+    {
+      "name": "vent"
+    },
+    {
+      "name": "door"
+    },
+    {
+      "name": "exit_closed"
+    },
+    {
+      "name": "exit_open"
+    },
+    {
+      "name": "floor_0"
+    },
+    {
+      "name": "floor_1"
+    },
+    {
+      "name": "floor_2"
+    },
+    {
+      "name": "floor_3"
+    },
+    {
+      "name": "floor_4"
+    }
+  ]
+}

@@ -259,6 +259,7 @@
     - id: SpaceVillainArcadeComputerCircuitboard
     - id: BlockGameArcadeComputerCircuitboard
     - id: AstroMinerArcadeComputerCircuitboard # Harvest
+    - id: RobustOfficerArcadeComputerCircuitboard # Harvest
 
 - type: entity
   parent: ToteBase

@@ -18,13 +18,23 @@ public sealed class AstroMinerBoundUserInterface(EntityUid owner, Enum uiKey) : 
     private static readonly SoundSpecifier LandSound = new SoundPathSpecifier("/Audio/_Harvest/Arcade/AstroMiner/land.ogg");
     private static readonly SoundSpecifier ExplosionSound = new SoundPathSpecifier("/Audio/_Harvest/Arcade/AstroMiner/explosion.ogg");
 
-    private static readonly AudioParams MusicParams = AudioParams.Default.WithLoop(true).WithVolume(-10f);
+    private static readonly AudioParams MusicParams = AudioParams.Default.WithLoop(true);
+
+    /// <summary>
+    /// Volume of the music with the slider at full, in decibels.
+    /// </summary>
+    private const float MusicVolume = -10f;
     private static readonly AudioParams EffectParams = AudioParams.Default.WithVolume(-6f);
 
     /// <summary>
     /// Kept for the whole session, so turning the music off sticks between cabinets.
     /// </summary>
     private static bool _musicEnabled = true;
+
+    /// <summary>
+    /// The slider's music volume from 0 to 1, kept for the whole session like <see cref="_musicEnabled"/>.
+    /// </summary>
+    private static float _musicGain = 1f;
 
     private AstroMinerMenu? _menu;
     private EntityUid? _music;
@@ -36,6 +46,12 @@ public sealed class AstroMinerBoundUserInterface(EntityUid owner, Enum uiKey) : 
 
         _menu = this.CreateWindow<AstroMinerMenu>();
         _menu.MusicEnabled = _musicEnabled;
+        _menu.MusicVolume = _musicGain;
+        _menu.OnMusicVolumeChanged += gain =>
+        {
+            _musicGain = gain;
+            EntMan.System<SharedAudioSystem>().SetVolume(_music, MusicDecibels());
+        };
         _menu.OnAction += action => SendMessage(new AstroMinerActionMessage(action));
         _menu.OnMusicToggled += enabled =>
         {
@@ -84,12 +100,20 @@ public sealed class AstroMinerBoundUserInterface(EntityUid owner, Enum uiKey) : 
         EntMan.System<SharedAudioSystem>().PlayGlobal(sound, Filter.Local(), false, EffectParams);
     }
 
+    /// <summary>
+    /// The slider scales the music's gain; at zero it is simply inaudible.
+    /// </summary>
+    private static float MusicDecibels()
+    {
+        return MusicVolume + SharedAudioSystem.GainToVolume(MathF.Max(_musicGain, 0.001f));
+    }
+
     private void UpdateMusic()
     {
         var audio = EntMan.System<SharedAudioSystem>();
         var wanted = _inGame && _musicEnabled;
         if (wanted && _music == null)
-            _music = audio.PlayGlobal(MusicSound, Filter.Local(), false, MusicParams)?.Entity;
+            _music = audio.PlayGlobal(MusicSound, Filter.Local(), false, MusicParams.WithVolume(MusicDecibels()))?.Entity;
         else if (!wanted && _music != null)
             _music = audio.Stop(_music);
     }

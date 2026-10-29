@@ -1,0 +1,4 @@
+- files: ["music.ogg", "shoot.ogg", "enemy_shot.ogg", "hit.ogg", "kill.ogg", "pickup.ogg", "credit.ogg", "armor.ogg", "item.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Synthesized for Goob-Station-Harvest Robust Officer by Kryyto"
+  source: "https://github.com/Kryyto"

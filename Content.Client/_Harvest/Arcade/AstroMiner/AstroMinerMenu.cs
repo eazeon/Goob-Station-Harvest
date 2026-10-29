@@ -1,5 +1,6 @@
 using System.Numerics;
 using System.Text;
+using Content.Shared._Harvest.Arcade;
 using Content.Shared._Harvest.Arcade.AstroMiner;
 using Content.Shared.Input;
 using Robust.Client.Graphics;
@@ -20,6 +21,7 @@ public sealed class AstroMinerMenu : DefaultWindow
     private readonly Label _livesLabel;
     private readonly Button _pauseButton;
     private readonly Button _musicButton;
+    private readonly Slider _musicVolume;
 
     private readonly PanelContainer _overlay;
     private readonly Label _overlayTitle;
@@ -42,10 +44,15 @@ public sealed class AstroMinerMenu : DefaultWindow
     private AstroMinerScreen _screenBeforeScores = AstroMinerScreen.Title;
     private (AstroMinerMode Mode, int FinalScore, int? RoundPlacement, int? AllTimePlacement) _lastScreenInfo;
     private AstroMinerMode _scoresMode = AstroMinerMode.Standard;
-    private readonly Dictionary<AstroMinerMode, (List<AstroMinerScoreEntry> Round, List<AstroMinerScoreEntry> AllTime)> _scores = new();
+    private readonly Dictionary<AstroMinerMode, (List<ArcadeScoreEntry> Round, List<ArcadeScoreEntry> AllTime)> _scores = new();
 
     public event Action<AstroMinerAction>? OnAction;
     public event Action<bool>? OnMusicToggled;
+
+    /// <summary>
+    /// Raised with the music volume picked on the slider, from 0 to 1.
+    /// </summary>
+    public event Action<float>? OnMusicVolumeChanged;
 
     public AstroMinerMenu()
     {
@@ -130,15 +137,32 @@ public sealed class AstroMinerMenu : DefaultWindow
         root.AddChild(stack);
 
         var footer = new BoxContainer { Orientation = LayoutOrientation.Horizontal };
+        // Clipped so the music controls always fit; the whole text is in the tooltip.
         footer.AddChild(new Label
         {
             Text = Loc.GetString("astrominer-menu-help"),
+            ToolTip = Loc.GetString("astrominer-menu-help"),
+            MouseFilter = MouseFilterMode.Stop,
             HorizontalExpand = true,
+            ClipText = true,
             FontColorOverride = Color.Gray,
         });
         _musicButton = new Button { ToggleMode = true, Pressed = true, Text = Loc.GetString("astrominer-menu-button-music") };
         _musicButton.OnToggled += args => OnMusicToggled?.Invoke(args.Pressed);
         footer.AddChild(_musicButton);
+        _musicVolume = new Slider
+        {
+            MinValue = 0f,
+            MaxValue = 100f,
+            Value = 100f,
+            Rounded = true,
+            MinWidth = 100f,
+            VerticalAlignment = VAlignment.Center,
+            ToolTip = Loc.GetString("astrominer-menu-music-volume"),
+            Margin = new Thickness(4, 0, 8, 0),
+        };
+        _musicVolume.OnValueChanged += range => OnMusicVolumeChanged?.Invoke(range.Value / 100f);
+        footer.AddChild(_musicVolume);
         _pauseButton = MakeButton("astrominer-menu-button-pause", AstroMinerAction.Pause);
         footer.AddChild(_pauseButton);
         root.AddChild(footer);
@@ -152,6 +176,15 @@ public sealed class AstroMinerMenu : DefaultWindow
         var button = new Button { Text = Loc.GetString(text) };
         button.OnPressed += _ => OnAction?.Invoke(action);
         return button;
+    }
+
+    /// <summary>
+    /// The music volume, from 0 to 1.
+    /// </summary>
+    public float MusicVolume
+    {
+        get => _musicVolume.Value / 100f;
+        set => _musicVolume.SetValueWithoutEvent(value * 100f);
     }
 
     public bool MusicEnabled
@@ -225,7 +258,7 @@ public sealed class AstroMinerMenu : DefaultWindow
         UpdateButtons();
     }
 
-    public void UpdateHighscores(AstroMinerMode mode, List<AstroMinerScoreEntry> round, List<AstroMinerScoreEntry> allTime)
+    public void UpdateHighscores(AstroMinerMode mode, List<ArcadeScoreEntry> round, List<ArcadeScoreEntry> allTime)
     {
         _scores[mode] = (round, allTime);
         if (mode == _scoresMode)
@@ -244,7 +277,7 @@ public sealed class AstroMinerMenu : DefaultWindow
         _allTimeScoresLabel.Text = FormatScores("astrominer-menu-all-time-scores", entryLoc, allTime);
     }
 
-    private static string FormatScores(string title, string entryLoc, List<AstroMinerScoreEntry> entries)
+    private static string FormatScores(string title, string entryLoc, List<ArcadeScoreEntry> entries)
     {
         var text = new StringBuilder(Loc.GetString(title));
         for (var i = 0; i < entries.Count; i++)

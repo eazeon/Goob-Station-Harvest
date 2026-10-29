@@ -11,9 +11,27 @@
       - sprite: Structures/Machines/arcade.rsi
         state: icon
   - type: RandomSpawner
+    # Harvest: picked uniformly, so entries are repeated for 35% AstroMiner, 35% Robust Officer, 15% each of the others.
     prototypes:
       - BlockGameArcade
+      - BlockGameArcade
+      - BlockGameArcade
+      - SpaceVillainArcadeFilled
+      - SpaceVillainArcadeFilled
       - SpaceVillainArcadeFilled
       - AstroMinerArcadeFilled # Harvest
+      - AstroMinerArcadeFilled # Harvest
+      - AstroMinerArcadeFilled # Harvest
+      - AstroMinerArcadeFilled # Harvest
+      - AstroMinerArcadeFilled # Harvest
+      - AstroMinerArcadeFilled # Harvest
+      - AstroMinerArcadeFilled # Harvest
+      - RobustOfficerArcadeFilled # Harvest
+      - RobustOfficerArcadeFilled # Harvest
+      - RobustOfficerArcadeFilled # Harvest
+      - RobustOfficerArcadeFilled # Harvest
+      - RobustOfficerArcadeFilled # Harvest
+      - RobustOfficerArcadeFilled # Harvest
+      - RobustOfficerArcadeFilled # Harvest
     chance: 1
     keepRotation: true # Harvest: arcades face the way they were mapped

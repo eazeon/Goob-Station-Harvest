@@ -1,0 +1,101 @@
+- type: entity
+  id: RobustOfficerArcade
+  name: Robust Officer arcade
+  description: An arcade cabinet where a security cadet holds the station against greytiders, xenos and nuclear operatives, one promotion at a time.
+  parent: ArcadeBase
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/arcade.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: arcade
+    - map: ["computerLayerScreen"]
+      sprite: _Harvest/Arcade/robustofficer_screen.rsi
+      state: screen_robustofficer
+    - map: ["enum.WiresVisualLayers.MaintenancePanel"]
+      state: panel
+      visible: false
+  - type: PointLight
+    color: "#e0403a"
+  - type: RobustOfficerArcade
+    # Cheap security and syndicate souvenirs.
+    possibleRewards:
+    - ToyFigurineSecurity
+    - ToyFigurineWarden
+    - ToyFigurineHeadOfSecurity
+    - ToyFigurineDetective
+    - ToyFigurineNukie
+    - ToyFigurineNukieCommander
+    - PlushieNuke
+    - ToyNuke
+    - BalloonSyn
+    - FoodDonutPlain
+    - FoodDonutPink
+    - FoodDonutChocolate
+    - ClothingHeadHatBeretSecurity
+    - ClothingHeadHatSecsoft
+    - ClothingHeadHatSyndie
+    - ClothingNeckScarfStripedSyndieRed
+    - ClothingNeckScarfStripedSyndieGreen
+    - BedsheetSyndie
+    - BookSecurity
+    - FoamCrossbow
+    - FoamBlade
+    - RevolverCapGun
+    - SnapPopBox
+    - SpaceCash10
+    # Only for winning the campaign.
+    finalRewards:
+    - ToyFigurineNukieElite
+    - BalloonOperative
+    - ToySword
+  - type: ActivatableUI
+    key: enum.RobustOfficerUiKey.Key
+  - type: ActivatableUIRequiresPower
+  - type: StationAiWhitelist
+  - type: UserInterface
+    interfaces:
+      enum.RobustOfficerUiKey.Key:
+        type: RobustOfficerBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Computer
+    board: RobustOfficerArcadeComputerCircuitboard
+  - type: Vocalizer
+    minVocalizeInterval: 1m # Arcades are noisy
+    maxVocalizeInterval: 4m
+    hideChat: true
+  - type: DatasetVocalizer
+    dataset: RobustOfficerAds
+  - type: SpeakOnUIClosed
+    pack: RobustOfficerGoodbyes
+
+- type: entity
+  id: RobustOfficerArcadeFilled
+  parent: RobustOfficerArcade
+  suffix: Filled
+  components:
+  - type: RobustOfficerArcade
+    rewardMinAmount: 5
+    rewardMaxAmount: 8
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: RobustOfficerArcadeComputerCircuitboard
+  name: Robust Officer arcade board
+  description: A computer printed circuit board for a Robust Officer arcade cabinet.
+  components:
+  - type: ComputerBoard
+    prototype: RobustOfficerArcade
+
+- type: localizedDataset
+  id: RobustOfficerAds
+  values:
+    prefix: advertisement-robust-officer-
+    count: 6
+
+- type: localizedDataset
+  id: RobustOfficerGoodbyes
+  values:
+    prefix: thankyou-robust-officer-
+    count: 5

@@ -29,6 +29,7 @@ astrominer-menu-button-scores = High scores
 astrominer-menu-button-back = Back
 astrominer-menu-button-pause = Pause
 astrominer-menu-button-music = Music
+astrominer-menu-music-volume = Music volume
 
 astrominer-level-trainingshaft = Training Shaft
 astrominer-level-collapsedtunnels = Collapsed Tunnels

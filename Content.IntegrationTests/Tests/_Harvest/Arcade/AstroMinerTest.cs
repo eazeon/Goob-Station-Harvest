@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Client._Harvest.Arcade.AstroMiner;
 using Content.Server._Harvest.Arcade.AstroMiner;
+using Content.Shared._Harvest.Arcade;
 using Content.Shared._Harvest.Arcade.AstroMiner;
 using Robust.Shared.ContentPack;
 using Robust.Shared.GameObjects;
@@ -105,7 +106,7 @@ public sealed class AstroMinerTest
         var server = pair.Server;
         var entMan = server.EntMan;
         var mapSystem = server.System<SharedMapSystem>();
-        var arcades = new[] { "BlockGameArcade", "SpaceVillainArcadeFilled", "AstroMinerArcadeFilled" };
+        var arcades = new[] { "BlockGameArcade", "SpaceVillainArcadeFilled", "AstroMinerArcadeFilled", "RobustOfficerArcadeFilled" };
 
         await server.WaitAssertion(() =>
         {
@@ -158,7 +159,7 @@ public sealed class AstroMinerTest
                 LevelName = "Test",
             });
             menu.SetScreen(AstroMinerScreen.GameOver, true, AstroMinerMode.Endless, 100, 1, 2);
-            menu.UpdateHighscores(AstroMinerMode.Endless, [new AstroMinerScoreEntry { Name = "A", Score = 1, Level = 3 }], []);
+            menu.UpdateHighscores(AstroMinerMode.Endless, [new ArcadeScoreEntry { Name = "A", Score = 1, Level = 3 }], []);
             menu.SetScreen(AstroMinerScreen.Highscores, true, AstroMinerMode.Endless);
             menu.Orphan();
         });

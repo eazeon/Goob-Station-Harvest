@@ -155,17 +155,9 @@ public sealed class AstroMinerUserStatusMessage(bool isPlayer) : BoundUserInterf
 }
 
 [Serializable, NetSerializable]
-public sealed class AstroMinerHighscoresMessage(AstroMinerMode mode, List<AstroMinerScoreEntry> round, List<AstroMinerScoreEntry> allTime) : BoundUserInterfaceMessage
+public sealed class AstroMinerHighscoresMessage(AstroMinerMode mode, List<ArcadeScoreEntry> round, List<ArcadeScoreEntry> allTime) : BoundUserInterfaceMessage
 {
     public readonly AstroMinerMode Mode = mode;
-    public readonly List<AstroMinerScoreEntry> Round = round;
-    public readonly List<AstroMinerScoreEntry> AllTime = allTime;
-}
-
-[Serializable, NetSerializable]
-public sealed class AstroMinerScoreEntry
-{
-    public string Name { get; set; } = string.Empty;
-    public int Score { get; set; }
-    public int Level { get; set; }
+    public readonly List<ArcadeScoreEntry> Round = round;
+    public readonly List<ArcadeScoreEntry> AllTime = allTime;
 }
