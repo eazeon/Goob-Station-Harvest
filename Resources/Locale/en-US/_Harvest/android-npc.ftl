@@ -15,3 +15,4 @@ android-verb-heal-me = Heal me
 android-verb-repeat-order = What would you like?
 
 species-name-android = Android
+android-medic-inject-others = { CAPITALIZE($user) } injects { $target }.

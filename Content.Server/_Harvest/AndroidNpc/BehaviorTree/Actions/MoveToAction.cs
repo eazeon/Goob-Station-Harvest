@@ -279,7 +279,7 @@ public sealed class MoveToAction : IBehaviorNode
             case SteeringStatus.Moving:
                 sawmill.Debug($"[MoveTo] Moving toward {steering.Coordinates} (distance {diagnostics.distance:F2})");
                 UpdatePathProgress(owner, blackboard, ownerPos);
-                if (IsStuck(blackboard, resolvedTarget, ownerPos))
+                if (IsStuck(blackboard, steering, resolvedTarget, ownerPos))
                 {
                     sawmill.Debug($"[MoveTo] no progress towards {resolvedTarget} for {StuckTime.TotalSeconds} s; giving up");
                     _state.WatchedTarget = null;
@@ -423,14 +423,17 @@ public sealed class MoveToAction : IBehaviorNode
         inventory.NoPathLastReregisterTime = TimeSpan.Zero;
     }
 
-    private bool IsStuck(AndroidBlackboard blackboard, EntityCoordinates target, Vector2 ownerPos)
+    private bool IsStuck(AndroidBlackboard blackboard, NPCSteeringComponent steering, EntityCoordinates target, Vector2 ownerPos)
     {
         var now = blackboard.Timing.CurTime;
         var targetPos = blackboard.Transform.ToMapCoordinates(target).Position;
         var distance = (targetPos - ownerPos).Length();
 
-        // A new target, a target that moved away (someone being followed), or real progress restarts the clock.
-        if (_state.WatchedTarget is not { } watched ||
+        // A new target, a target that moved away (someone being followed), or real progress restarts the clock,
+        // and so does waiting for a path: a long one across the station takes several ticks to compute, during
+        // which the android stands still without being stuck.
+        if (steering.Pathfind ||
+            _state.WatchedTarget is not { } watched ||
             (blackboard.Transform.ToMapCoordinates(watched).Position - targetPos).Length() > 1f ||
             distance < _state.BestDistance - 0.5f)
         {

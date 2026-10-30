@@ -78,8 +78,4 @@ public sealed partial class AndroidMedicComponent : Component
     /// </summary>
     [ViewVariables] public Dictionary<EntityUid, TimeSpan> UnreachableBeds { get; } = new();
 
-    /// <summary>
-    /// When each patient last got each medicine (dylovene, dexalin).
-    /// </summary>
-    [ViewVariables] public Dictionary<(EntityUid Patient, string Reagent), TimeSpan> MedicatedAt { get; } = new();
 }

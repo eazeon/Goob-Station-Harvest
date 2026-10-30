@@ -19,6 +19,8 @@ using Content.Shared.Damage.Prototypes;
 using Content.Server.Atmos.Components;
 using Content.Server.Radio;
 using Content.Shared._EinsteinEngines.Language;
+using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Chat;
 using Content.Shared.Gravity;
 using Content.Shared.Radio;
@@ -246,13 +248,11 @@ public sealed class AndroidParamedicTests
     }
 
     /// <summary>
-    /// Far away crew only show on the crew monitor when their sensors give coordinates, and only while the
-    /// paramedic still carries the monitor.
+    /// Far away crew only show when their suit sensors give coordinates. The paramedic reads them itself: it carries
+    /// no crew monitor an antagonist could take from it.
     /// </summary>
     [Test]
-    [TestCase(SuitSensorMode.SensorVitals, true)]
-    [TestCase(SuitSensorMode.SensorCords, false)]
-    public async Task Paramedic_SeesFarCrewOnlyThroughTheCrewMonitor(SuitSensorMode mode, bool keepMonitor)
+    public async Task Paramedic_SeesFarCrewOnlyThroughCoordinateSensors()
     {
         var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
@@ -265,24 +265,113 @@ public sealed class AndroidParamedicTests
         await server.WaitRunTicks(5);
         await server.WaitAssertion(() =>
         {
-            var medicSystem = server.System<AndroidMedicSystem>();
-            Assert.That(medicSystem.CarriesCrewMonitor(medic), Is.True, "The paramedic spawns with its crew monitor");
-            if (!keepMonitor)
-            {
-                var inventory = sEnt.GetComponent<AndroidInventoryComponent>(medic);
-                sEnt.DeleteEntity(server.System<AndroidInventorySystem>().FindItemByPrototype(medic, inventory, "HandheldCrewMonitor"));
-                Assert.That(medicSystem.CarriesCrewMonitor(medic), Is.False);
-            }
+            var inventory = sEnt.GetComponent<AndroidInventoryComponent>(medic);
+            Assert.That(server.System<AndroidInventorySystem>().FindItemByPrototype(medic, inventory, "HandheldCrewMonitor"), Is.Null,
+                "No crew monitor to loot");
 
             var critical = sEnt.SpawnEntity("MobHuman", new EntityCoordinates(map.Grid.Owner, 36.5f, 0.5f));
-            WearSensors(server, critical, mode);
+            WearSensors(server, critical, SuitSensorMode.SensorVitals);
             Hurt(server, critical, 120);
         });
         await server.WaitRunTicks(10);
 
         await server.WaitAssertion(() =>
             Assert.That(sEnt.GetComponent<AndroidMedicComponent>(medic).Patient, Is.Null,
-                keepMonitor ? "Sensors without coordinates do not say where the patient is" : "Without its crew monitor the paramedic does not know"));
+                "Sensors without coordinates do not say where the patient is"));
+
+        await pair.CleanReturnAsync();
+    }
+
+    [Test]
+    [TestCase(true)]
+    [TestCase(false)]
+    public async Task Paramedic_PutsBodiesOnAStasisBedOnly(bool withStasisBed)
+    {
+        var pair = await AndroidTestPool.GetServerClient();
+        var server = pair.Server;
+        var sEnt = server.EntMan;
+        var map = await pair.CreateTestMap();
+        await BuildHall(server, map, 16);
+        EntityUid medic = default, body = default, bed = default, table = default;
+        EntityUid? stasis = null;
+
+        await server.WaitAssertion(() =>
+        {
+            // The operating table and the medical bed are closer to medbay than the stasis bed.
+            table = sEnt.SpawnEntity("OperatingTable", new EntityCoordinates(map.Grid.Owner, 1.5f, 1.5f));
+            bed = sEnt.SpawnEntity("MedicalBed", new EntityCoordinates(map.Grid.Owner, 2.5f, 1.5f));
+            if (withStasisBed)
+                stasis = sEnt.SpawnEntity("StasisBed", new EntityCoordinates(map.Grid.Owner, 4.5f, 1.5f));
+            body = sEnt.SpawnEntity("MobHuman", new EntityCoordinates(map.Grid.Owner, 12.5f, 0.5f));
+            WearSensors(server, body, SuitSensorMode.SensorCords);
+            Hurt(server, body, 250);
+            server.System<MobStateSystem>().ChangeMobState(body, MobState.Dead);
+        });
+        await server.WaitRunTicks(30);
+        await server.WaitAssertion(() => medic = sEnt.SpawnEntity("MobAndroidParamedic", new EntityCoordinates(map.Grid.Owner, 14.5f, 0.5f)));
+        await server.WaitRunTicks(1200);
+
+        await server.WaitAssertion(() =>
+        {
+            var buckledTo = sEnt.GetComponent<Content.Shared.Buckle.Components.BuckleComponent>(body).BuckledTo;
+            Assert.That(buckledTo, Is.Not.EqualTo(table), "Never on the operating table");
+            Assert.That(buckledTo, Is.Not.EqualTo(bed), "Never on a medical bed, where it would rot");
+            Assert.That(buckledTo, Is.EqualTo(stasis),
+                $"On the stasis bed if there is one, else left lying at medbay; said: {string.Join(" | ", sEnt.GetComponent<AndroidComponent>(medic).RecentLines)}");
+            Assert.That(sEnt.GetComponent<TransformComponent>(body).LocalPosition.X, Is.LessThan(6f), "It was carried to medbay");
+        });
+
+        await pair.CleanReturnAsync();
+    }
+
+    [Test]
+    public async Task Paramedic_ComesToAFarCallerOnTheRadioAndInjectsBicaridine()
+    {
+        var pair = await AndroidTestPool.GetServerClient();
+        var server = pair.Server;
+        var sEnt = server.EntMan;
+        var map = await pair.CreateTestMap();
+        var xforms = sEnt.System<SharedTransformSystem>();
+        await BuildHall(server, map, 40);
+        EntityUid medic = default, caller = default;
+
+        await server.WaitAssertion(() =>
+        {
+            caller = sEnt.SpawnEntity("MobHuman", new EntityCoordinates(map.Grid.Owner, 36.5f, 0.5f));
+            medic = sEnt.SpawnEntity("MobAndroidParamedic", new EntityCoordinates(map.Grid.Owner, 1.5f, 0.5f));
+            Name(sEnt, medic, "Zephyrin");
+        });
+        await server.WaitRunTicks(5);
+
+        await server.WaitAssertion(() =>
+        {
+            Hurt(server, caller, 30);
+            var channel = server.ProtoMan.Index<RadioChannelPrototype>("Medical");
+            var language = server.ProtoMan.Index<LanguagePrototype>("TauCetiBasic");
+            var chat = new ChatMessage(ChatChannel.Radio, "Zephyrin, soigne-moi", string.Empty, sEnt.GetNetEntity(caller), null);
+            var ev = new RadioReceiveEvent(caller, channel, chat, chat, language, caller);
+            sEnt.EventBus.RaiseLocalEvent(medic, ref ev);
+            Assert.That(sEnt.GetComponent<AndroidMedicComponent>(medic).Caller, Is.EqualTo(caller));
+        });
+
+        var reached = false;
+        for (var i = 0; i < 40 && !reached; i++)
+        {
+            await server.WaitRunTicks(30);
+            await server.WaitAssertion(() =>
+                reached = (xforms.GetWorldPosition(medic) - xforms.GetWorldPosition(caller)).Length() < 2.5f);
+        }
+
+        Assert.That(reached, Is.True, "The paramedic walked the 35 tiles to the caller");
+        await server.WaitRunTicks(120);
+
+        await server.WaitAssertion(() =>
+        {
+            Assert.That(server.System<SharedSolutionContainerSystem>().TryGetInjectableSolution(caller, out _, out var blood), Is.True);
+            var brute = sEnt.GetComponent<DamageableComponent>(caller).DamagePerGroup.GetValueOrDefault("Brute").Float();
+            Assert.That(blood!.GetReagentQuantity(new ReagentId("Bicaridine", null)) > 0 || brute < 30f, Is.True,
+                "Bicaridine was injected and is healing the bruises; nothing is healed directly");
+        });
 
         await pair.CleanReturnAsync();
     }
@@ -384,7 +473,9 @@ public sealed class AndroidParamedicTests
 
         await server.WaitAssertion(() =>
         {
-            Assert.That(sEnt.GetComponent<AndroidMedicComponent>(medic).MedicatedAt.ContainsKey((patient, "Dylovene")), Is.True);
+            // Dylovene was injected and is healing the poison over time.
+            var toxin = sEnt.GetComponent<DamageableComponent>(patient).DamagePerGroup.GetValueOrDefault("Toxin").Float();
+            Assert.That(toxin, Is.LessThan(15f), "The poison is going down");
             Assert.That(sEnt.GetComponent<AndroidComponent>(medic).RecentLines, Does.Contain(fr.AckHealMe));
         });
 

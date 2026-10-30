@@ -3,21 +3,26 @@
 using Content.Shared.Damage.Systems;
 using Content.Shared.Damage.Components;
 using System.Linq;
+using Content.Server.Administration.Logs;
+using Content.Shared.Chemistry.Reagent;
+using Content.Shared.Database;
+using Content.Shared.IdentityManagement;
+using Content.Shared.Popups;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Player;
 using Content.Server._Harvest.AndroidNpc.BehaviorTree.Nodes;
 using Content.Server._Harvest.AndroidNpc.Components;
 using Content.Server._Harvest.AndroidNpc.BehaviorTree;
 using Content.Server._Harvest.AndroidNpc.Services;
 using Content.Server._Harvest.AndroidNpc.Utilities;
-using Content.Shared.Body.Components;
-using Content.Shared.Body.Systems;
 using Content.Shared.Bed.Components;
+using Content.Shared._Shitmed.Medical.Surgery;
 using Content.Shared.Buckle;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Chemistry.EntitySystems;
-using Content.Shared._Shitmed.Medical.Surgery.Wounds.Components;
 using Content.Shared.Damage;
 using Content.Shared.Humanoid;
-using Content.Shared.Medical.Healing;
 using Content.Shared.Medical.SuitSensor;
 using Content.Shared.Medical.SuitSensors;
 using Content.Shared.Mobs;
@@ -26,7 +31,6 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Pulling.Components;
 using Content.Shared._DV.Carrying;
 using Content.Shared.Hands.EntitySystems;
-using Content.Shared.Stacks;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
@@ -36,9 +40,10 @@ using Robust.Shared.Timing;
 namespace Content.Server._Harvest.AndroidNpc.Systems;
 
 /// <summary>
-/// Paramedic androids: treat injured crew on the spot with the kits they carry, give epinephrine to critical
-/// patients and carry critical patients and bodies to medbay. Care is simulated: after a short delay the kit's
-/// healing is applied and one use of it is spent.
+/// Paramedic androids: treat injured crew on the spot with injections (bicaridine, dermaline, dylovene, dexalin),
+/// give epinephrine to critical patients and carry critical patients and bodies to medbay. The injections are
+/// simulated, as with a hypospray: the drug goes into the bloodstream with the hypospray's sound and popups, and
+/// heals over time like any medicine.
 /// </summary>
 public sealed class AndroidMedicSystem : EntitySystem
 {
@@ -49,9 +54,10 @@ public sealed class AndroidMedicSystem : EntitySystem
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SharedContainerSystem _containers = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!;
-    [Dependency] private readonly SharedBodySystem _body = default!;
     [Dependency] private readonly SharedBuckleSystem _buckle = default!;
-    [Dependency] private readonly SharedStackSystem _stack = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solutions = default!;
     [Dependency] private readonly CarryingSystem _carrying = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
@@ -85,10 +91,6 @@ public sealed class AndroidMedicSystem : EntitySystem
 
     private const string MorgueBeacon = "station-beacon-morgue";
 
-    /// <summary>
-    /// With it, the paramedic sees the downed crew whose suit sensors report their position, anywhere on the station.
-    /// </summary>
-    private const string CrewMonitor = "HandheldCrewMonitor";
     private static readonly TimeSpan PlacesRefresh = TimeSpan.FromSeconds(30);
 
     /// <summary>
@@ -98,22 +100,26 @@ public sealed class AndroidMedicSystem : EntitySystem
 
     private const float EpinephrineUnits = 10f;
     private const string Epinephrine = "Epinephrine";
-    private const string Medipen = "EmergencyMedipen";
 
     private static readonly TimeSpan ScanInterval = TimeSpan.FromSeconds(2);
-    private static readonly TimeSpan TreatTime = TimeSpan.FromSeconds(4);
     private static readonly TimeSpan InjectTime = TimeSpan.FromSeconds(2);
     private static readonly TimeSpan EpinephrineCooldown = TimeSpan.FromSeconds(30);
     private static readonly TimeSpan CarryAnnounceCooldown = TimeSpan.FromMinutes(1);
 
     /// <summary>
-    /// What the android injects for damage its kits cannot heal, at most once per cooldown per patient.
+    /// What the android injects for each kind of damage. A drug is given again only once the patient has
+    /// almost none of it left in the blood, so it never overdoses anyone.
     /// </summary>
-    private static readonly (string Group, string Reagent)[] Medicines = { ("Toxin", "Dylovene"), ("Airloss", "Dexalin") };
+    private static readonly (string Group, string Reagent)[] Medicines =
+    {
+        ("Brute", "Bicaridine"), ("Burn", "Dermaline"), ("Toxin", "Dylovene"), ("Airloss", "Dexalin"),
+    };
 
     private const float MedicineUnits = 10f;
     private const float MedicineDamage = 5f;
-    private static readonly TimeSpan MedicineCooldown = TimeSpan.FromSeconds(30);
+    private const float RedoseBelow = 1f;
+
+    private static readonly SoundSpecifier InjectSound = new SoundPathSpecifier("/Audio/Items/hypospray.ogg");
 
     /// <summary>
     /// Beds this close to the medbay beacon are medbay's.
@@ -211,10 +217,10 @@ public sealed class AndroidMedicSystem : EntitySystem
         EntityUid? best = null;
         var bestScore = float.MinValue;
 
-        // Nearby crew, plus the downed crew the crew monitor shows anywhere on the station.
+        // Nearby crew, plus the downed crew whose suit sensors give their position anywhere on the station: the
+        // android reads the sensors itself, so there is no crew monitor to loot from it.
         var candidates = _lookup.GetEntitiesInRange<MobStateComponent>(Transform(medic).Coordinates, ScanRange).Select(e => e.Owner).ToHashSet();
-        if (CarriesCrewMonitor(medic))
-            candidates.UnionWith(DownedOnSensors(Transform(medic).GridUid));
+        candidates.UnionWith(DownedOnSensors(Transform(medic).GridUid));
 
         // Whoever called for care, by voice or on the radio, wherever they are.
         if (comp.Caller is { } calling)
@@ -239,29 +245,6 @@ public sealed class AndroidMedicSystem : EntitySystem
 
         comp.Patient = chosen;
         return chosen;
-    }
-
-    /// <summary>
-    /// Whether the paramedic still has its crew monitor on it (in hand, worn or in its bags).
-    /// </summary>
-    public bool CarriesCrewMonitor(EntityUid medic)
-    {
-        if (!TryComp<AndroidInventoryComponent>(medic, out var inventory) ||
-            _inventory.FindItemByPrototype(medic, inventory, CrewMonitor) is not { } monitor)
-        {
-            return false;
-        }
-
-        var parent = Transform(monitor).ParentUid;
-        while (parent.IsValid())
-        {
-            if (parent == medic)
-                return true;
-
-            parent = Transform(parent).ParentUid;
-        }
-
-        return false;
     }
 
     /// <summary>
@@ -315,7 +298,7 @@ public sealed class AndroidMedicSystem : EntitySystem
             return BehaviorStatus.Success;
         }
 
-        // Epinephrine is given on the paramedic's back; treating with kits waits until the patient is put down.
+        // Epinephrine is given on the paramedic's back; other drugs wait until the patient is put down.
         if (need == Need.Treat && IsCarrying(medic, patient))
             FinishCarry(medic);
 
@@ -328,7 +311,7 @@ public sealed class AndroidMedicSystem : EntitySystem
         var now = _timing.CurTime;
         if (comp.CareUntil == null)
         {
-            comp.CareUntil = now + (need == Need.Inject ? InjectTime : TreatTime);
+            comp.CareUntil = now + InjectTime;
             Announce(medic, comp, patient, need);
             return BehaviorStatus.Running;
         }
@@ -340,7 +323,7 @@ public sealed class AndroidMedicSystem : EntitySystem
         if (need == Need.Inject)
             Inject(medic, comp, patient);
         else
-            Treat(medic, comp, patient);
+            Treat(medic, patient);
 
         if (NeedOf(medic, comp, patient) == Need.None && _dialogue.LinesFor(medic) is { } lines)
             _dialogue.SpeakRandom(medic, lines.Treated, ("patient", Name(patient)));
@@ -500,7 +483,7 @@ public sealed class AndroidMedicSystem : EntitySystem
         var bestScore = float.MaxValue;
         foreach (var (strap, _) in _lookup.GetEntitiesInRange<StrapComponent>(medbay, BedSearchRange, LookupFlags.Static))
         {
-            if (!HasComp<StasisBedComponent>(strap) && !HasComp<HealOnBuckleComponent>(strap) || !IsFreeBed(medic, comp, strap))
+            if (!IsBedFor(comp.Patient, strap) || !IsFreeBed(medic, comp, strap))
                 continue;
 
             var score = (HasComp<StasisBedComponent>(strap) ? 0f : 100f) + (_transform.GetWorldPosition(strap) - _transform.ToMapCoordinates(medbay).Position).Length();
@@ -633,133 +616,98 @@ public sealed class AndroidMedicSystem : EntitySystem
             return true;
         }
 
-        if (comp.Patient == patient ? FreeBed(medic, comp) != null : AnyFreeBed(medic, comp, medbay))
+        if (comp.Patient == patient ? FreeBed(medic, comp) != null : AnyFreeBed(medic, comp, medbay, patient))
             return false;
 
         var radius = comp.Patient == patient ? MedbayRadius : MedbayArea;
         return comp.Delivered.Contains(patient) || _transform.InRange(medbay, coords, radius);
     }
 
-    private bool AnyFreeBed(EntityUid medic, AndroidMedicComponent comp, EntityCoordinates medbay)
+    private bool AnyFreeBed(EntityUid medic, AndroidMedicComponent comp, EntityCoordinates medbay, EntityUid patient)
     {
         foreach (var (strap, _) in _lookup.GetEntitiesInRange<StrapComponent>(medbay, BedSearchRange, LookupFlags.Static))
         {
-            if ((HasComp<StasisBedComponent>(strap) || HasComp<HealOnBuckleComponent>(strap)) && IsFreeBed(medic, comp, strap))
+            if (IsBedFor(patient, strap) && IsFreeBed(medic, comp, strap))
                 return true;
         }
 
         return false;
     }
 
+    /// <summary>
+    /// A body only goes on a stasis bed, where it does not rot and the doctors see it; a critical patient on a
+    /// stasis bed or a medical bed. Never an operating table.
+    /// </summary>
+    private bool IsBedFor(EntityUid? patient, EntityUid bed)
+    {
+        if (HasComp<OperatingTableComponent>(bed))
+            return false;
+
+        if (HasComp<StasisBedComponent>(bed))
+            return true;
+
+        return HasComp<HealOnBuckleComponent>(bed) && !(patient is { } p && _mobState.IsDead(p));
+    }
+
     private bool CanTreat(EntityUid medic, AndroidMedicComponent comp, EntityUid patient, DamageableComponent damage)
     {
-        return BestKit(medic, damage) != null || NeededMedicine(comp, patient, damage) != null;
+        return NeededMedicine(patient, damage) != null;
     }
 
     /// <summary>
-    /// A medicine for damage the kits do not heal (poison, lack of air) that the patient has not had recently.
+    /// The drug for the patient's worst kind of damage that it does not already have in its blood.
     /// </summary>
-    private string? NeededMedicine(AndroidMedicComponent comp, EntityUid patient, DamageableComponent damage)
+    private string? NeededMedicine(EntityUid patient, DamageableComponent damage)
     {
-        foreach (var (group, reagent) in Medicines)
-        {
-            if (damage.DamagePerGroup.GetValueOrDefault(group).Float() > MedicineDamage &&
-                (!comp.MedicatedAt.TryGetValue((patient, reagent), out var at) || _timing.CurTime - at > MedicineCooldown))
-            {
-                return reagent;
-            }
-        }
-
-        return null;
-    }
-
-    /// <summary>
-    /// The carried kit that heals the most of the patient's damage.
-    /// </summary>
-    private EntityUid? BestKit(EntityUid medic, DamageableComponent patient)
-    {
-        if (!TryComp<AndroidInventoryComponent>(medic, out var inventory))
+        if (!_solutions.TryGetInjectableSolution(patient, out _, out var blood))
             return null;
 
-        EntityUid? best = null;
-        var bestHeal = 0f;
-
-        foreach (var item in inventory.OwnedItems)
+        string? best = null;
+        var worst = MedicineDamage;
+        foreach (var (group, reagent) in Medicines)
         {
-            if (Deleted(item) || !TryComp<HealingComponent>(item, out var healing))
+            var amount = damage.DamagePerGroup.GetValueOrDefault(group).Float();
+            if (amount <= worst || blood.GetReagentQuantity(new ReagentId(reagent, null)) >= RedoseBelow)
                 continue;
 
-            var heal = healing.Damage.DamageDict
-                .Where(d => d.Value < 0)
-                .Sum(d => MathF.Min(-d.Value.Float(), patient.Damage.DamageDict.GetValueOrDefault(d.Key).Float()));
-
-            if (heal <= bestHeal)
-                continue;
-
-            best = item;
-            bestHeal = heal;
+            best = reagent;
+            worst = amount;
         }
 
         return best;
     }
 
-    private void Treat(EntityUid medic, AndroidMedicComponent comp, EntityUid patient)
+    private void Treat(EntityUid medic, EntityUid patient)
     {
-        if (!TryComp<DamageableComponent>(patient, out var damage))
-            return;
-
-        if (BestKit(medic, damage) is not { } kit)
-        {
-            if (NeededMedicine(comp, patient, damage) is { } reagent &&
-                _solutions.TryGetInjectableSolution(patient, out var bloodstream, out _))
-            {
-                _solutions.TryAddReagent(bloodstream.Value, reagent, MedicineUnits);
-                comp.MedicatedAt[(patient, reagent)] = _timing.CurTime;
-            }
-
-            return;
-        }
-
-        // Bodies keep their damage on each limb: the kit heals limb after limb until it is used up, as a player's would.
-        var healing = Comp<HealingComponent>(kit).Damage * _damageable.UniversalTopicalsHealModifier;
-        if (TryComp<BodyComponent>(patient, out var body))
-        {
-            foreach (var (part, _) in _body.GetBodyChildren(patient, body))
-            {
-                if (healing.GetTotal() >= 0)
-                    break;
-
-                if (HasComp<WoundableComponent>(part) &&
-                    _damageable.TryChangeDamage(part, healing, out var healed, true, origin: medic, ignoreBlockers: true, canMiss: false))
-                {
-                    healing += -healed;
-                }
-            }
-        }
-        else
-        {
-            _damageable.TryChangeDamage(patient, healing, true, origin: medic, canMiss: false);
-        }
-
-        if (TryComp<StackComponent>(kit, out var stack))
-            _stack.ReduceCount((kit, stack), 1);
-        else
-            QueueDel(kit);
+        if (TryComp<DamageableComponent>(patient, out var damage) && NeededMedicine(patient, damage) is { } reagent)
+            InjectDrug(medic, patient, reagent, MedicineUnits);
     }
 
     private void Inject(EntityUid medic, AndroidMedicComponent comp, EntityUid patient)
     {
         comp.InjectedAt[patient] = _timing.CurTime;
-        if (_solutions.TryGetInjectableSolution(patient, out var bloodstream, out _))
-            _solutions.TryAddReagent(bloodstream.Value, Epinephrine, EpinephrineUnits);
+        InjectDrug(medic, patient, Epinephrine, EpinephrineUnits);
+    }
 
-        // A carried medipen is used up; the android keeps a reserve so it never runs dry mid-rescue.
-        if (TryComp<AndroidInventoryComponent>(medic, out var inventory) &&
-            inventory.OwnedItems.FirstOrDefault(i => !Deleted(i) && MetaData(i).EntityPrototype?.ID == Medipen) is { Valid: true } pen)
+    /// <summary>
+    /// A hypospray injection without the item: the drug goes into the patient's blood with the hypospray's
+    /// sound, the "small prick" the patient feels, a popup for the people around and an admin log.
+    /// </summary>
+    private void InjectDrug(EntityUid medic, EntityUid patient, string reagent, float units)
+    {
+        if (!_solutions.TryGetInjectableSolution(patient, out var blood, out _) ||
+            !_solutions.TryAddReagent(blood.Value, reagent, units, out var accepted) || accepted <= 0)
         {
-            inventory.OwnedItems.Remove(pen);
-            QueueDel(pen);
+            return;
         }
+
+        _audio.PlayPvs(InjectSound, patient);
+        _popup.PopupEntity(Loc.GetString("injector-component-feel-prick-message"), patient, patient);
+        _popup.PopupEntity(Loc.GetString("android-medic-inject-others",
+                ("user", Identity.Entity(medic, EntityManager)), ("target", Identity.Entity(patient, EntityManager))),
+            patient, Filter.PvsExcept(patient), true);
+        _adminLogger.Add(LogType.ForceFeed, LogImpact.Low,
+            $"{ToPrettyString(medic):user} (android paramedic) injected {ToPrettyString(patient):target} with {accepted}u of {reagent}");
     }
 
     private void Announce(EntityUid medic, AndroidMedicComponent comp, EntityUid patient, Need need)

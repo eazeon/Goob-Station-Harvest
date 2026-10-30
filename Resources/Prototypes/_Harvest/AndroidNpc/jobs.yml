@@ -420,12 +420,6 @@
   - station-beacon-engineering
   - station-beacon-cargo
   - station-beacon-command
-  requiredLoadout:
-  - Brutepack
-  - Ointment
-  - EmergencyMedipen
-  - EmergencyMedipen
-  - HandheldCrewMonitor
   retaliationWeapon: CrowbarRed
   addressKeywords:
   - android
@@ -433,7 +427,7 @@
   lines:
     en:
       capabilities:
-      - "I treat the injured with my kits, give epinephrine to critical patients and bring them and the dead to medbay. Tell me \"heal me\" or \"someone is hurt at the bar\"."
+      - "I treat the injured with injections, give epinephrine to critical patients and bring them and the dead to medbay. Tell me \"heal me\" or \"someone is hurt at the bar\"."
       break: *breakEn
       backToWork: *backEn
       flee: *fleeEn
@@ -463,7 +457,7 @@
       - "Moving the patient to medbay, make way!"
     fr:
       capabilities:
-      - "Je soigne les blessés avec mes trousses, j'injecte de l'épinéphrine aux patients critiques et je les ramène à l'infirmerie, les morts aussi. Dites-moi « soigne-moi » ou « il y a un blessé au bar »."
+      - "Je soigne les blessés par injection, j'injecte de l'épinéphrine aux patients critiques et je les ramène à l'infirmerie, les morts aussi. Dites-moi « soigne-moi » ou « il y a un blessé au bar »."
       break: *breakFr
       backToWork: *backFr
       flee: *fleeFr

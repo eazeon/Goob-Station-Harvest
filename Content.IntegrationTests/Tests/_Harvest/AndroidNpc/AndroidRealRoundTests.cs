@@ -228,7 +228,7 @@ public sealed class AndroidRealRoundTests
 
     /// <summary>
     /// Injured crew far away (not critical, so not flagged on the monitor) call the paramedic on the radio:
-    /// it comes over and patches them up with its kits.
+    /// it comes over and treats them with injections.
     /// </summary>
     [Test]
     public async Task Paramedic_AnswersARadioCallFromAcrossTheStation()

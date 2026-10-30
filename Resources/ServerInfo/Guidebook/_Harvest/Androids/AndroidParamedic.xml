@@ -5,13 +5,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 <Document>
 # Androïde paramédic
 
-L'androïde paramédic patrouille la station et s'occupe des blessés qu'il croise. Il porte un moniteur d'équipage portatif : il voit qui est en état critique ou mort n'importe où sur la station, à condition que ses capteurs de combinaison donnent sa position, et va le chercher. Sans capteurs (ou si on lui vole son moniteur), il ne voit que les blessés proches et ceux qui l'appellent. Les soins sont simulés : après quelques secondes, l'effet de la trousse est appliqué et une utilisation est consommée.
+L'androïde paramédic patrouille la station et s'occupe des blessés qu'il croise. Il lit lui-même les capteurs de combinaison : il voit qui est en état critique ou mort n'importe où sur la station, à condition que ses capteurs donnent sa position, et va le chercher. Sans capteurs, il ne voit que les blessés proches et ceux qui l'appellent. Il soigne par injection, comme avec un hypospray : on entend l'injection et le patient sent la piqûre. Les médicaments agissent ensuite peu à peu, comme n'importe quel médicament.
 
 ## Ce qu'il fait
-- **Blessés** : il soigne sur place les membres d'équipage blessés avec ses pansements anti-contusions et sa pommade contre les brûlures, et injecte du dylovène contre le poison et de la dexaline contre le manque d'air.
-- **Patients critiques** : il leur injecte de l'épinéphrine, puis les traîne jusqu'à l'infirmerie et les installe sur un lit de stase libre, sinon sur un lit médical, et continue de les soigner. Il les amène jusqu'au bout même si l'épinéphrine les réveille en chemin.
-- **Morts** : il ramène les corps à l'infirmerie pour que les médecins s'en occupent. Il laisse tranquille ceux qui sont déjà à l'infirmerie, à la morgue ou sur un lit.
-- Quand ses trousses ou ses médipens sont épuisés, il retourne s'approvisionner au service médical.
+- **Blessés** : il injecte sur place de la bicaridine contre les contusions, de la dermaline contre les brûlures, du dylovène contre le poison et de la dexaline contre le manque d'air. Il ne refait une dose que quand le patient n'en a presque plus dans le sang, pour ne jamais provoquer d'overdose.
+- **Patients critiques** : il leur injecte de l'épinéphrine, puis les traîne jusqu'à l'infirmerie et les installe sur un lit de stase libre, sinon sur un lit médical (jamais une table d'opération), et continue de les soigner. Il les amène jusqu'au bout même si l'épinéphrine les réveille en chemin.
+- **Morts** : il ramène les corps à l'infirmerie, uniquement sur un lit de stase pour qu'ils ne pourrissent pas et que les médecins les voient, sinon près de l'entrée de l'infirmerie. Il laisse tranquille ceux qui sont déjà à l'infirmerie, à la morgue ou sur un lit.
 
 ## L'appeler
 - « Camille, soigne-moi » : il vient vous soigner si vous êtes blessé, sinon il vous dit qu'il ne voit aucune blessure.
@@ -23,9 +22,5 @@ L'androïde paramédic patrouille la station et s'occupe des blessés qu'il croi
 Il n'opère pas, ne clone pas et ne prépare pas de médicaments : il stabilise et amène les patients aux médecins.
 
 <Box>
-<GuideEntityEmbed Entity="Brutepack"/>
-<GuideEntityEmbed Entity="Ointment"/>
-<GuideEntityEmbed Entity="EmergencyMedipen"/>
-<GuideEntityEmbed Entity="HandheldCrewMonitor"/>
 </Box>
 </Document>
