@@ -4,6 +4,7 @@ using System.Linq;
 using Content.Server.Chemistry.Components;
 using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Containers.ItemSlots;
 using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Nutrition.EntitySystems;
@@ -12,6 +13,7 @@ using JetBrains.Annotations;
 using Robust.Server.Audio;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
+using Robust.Shared.GameObjects;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Content.Shared.Labels.Components;
@@ -106,13 +108,25 @@ namespace Content.Server.Chemistry.EntitySystems
                 // Get volume remaining and color of solution
                 FixedPoint2 quantity = 0f;
                 var reagentColor = Color.White;
+                string reagentNameLocId = string.Empty;
                 if (_solutionContainerSystem.TryGetDrainableSolution(storedContainer, out _, out var sol))
                 {
                     quantity = sol.Volume;
                     reagentColor = sol.GetColor(_prototypeManager);
+
+                    // The primary reagent's name localization key is used to sort by English name client-side.
+                    if (sol.Contents.Count > 0)
+                    {
+                        var primary = sol.GetPrimaryReagentId();
+                        if (primary.HasValue &&
+                            _prototypeManager.TryIndex<ReagentPrototype>(primary.Value.Prototype, out var reagentProto))
+                        {
+                            reagentNameLocId = reagentProto.NameLocId;
+                        }
+                    }
                 }
 
-                inventory.Add(new ReagentInventoryItem(storageLocation, reagentLabel, quantity, reagentColor));
+                inventory.Add(new ReagentInventoryItem(storageLocation, reagentLabel, reagentNameLocId, quantity, reagentColor));
             }
 
             return inventory;

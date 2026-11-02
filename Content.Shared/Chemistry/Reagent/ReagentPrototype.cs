@@ -31,6 +31,12 @@ namespace Content.Shared.Chemistry.Reagent
         [DataField(required: true)]
         private LocId Name { get; set; }
 
+        /// <summary>
+        ///     The raw localization key of this reagent's name (ex. <c>reagent-name-sulfur</c>).
+        ///     Used to resolve the name in a language other than the active one.
+        /// </summary>
+        public LocId NameLocId => Name;
+
         [ViewVariables(VVAccess.ReadOnly)]
         public string LocalizedName => Loc.GetString(Name);
 

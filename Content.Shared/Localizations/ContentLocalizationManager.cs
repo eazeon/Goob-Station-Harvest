@@ -76,6 +76,30 @@ namespace Content.Shared.Localizations
             _loc.AddFunction(cultureEn, "PLAYTIME", FormatPlaytime);
         }
 
+        /// <summary>
+        ///     Resolves a message id to its English (en-US) string, regardless of the active culture.
+        ///     Used for sorting UI labels by their English names while the game runs in another language.
+        ///     Temporarily switches the active culture to English to read the string, then restores it.
+        /// </summary>
+        public string GetEnglishString(string messageId)
+        {
+            var previous = _loc.DefaultCulture;
+            var english = new CultureInfo("en-US");
+
+            if (!_loc.HasCulture(english))
+                _loc.LoadCulture(english);
+
+            _loc.DefaultCulture = english;
+            try
+            {
+                return _loc.GetString(messageId);
+            }
+            finally
+            {
+                _loc.DefaultCulture = previous;
+            }
+        }
+
         private ILocValue FormatMany(LocArgs args)
         {
             var count = ((LocValueNumber) args.Args[1]).Value;

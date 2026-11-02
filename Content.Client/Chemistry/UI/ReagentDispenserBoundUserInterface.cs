@@ -6,6 +6,7 @@ using Content.Shared.Chemistry;
 using Content.Shared.Containers.ItemSlots;
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
+using Robust.Shared.Localization;
 
 namespace Content.Client.Chemistry.UI
 {
@@ -40,6 +41,25 @@ namespace Content.Client.Chemistry.UI
             _window.ClearButton.OnPressed += _ => SendMessage(new ReagentDispenserClearContainerSolutionMessage());
 
             _window.AmountGrid.OnButtonPressed += s => SendMessage(new ReagentDispenserSetDispenseAmountMessage(s));
+
+            // Updates the button label to reflect the active sort language.
+            void UpdateSortButtonText()
+            {
+                var sortLabel = Loc.GetString(_window.SortByEnglish
+                    ? "reagent-dispenser-window-sort-english"
+                    : "reagent-dispenser-window-sort-french");
+                _window.SortButton.Text = Loc.GetString("reagent-dispenser-window-sort-button", ("sort", sortLabel));
+            }
+
+            _window.SortButton.OnPressed += _ =>
+            {
+                var next = !_window.SortByEnglish;
+                _window.SetSortByEnglish(next);
+                UpdateSortButtonText();
+            };
+
+            // Initialize the button text to the current sort language.
+            UpdateSortButtonText();
 
             _window.OnDispenseReagentButtonPressed += (location) => SendMessage(new ReagentDispenserDispenseReagentMessage(location));
             _window.OnEjectJugButtonPressed += (location) => SendMessage(new ReagentDispenserEjectContainerMessage(location));
