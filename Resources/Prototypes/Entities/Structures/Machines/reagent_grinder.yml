@@ -82,7 +82,7 @@
       machine_parts: !type:Container
 
 - type: entity
-  parent: Recycler #too different so different parent
+  parent: [ Recycler, BaseAutomatedMachine ] #too different so different parent # Goob: Automation
   id: ReagentGrinderIndustrial
   name: broyeur de réactifs industriel
   description: Un broyeur de réactifs industriel.

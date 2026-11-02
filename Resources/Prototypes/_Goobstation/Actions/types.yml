@@ -93,32 +93,6 @@
 
 - type: entity
   parent: BaseAction
-  id: ActionToggleRightMantisBlade
-  name: Basculer la Lame Mantis Droite
-  description: Déployer ou rétracter la lame mantis dans votre bras droit.
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Action
-    checkCanInteract: false
-    useDelay: 2
-    icon: { sprite: _Goobstation/Objects/Weapons/Melee/mantis_blade.rsi, state: icon }
-    itemIconStyle: NoItem
-    sound: !type:SoundPathSpecifier
-      path: /Audio/Items/unsheath.ogg
-  - type: InstantAction
-    event: !type:ToggleMantisBladeEvent
-
-- type: entity
-  parent: ActionToggleRightMantisBlade
-  id: ActionToggleLeftMantisBlade
-  name: Basculer la Lame Mantis Gauche
-  description: Déployer ou rétracter la lame mantis dans votre bras gauche.
-  components:
-  - type: Action
-    icon: { sprite: _Goobstation/Objects/Weapons/Melee/mantis_blade.rsi, state: icon-mirrored }
-
-- type: entity
-  parent: BaseAction
   id: ActionToggleSandevistan
   name: Basculer le Sandevistan
   description: Activer ou désactiver vos réflexes améliorés fournis par le Sandevistan.
