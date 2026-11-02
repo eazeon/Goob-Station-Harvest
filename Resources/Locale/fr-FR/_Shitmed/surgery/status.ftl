@@ -15,7 +15,7 @@ body-part-hand = main
 body-part-leg = jambe
 body-part-foot = pied
 
-inspect-part-status-line = [font size=10]{$possessive} [bold]{
+inspect-part-status-line = [font size=10]{$possessive} {
     $part ->
     [head] { body-part-head }
     [chest] { body-part-chest }
@@ -33,7 +33,7 @@ inspect-part-status-line = [font size=10]{$possessive} [bold]{
     [leg] { body-part-leg }
     [foot] { body-part-foot }
     *[other] { $part }
-}[/bold] est {$status}.[/font]
+} est {$status}.[/font]
 inspect-part-status-title = [font size = 11][color=DarkGray]Vous vous examinez pour détecter des blessures.[/color][/font]
 inspect-part-status-title-other = [font size = 11][color=DarkGray]Vous examinez {$entity} pour détecter des blessures.[/color][/font]
 inspect-part-status-line-styleless = {$possessive} {
