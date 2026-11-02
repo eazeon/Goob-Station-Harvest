@@ -111,10 +111,16 @@ namespace Content.Shared.Chemistry
     }
 
     [Serializable, NetSerializable]
-    public sealed class ReagentInventoryItem(ItemStorageLocation storageLocation, string reagentLabel, FixedPoint2 quantity, Color reagentColor)
+    public sealed class ReagentInventoryItem(ItemStorageLocation storageLocation, string reagentLabel, string reagentNameLocId, FixedPoint2 quantity, Color reagentColor)
     {
         public ItemStorageLocation StorageLocation = storageLocation;
         public string ReagentLabel = reagentLabel;
+        /// <summary>
+        ///     The localization key of the reagent's name (ex. <c>reagent-name-sulfur</c>).
+        ///     Used to resolve the reagent's name in a non-active language for sorting.
+        ///     Empty if the container has a custom label or no resolvable reagent.
+        /// </summary>
+        public string ReagentNameLocId = reagentNameLocId;
         public FixedPoint2 Quantity = quantity;
         public Color ReagentColor = reagentColor;
     }
