@@ -3,7 +3,7 @@
 - type: entity
   parent: BaseAction
   id: ActionModSuitActivate
-  nom : Activer/désactiver le MOD
+  name : Activer/désactiver le MOD
   description : Verrouillez ou déverrouillez votre MODsuit. Toutes les parties doivent d'abord être déployées.
   categories: [ HideSpawnMenu ]
   components:

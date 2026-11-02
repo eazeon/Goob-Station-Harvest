@@ -2,7 +2,7 @@
 
 - type: entity
   id: MantisBlade
-  nom : lame de mante
+  name : lame de mante
   description : Une lame qui jaillit d'un avant-bras cybernétique.
   components:
   - type: Sprite
