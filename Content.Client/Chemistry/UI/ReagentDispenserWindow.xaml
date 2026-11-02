@@ -23,6 +23,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                 RadioGroup="True">
             </ui:ButtonGrid>
             <Control VerticalExpand="True" />
+            <Button Name="SortButton"
+                    Access="Public"
+                    Text="{Loc 'reagent-dispenser-window-sort-button'}"
+                    HorizontalAlignment="Center"
+                    Margin="5"
+                    ToggleMode="True" />
             <Label Name="ContainerInfoName"
                    Access="Public"
                    Text=""

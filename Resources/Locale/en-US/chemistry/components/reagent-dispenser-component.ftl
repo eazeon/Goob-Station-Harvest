@@ -27,3 +27,9 @@ reagent-dispenser-window-no-container-loaded-text = No container loaded.
 reagent-dispenser-window-reagent-name-not-found-text = Reagent name not found
 reagent-dispenser-window-unknown-reagent-text = Unknown reagent
 reagent-dispenser-window-quantity-label-text = {$quantity}u
+
+## Sorting
+
+reagent-dispenser-window-sort-button = Sort by: {$sort}
+reagent-dispenser-window-sort-french = French
+reagent-dispenser-window-sort-english = English

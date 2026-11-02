@@ -27,3 +27,9 @@ reagent-dispenser-window-no-container-loaded-text = Aucun conteneur chargé.
 reagent-dispenser-window-reagent-name-not-found-text = Nom du réactif introuvable
 reagent-dispenser-window-unknown-reagent-text = Réactif inconnu
 reagent-dispenser-window-quantity-label-text = {$quantity}u
+
+## Tri
+
+reagent-dispenser-window-sort-button = Trier par : {$sort}
+reagent-dispenser-window-sort-french = Français
+reagent-dispenser-window-sort-english = Anglais
