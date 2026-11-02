@@ -88,5 +88,55 @@ traitor-evilchampion-allies = Quiconque voit comme vous voyez et ressent comme v
 traitor-evilchampion-uplink = Les Champions du Mal entretiennent des liens étroits avec le marché noir. Votre uplink vous a été donné pour servir vos desseins les plus maléfiques !
 traitor-evilchampion-roundend = [color=red]un Champion du Mal[/color]
 
+# Traitor issuer flavor keys, matched to the French issuer names resolved from the
+# TraitorCorporationsFlavor localized dataset. Diacritics are stripped from the keys
+# so they are valid Fluent message ids and match what the C# generates (see
+# FluentIssuerKey in TraitorRuleSystem.Goob and ObjectivesSystem).
+
+traitor-arcterroriste-intro = Vous êtes le terroriste du Consortium pour les Droits des Animaux.
+traitor-arcterroriste-goal = Les créatures de ce monde doivent être libérées de l'emprise de fer de Nanotrasen, et vous êtes leur seul espoir !
+traitor-arcterroriste-allies = Vous pouvez coopérer avec d'autres agents du syndicat si vous soutenez notre cause. Peut-être pouvez-vous convaincre les agents du Front de Libération des Abeilles de coopérer pour une fois ?
+traitor-arcterroriste-roundend = [color=green]un activiste du Consortium pour les Droits des Animaux[/color]
+
+traitor-frontdeliberationdesabeilles-intro = Vous êtes l'activiste du Front de Libération des Abeilles.
+traitor-frontdeliberationdesabeilles-goal = Nous devons nous prouver au Syndicat ou nous ne pourrons pas les rejoindre. Le Consortium pour les Droits des Animaux va nous écraser !
+traitor-frontdeliberationdesabeilles-allies = Vous pouvez coopérer avec d'autres agents du syndicat s'ils soutiennent notre cause. Peut-être pouvez-vous recruter un membre du Consortium pour les Droits des Animaux pour qu'il soit utile pour une fois ?
+traitor-frontdeliberationdesabeilles-roundend = [color=green]un activiste du Front de Libération des Abeilles.[/color]
+
+traitor-industriescybersun-intro = Vous êtes le spécialiste de Cybersun Industries.
+traitor-industriescybersun-goal = Évitez d'établir une présence importante sur le site désigné, car les incidents de grande ampleur sont plus difficiles à dissimuler.
+traitor-industriescybersun-allies = Vous pouvez faire confiance à vos collègues de Cybersun, ainsi qu'aux membres de l'organisation MI13. Vous ne devez pas faire confiance aux autres agents du syndicat.
+traitor-industriescybersun-roundend = [color=yellow]un spécialiste de Cybersun Industries[/color]
+
+traitor-maraudeursgorlex-intro = Vous êtes le maraudeur Gorlex.
+traitor-maraudeursgorlex-goal = Vous faire remarquer n'est pas un problème, et vous pouvez recourir à n'importe quel type de mesure pour atteindre votre objectif. Cela dit, ne bâclez pas votre travail en y mêlant des massacres au hasard.
+traitor-maraudeursgorlex-allies = Vous pouvez collaborer avec n'importe quel membre de la coalition du Syndicat, mais gardez un œil sur ces punks de la Tiger s'ils se pointent.
+traitor-maraudeursgorlex-roundend = [color=red]un maraudeur Gorlex[/color]
+
+traitor-serialcarrieriste-intro = Vous êtes le serial carriériste.
+traitor-serialcarrieriste-goal = Tuer sans raison ferait de vous une sorte de traître, ou du moins vous ferait passer pour tel. Tout cela n'est qu'un moyen d'arriver à vos fins.
+traitor-serialcarrieriste-allies = Mort au Syndicat.
+traitor-serialcarrieriste-roundend = [color=yellow]un serial carriériste.[/color]
+
+traitor-problemesjuridiques-intro = Vous êtes en difficulté juridique.
+traitor-problemesjuridiques-goal =  Essayez de terminer votre liste de tâches, et ne vous faites pas prendre. S'ils découvrent ce que vous faites réellement, ce scandale va faire le tour de la galaxie.
+traitor-problemesjuridiques-allies = Mort au Syndicat.
+traitor-problemesjuridiques-roundend = [color=white]en difficulté juridique[/color]
+
+traitor-cooperativedutigre-intro = Vous êtes le fanatique de la Tiger Cooperative.
+traitor-cooperativedutigre-goal = Souvenez-vous des enseignements de Hy-lurgixon : tuez d'abord, posez les questions ensuite !
+traitor-cooperativedutigre-allies = On ne peut faire confiance qu'aux frères Tigres éclairés ; tous les autres doivent être expulsés de ce monde mortels !
+traitor-cooperativedutigre-roundend = [color=crimson]un fanatique de la Tiger Cooperative[/color]
+
+traitor-terroristedelawafflecorporation-intro = Vous êtes le terroriste de Waffle Corporation.
+traitor-terroristedelawafflecorporation-goal = Nos investisseurs ont besoin d'une preuve concrète de notre engagement à détruire Nanotrasen. Donnons-leur-en une qui en jette !
+traitor-terroristedelawafflecorporation-allies = La plupart des autres agents de syndicat ne sont pas dignes de confiance, à l'exception des Maraudeurs de Gorlex.
+traitor-terroristedelawafflecorporation-roundend = [color=red]un terroriste de Waffle Corporation[/color]
+
+traitor-visionnairedelafederationneulithiv-intro = Vous êtes le Visionnaire de la Fédération Neulithiv.
+traitor-visionnairedelafederationneulithiv-goal =  La Fédération des Sorciers de l'Espace veut que nous prouvions que nous sommes capables de bien travailler avec eux. Attirez autant l'attention que possible sur vous tout en accomplissant votre mission.
+traitor-visionnairedelafederationneulithiv-allies = Vous pouvez faire confiance aux membres de la Fédération des Sorciers de l'Espace et aux autres Visionnaires. C'est à vous de décider de faire confiance ou non aux autres membres du Syndicat.
+traitor-visionnairedelafederationneulithiv-roundend = [color=violet]un Visionnaire de la Fédération[/color]
+
 issuers-corporate-flavor-1 = NanoTrasen
 issuers-corporate-flavor-2 = Commandement Central

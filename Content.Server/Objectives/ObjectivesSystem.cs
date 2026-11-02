@@ -11,6 +11,7 @@ using Content.Shared.Random;
 using Content.Shared.Random.Helpers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using Content.Goobstation.Common.CCVar;
@@ -151,6 +152,18 @@ public sealed class ObjectivesSystem : SharedObjectivesSystem
         }
     }
 
+    /// <summary>
+    ///     Normalizes an issuer name into a valid Fluent message id: strips diacritics, spaces and lowercases.
+    ///     Fluent ids must be ASCII, so accented French issuer names (e.g. "Coopérative du Tigre") are flattened
+    ///     (e.g. "cooperativedutigre") to match the locale file keys.
+    /// </summary>
+    private static string FluentIssuerKey(string issuer)
+    {
+        var normalized = issuer.Normalize(NormalizationForm.FormD);
+        var withoutDiacritics = new string(normalized.Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark).ToArray());
+        return withoutDiacritics.Replace(" ", "").ToLower();
+    }
+
     private void AddSummary(StringBuilder result, string agent, List<(EntityUid, string)> minds)
     {
         var agentSummaries = new List<(string summary, float successRate, int completedObjectives)>();
@@ -174,7 +187,7 @@ public sealed class ObjectivesSystem : SharedObjectivesSystem
             // regards
             if (_roles.MindHasRole<TraitorRoleComponent>(mindId, out var traitorRole))
             {
-                var issuer = traitorRole.Value.Comp2.ObjectiveIssuer.Replace(" ", "").ToLower();
+                var issuer = FluentIssuerKey(traitorRole.Value.Comp2.ObjectiveIssuer);
                 agent = Loc.GetString($"traitor-{issuer}-roundend");
             }
 

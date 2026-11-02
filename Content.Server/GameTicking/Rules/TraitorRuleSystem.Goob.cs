@@ -1,3 +1,5 @@
+using System.Globalization;
+using System.Linq;
 using System.Text;
 using Content.Goobstation.Common.Traitor;
 using Content.Goobstation.Maths.FixedPoint;
@@ -46,10 +48,23 @@ public sealed partial class TraitorRuleSystem
         return true;
     }
 
+    /// <summary>
+    ///     Normalizes an issuer name into a valid Fluent message id: strips diacritics, spaces and lowercases.
+    ///     Fluent ids must be ASCII, so accented French issuer names (e.g. "Coopérative du Tigre") are flattened
+    ///     (e.g. "cooperativedutigre") to match the locale file keys.
+    /// </summary>
+    private static string FluentIssuerKey(string issuer)
+    {
+        var normalized = issuer.Normalize(NormalizationForm.FormD);
+        var withoutDiacritics = new string(normalized.Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark).ToArray());
+        return withoutDiacritics.Replace(" ", "").ToLower();
+    }
+
     private string GenerateBriefingCharacter(string[]? codewords, string? uplinkBriefingShort, string objectiveIssuer)
     {
+        var issuerKey = FluentIssuerKey(objectiveIssuer);
         var sb = new StringBuilder();
-        sb.AppendLine("\n" + Loc.GetString($"traitor-{objectiveIssuer.Replace(" ", "").ToLower()}-intro"));
+        sb.AppendLine("\n" + Loc.GetString($"traitor-{issuerKey}-intro"));
 
         if (uplinkBriefingShort != null)
             sb.AppendLine(uplinkBriefingShort);
@@ -59,10 +74,10 @@ public sealed partial class TraitorRuleSystem
             sb.AppendLine(Loc.GetString($"traitor-role-codewords-short", ("codewords", string.Join(", ", codewords))));
 
         sb.AppendLine("\n" + Loc.GetString($"traitor-role-allegiances"));
-        sb.AppendLine(Loc.GetString($"traitor-{objectiveIssuer.Replace(" ", "").ToLower()}-allies"));
+        sb.AppendLine(Loc.GetString($"traitor-{issuerKey}-allies"));
 
         sb.AppendLine("\n" + Loc.GetString($"traitor-role-notes"));
-        sb.AppendLine(Loc.GetString($"traitor-{objectiveIssuer.Replace(" ", "").ToLower()}-goal"));
+        sb.AppendLine(Loc.GetString($"traitor-{issuerKey}-goal"));
 
         return sb.ToString();
     }
