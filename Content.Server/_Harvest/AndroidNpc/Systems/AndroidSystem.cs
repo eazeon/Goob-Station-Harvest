@@ -11,13 +11,17 @@ using Content.Server._Harvest.AndroidNpc.Services;
 using Content.Server._Harvest.AndroidNpc.Utilities;
 using Content.Server.NPC.Pathfinding;
 using Content.Server.NPC.Systems;
+using Content.Shared._Trauma.Hands;
 using Content.Shared.Clothing;
+using Content.Shared.CombatMode;
 using Content.Shared.Examine;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
 using Content.Shared.Mind.Components;
 using Content.Shared.NPC;
 using Content.Shared.SSDIndicator;
+using Content.Shared.Standing;
+using Content.Shared.Strip.Components;
 using Content.Shared.Body.Organ;
 using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
@@ -84,6 +88,24 @@ public sealed class AndroidSystem : EntitySystem
         SubscribeLocalEvent<AndroidComponent, MapInitEvent>(OnMapInit, after: [typeof(LoadoutSystem)]);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart);
         SubscribeLocalEvent<AndroidComponent, ExaminedEvent>(OnExamined);
+        SubscribeLocalEvent<AndroidComponent, DisarmedEvent>(OnDisarmed, before: [typeof(PredictedHandsSystem)]);
+        SubscribeLocalEvent<AndroidComponent, DropHandItemsEvent>(OnDropHandItems, before: [typeof(PredictedHandsSystem)]);
+    }
+
+    /// <summary>
+    /// A shove still costs an android stamina, but never takes what it holds.
+    /// </summary>
+    private void OnDisarmed(Entity<AndroidComponent> ent, ref DisarmedEvent args)
+    {
+        args = args with { DisarmProbability = 0f };
+    }
+
+    /// <summary>
+    /// Stunned, critical or dead, an android keeps its items in hand: they cannot be looted and go away with its body.
+    /// </summary>
+    private void OnDropHandItems(Entity<AndroidComponent> ent, ref DropHandItemsEvent args)
+    {
+        args.Handled = true;
     }
 
     private void BuildTrees()
@@ -158,6 +180,9 @@ public sealed class AndroidSystem : EntitySystem
 
     private void OnMapInit(EntityUid uid, AndroidComponent component, MapInitEvent args)
     {
+        // No strip menu, so nothing can be taken from an android, alive or dead. Inherited from the species prototype.
+        RemComp<StrippableComponent>(uid);
+
         if (!_entityManager.TryGetComponent<AndroidIdentityComponent>(uid, out var identity))
             return;
 
