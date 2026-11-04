@@ -1,8 +1,8 @@
 - type: entity
   parent: [ ClothingModsuitStandard, BaseCargoContraband ]
   id: ClothingModsuitMining
-  name: mining modsuit control unit
-  description: "A Nanotrasen mining suit for on-site operations, fit with accreting ash armor and a sphere form."
+  name: unité de contrôle modsuit minier
+  description: "Une combinaison de minage Nanotrasen pour les opérations sur site, équipée d'une armure en cendre qui s'accroît et d'une forme sphère."
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/OuterClothing/Modsuits/mining.rsi
@@ -20,8 +20,8 @@
 - type: entity
   parent: ClothingModsuitHelmetStandard
   id: ClothingModsuitHelmetMining
-  name: mining modsuit helmet
-  description: The helmet of a mining modsuit. The visor has been expanded into a system of seven arachnid-like cameras.
+  name: casque modsuit minier
+  description: Le casque d'un modsuit minier. La visière a été étendue en un système de sept caméras semblables à des araignées.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -88,8 +88,8 @@
 - type: entity
   parent: ClothingModsuitChestplateStandard
   id: ClothingModsuitChestplateMining
-  name: mining modsuit chestplate
-  description: The chestplate of a mining modsuit. Ceramic plating gives it incredible protection against blasts, corrosives and heat.
+  name: plastron modsuit minier
+  description: Le plastron d'un modsuit minier. Le placage céramique lui confère une protection incroyable contre les explosions, les corrosifs et la chaleur.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -141,8 +141,8 @@
 - type: entity
   parent: ClothingModsuitGauntletsStandard
   id: ClothingModsuitGauntletsMining
-  name: mining modsuit gauntlets
-  description: The gauntlets of a mining modsuit.
+  name: gantelets modsuit minier
+  description: Les gantelets d'un modsuit minier.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -151,8 +151,8 @@
 - type: entity
   parent: ClothingModsuitBootsStandard
   id: ClothingModsuitBootsMining
-  name: mining modsuit boots
-  description: The boots of a mining modsuit.
+  name: bottes modsuit minier
+  description: Les bottes d'un modsuit minier.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

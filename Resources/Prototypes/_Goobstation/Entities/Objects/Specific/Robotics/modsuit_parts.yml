@@ -187,8 +187,8 @@
 - type: entity
   id: ModsuitPlatingMining
   parent: PartModsuit
-  name: MOD mining plating
-  description: A part used in MOD construction.
+  name: blindage minier MOD
+  description: Une pièce utilisée dans la construction d'un MOD.
   components:
   - type: Sprite
     state: standard-plating
@@ -207,8 +207,8 @@
 - type: entity
   id: ModsuitPlatingLoader
   parent: PartModsuit
-  name: MOD loader plating
-  description: A part used in MOD construction. An experimental motorized harness plating from Scarborough Arms, issued to quartermasters.
+  name: blindage chargeur MOD
+  description: Une pièce utilisée dans la construction d'un MOD. Un blindage de harnais motorisé expérimental de Scarborough Arms, délivré aux quartiers-maîtres.
   components:
   - type: Sprite
     state: standard-plating
@@ -327,8 +327,8 @@
 - type: entity
   id: ModsuitPlatingBrigMed
   parent: PartModsuit
-  name: MOD standard security trauma plating
-  description: A part used in MOD construction.
+  name: blindage standard de traumatologie de sécurité MOD
+  description: Une pièce utilisée dans la construction MOD.
   components:
   - type: Sprite
     state: standard-plating
@@ -347,8 +347,8 @@
 - type: entity
   id: ModsuitPlatingPraetorian
   parent: PartModsuit
-  name: MOD praetorian plating
-  description: A part used in MOD construction. Issued to Blueshield Officers.
+  name: blindage prétoire MOD
+  description: Une pièce utilisée dans la construction MOD. Délivré aux officiers Blueshield.
   components:
   - type: Sprite
     state: standard-plating
@@ -405,7 +405,7 @@
 - type: entity
   parent: ModsuitCoreStandard
   id: ModsuitCoreStandardHighCapacity
-  suffix: High-Capacity Battery
+  suffix: Batterie haute capacité
   components:
   - type: ItemSlots
     slots:
@@ -422,7 +422,7 @@
 - type: entity
   parent: ModsuitCoreStandard
   id: ModsuitCoreStandardHyper
-  suffix: Hyper-Capacity Battery
+  suffix: Batterie surcapacité
   components:
   - type: ItemSlots
     slots:
@@ -439,8 +439,8 @@
 - type: entity
   parent: PartModsuit
   id: ModsuitCoreStandardMicroreactor
-  name: MOD microreactor core
-  description: A sealed MOD core built around a miniature reactor. It holds a modest charge that slowly regenerates on its own.
+  name: cœur de microréacteur MOD
+  description: Un noyau MOD scellé construit autour d'un mini-réacteur. Il détient une charge modeste qui se régénère lentement d'elle-même.
   components:
   - type: Sprite
     state: mod-core-standard
@@ -468,8 +468,8 @@
 - type: entity
   parent: PartModsuit
   id: ModsuitCoreStandardAntique
-  name: MOD antique core
-  description: An old but remarkably well-built sealed MOD core. It holds a large charge and slowly regenerates it on its own.
+  name: cœur MOD antique
+  description: Un vieux noyau MOD scellé remarquablement bien construit. Il détient une grande charge et se régénère lentement d'elle-même.
   components:
   - type: Sprite
     state: mod-core-standard
@@ -496,8 +496,8 @@
 - type: entity
   parent: PartModsuit
   id: ModsuitCorePlasma
-  name: MOD plasma core
-  description: Nanotrasen's attempt at capitalizing on their plasma research. These plasma cores are refueled by feeding plasma sheets straight into the suit, though they hold less charge than a standard core.
+  name: cœur de plasma MOD
+  description: Tentative de Nanotrasen de capitaliser sur sa recherche sur le plasma. Ces cœurs de plasma sont rechargés en injectant des feuilles de plasma directement dans la combinaison, bien qu'ils détiennent moins de charge qu'un cœur standard.
   components:
   - type: Sprite
     state: mod-core-standard
@@ -527,9 +527,9 @@
 - type: entity
   parent: PartModsuit
   id: ModsuitCoreInfinite
-  name: MOD infinite core
-  suffix: Admeme
-  description: A fusion core using the rare Fixium to sustain enough energy for the lifetime of the MOD's user.
+  name: cœur MOD infini
+  suffix: Mèmemémo
+  description: Un cœur à fusion utilisant le rare Fixium pour maintenir suffisamment d'énergie pour la durée de vie de l'utilisateur du MOD.
   components:
   - type: Sprite
     state: mod-core-standard

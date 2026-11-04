@@ -2,8 +2,8 @@
   abstract: true
   parent: BaseItem
   id: BaseModsuitModule
-  name: MOD module
-  description: A module for a modular suit.
+  name: module MOD
+  description: Un module pour une combinaison modulaire.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Specific/Robotics/mod_modules.rsi
@@ -39,8 +39,8 @@
 - type: entity
   parent: BaseModsuitModuleStorage
   id: ModsuitModuleStorageCompact
-  name: MOD compact storage module
-  description: What amounts to a series of integrated storage compartments and specialized pockets installed across the surface of the suit, useful for storing various bits, and or bobs.
+  name: module de stockage compact MOD
+  description: Une série de compartiments de stockage intégrés et de poches spécialisées installés sur la surface de la combinaison, utile pour stocker divers bricoles.
   components:
   - type: ModModule
     complexity: 1
@@ -58,8 +58,8 @@
 - type: entity
   parent: BaseModsuitModuleStorage
   id: ModsuitModuleStorageLarge
-  name: MOD storage module
-  description: Reverse engineered by Nakamura Engineering from Donk Company designs, this system of hidden compartments is entirely within the suit, distributing items and weight evenly to ensure a comfortable experience for the user; whether smuggling, or simply hauling.
+  name: module de stockage MOD
+  description: Système de compartiments cachés entièrement intégré à la combinaison, distribuant objets et poids de manière égale pour une expérience confortable pour l'utilisateur ; que ce soit pour la contrebande, ou simplement pour le transport.
   components:
   - type: Sprite
     state: storage_large
@@ -81,8 +81,8 @@
 - type: entity
   parent: [BaseModsuitModuleStorage, BaseSyndicateContraband]
   id: ModsuitModuleStorageSyndicate
-  name: MOD syndicate storage module
-  description: A storage system using nanotechnology developed by Cybersun Industries, these compartments use esoteric technology to compress the physical matter of items put inside of them, essentially shrinking items for much easier and more portable storage.
+  name: module de stockage syndicat MOD
+  description: Système de stockage utilisant la nanotechnologie développée par Cybersun Industries, ces compartiments utilisent une technologie ésotérique pour compresser la matière physique des objets placés à l'intérieur, rétrécissant essentiellement les objets pour un stockage beaucoup plus facile et portable.
   components:
   - type: Sprite
     state: storage_syndi
@@ -102,8 +102,8 @@
 - type: entity
   parent: BaseModsuitModuleStorage
   id: ModsuitModuleStorageBluespace
-  name: MOD bluespace storage module
-  description: A storage system developed by Nanotrasen, these compartments employ miniaturized bluespace pockets for the ultimate in storage technology; regardless of the weight of objects put inside.
+  name: module de stockage bluespace MOD
+  description: Système de stockage développé par Nanotrasen, ces compartiments emploient des poches de bluespace miniaturisées pour la technologie de stockage ultime ; quel que soit le poids des objets placés à l'intérieur.
   components:
   - type: Sprite
     state: storage_bluespace
@@ -123,8 +123,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleFlashlight
-  name: MOD flashlight module
-  description: A simple pair of configurable flashlights installed on the left and right sides of the helmet, useful for providing light in a variety of ranges and colors.
+  name: module de lampe de poche MOD
+  description: Une simple paire de lampes de poche configurables installées sur les côtés gauche et droit du casque, utile pour fournir de la lumière dans une variété de portées et de couleurs.
   components:
   - type: Sprite
     state: flashlight
@@ -139,8 +139,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleMagboots
-  name: MOD magnetic stability module
-  description: These are powerful electromagnets fitted into the suit's boots, allowing users both excellent traction no matter the condition indoors, and to essentially hitch a ride on the exterior of a hull.
+  name: module de stabilité magnétique MOD
+  description: Ce sont de puissants électroaimants installés dans les bottes de la combinaison, offrant une excellente adhérence quelles que soient les conditions à l'intérieur, et permettant essentiellement de s'accrocher à l'extérieur d'une coque.
   components:
   - type: Sprite
     state: magnet
@@ -174,8 +174,8 @@
 - type: entity
   parent: ModsuitModuleMagboots
   id: ModsuitModuleMagbootsAdvanced
-  name: "MOD advanced magnetic stability module"
-  description: "These are powerful electromagnets fitted into the suit's boots, allowing users both excellent traction no matter the condition indoors, and to essentially hitch a ride on the exterior of a hull."
+  name: "module de stabilité magnétique avancé MOD"
+  description: "Ce sont de puissants électroaimants installés dans les bottes de la combinaison, offrant une excellente adhérence quelles que soient les conditions à l'intérieur, et permettant essentiellement de s'accrocher à l'extérieur d'une coque."
   components:
   - type: ModModule
     moduleType: Toggle
@@ -212,8 +212,8 @@
 - type: entity
   parent: BaseModsuitModuleVisor
   id: ModsuitModuleVisorMedical
-  name: MOD medical visor module
-  description: A heads-up display installed into the visor of the suit. This cross-references suit sensor data with a modern biological scanning suite, allowing the user to visualize the current health of organic lifeforms.
+  name: module de viseur médical MOD
+  description: Un affichage tête haute installé dans le viseur de la combinaison. Celui-ci croise les données des capteurs de la combinaison avec une suite moderne de balayage biologique, permettant à l'utilisateur de visualiser la santé actuelle des formes de vie organiques.
   components:
   - type: Sprite
     state: medhud_visor
@@ -227,8 +227,8 @@
 - type: entity
   parent: [BaseModsuitModuleVisor, BaseSecurityContraband]
   id: ModsuitModuleVisorSecurity
-  name: MOD security visor module
-  description: A heads-up display installed into the visor of the suit. This module is a heavily-retrofitted targeting system, plugged into various criminal databases to be able to view arrest records, command simple security-oriented robots, and generally know who to shoot.
+  name: module de viseur de sécurité MOD
+  description: Un affichage tête haute installé dans le viseur de la combinaison. Ce module est un système de ciblage lourdement rétrofité, branché sur diverses bases de données criminelles pour pouvoir consulter les dossiers d'arrestation, commander des robots simples orientés sécurité, et généralement savoir qui abattre.
   components:
   - type: Sprite
     state: sechud_visor
@@ -243,8 +243,8 @@
 - type: entity
   parent: BaseModsuitModuleVisor
   id: ModsuitModuleVisorDiagnostic
-  name: MOD diagnostic visor module
-  description: A heads-up display installed into the visor of the suit. This uses a series of advanced sensors to access data from advanced machinery, exosuits, and other devices, allowing the user to visualize current power levels and integrity of such.
+  name: module de viseur de diagnostic MOD
+  description: Un affichage tête haute installé dans le viseur de la combinaison. Celui-ci utilise une série de capteurs avancés pour accéder aux données de machines avancées, d'exosquelettes et d'autres appareils, permettant à l'utilisateur de visualiser les niveaux de puissance et l'intégrité actuels de ceux-ci.
   components:
   - type: Sprite
     state: diaghud_visor
@@ -259,8 +259,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleWelding
-  name: MOD welding protection module
-  description: A module installed into the visor of the suit, this projects a polarized, holographic overlay in front of the user's eyes. It's rated high enough for immunity against extremities such as spot and arc welding, solar eclipses, and handheld flashlights.
+  name: module de protection contre le soudage MOD
+  description: Un module installé dans le viseur de la combinaison, qui projette une superposition holographique polarisée devant les yeux de l'utilisateur. Il est classé suffisamment haut pour l'immunité contre des extrémités telles que le soudage par points et à l'arc, les éclipses solaires, et les lampes de poche portatives.
   components:
   - type: Sprite
     state: welding
@@ -286,8 +286,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleHealthAnalyzer
-  name: MOD health analyzer module
-  description: A module installed into the glove of the suit. This is a high-tech biological scanning suite, allowing the user indepth information on the vitals and injuries of others even at a distance.
+  name: module d'analyseur de santé MOD
+  description: Un module installé dans le gant de la combinaison. Il s'agit d'une suite de balayage biologique high-tech, permettant à l'utilisateur d'obtenir des informations approfondies sur les signes vitaux et les blessures des autres, même à distance.
   components:
   - type: Sprite
     state: health
@@ -303,8 +303,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleGps
-  name: MOD internal GPS module
-  description: This module uses common Nanotrasen technology to calculate the user's position anywhere in space, down to the exact coordinates.
+  name: module GPS interne MOD
+  description: Ce module utilise la technologie commune de Nanotrasen pour calculer la position de l'utilisateur n'importe où dans l'espace, jusqu'aux coordonnées exactes.
   components:
   - type: Sprite
     state: gps
@@ -318,8 +318,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleJetpack
-  name: MOD ion jetpack module
-  description: A series of electric thrusters installed across the suit, this is a module highly anticipated by trainee Engineers. Rather than using gasses for combustion thrust, these jets are capable of accelerating ions using charge from the suit's charge.
+  name: module de réacteur à ions MOD
+  description: Une série de propulseurs électriques installés à travers la combinaison, ce module est très attendu par les stagiaires Ingénieurs. Plutôt que d'utiliser des gaz pour la poussée de combustion, ces jets sont capables d'accélérer des ions en utilisant la charge de la combinaison.
   components:
   - type: Sprite
     state: jetpack
@@ -343,8 +343,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleThermalRegulator
-  name: MOD thermal regulator module
-  description: Advanced climate control, using an inner body glove interwoven with thousands of tiny, flexible cooling lines. This circulates coolant at various user-controlled temperatures, ensuring they're comfortable.
+  name: module de régulateur thermique MOD
+  description: Contrôle climatique avancé, utilisant un gant corporel intérieur entrelacé avec des milliers de minuscules lignes de refroidissement flexibles. Celui-ci fait circuler du liquide de refroidissement à diverses températures contrôlées par l'utilisateur, assurant leur confort.
   components:
   - type: Sprite
     state: regulator
@@ -357,8 +357,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleEmpShield
-  name: MOD EMP shield module
-  description: A field inhibitor installed into the suit, protecting it against feedback such as electromagnetic pulses that would otherwise damage the electronic systems of the suit.
+  name: module de bouclier EMP MOD
+  description: Un inhibiteur de champ installé dans la combinaison, la protégeant contre les rétroactions telles que les impulsions électromagnétiques qui endommageraient autrement les systèmes électroniques de la combinaison.
   components:
   - type: Sprite
     state: empshield
@@ -370,8 +370,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleMouthhole
-  name: MOD eating apparatus module
-  description: A favorite by Miners, this modification to the helmet utilizes a nanotechnology barrier infront of the mouth to allow eating and drinking while retaining protection and atmosphere.
+  name: module d'appareil de consommation MOD
+  description: Un favori chez les Mineurs, cette modification du casque utilise une barrière de nanotechnologie devant la bouche pour permettre de manger et de boire tout en conservant la protection et l'atmosphère.
   components:
   - type: Sprite
     state: apparatus
@@ -384,13 +384,13 @@
 - type: entity
   parent: HandheldHealthAnalyzer
   id: ModsuitDeviceHealthAnalyzer
-  name: MOD health analyzer
+  name: analyseur de santé MOD
   categories: [ HideSpawnMenu ]
 
 - type: entity
   parent: HandheldGPSBasic
   id: ModsuitDeviceGps
-  name: MOD GPS
+  name: GPS MOD
   categories: [ HideSpawnMenu ]
   components:
   - type: PhysicalComposition
@@ -408,8 +408,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinThermal
-  name: integrated thermal visor
-  description: Thermal imaging built into the helmet's visor, letting the wearer see the heat signatures of living things through walls.
+  name: viseur thermique intégré
+  description: Imagerie thermique intégrée au viseur du casque, permettant au porteur de voir les signatures thermiques des êtres vivants à travers les murs.
   components:
   - type: Sprite
     state: thermal_visor
@@ -429,8 +429,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinNightVision
-  name: integrated night vision
-  description: Light amplification built into the helmet's visor, letting the wearer see in the dark.
+  name: vision nocturne intégrée
+  description: Amplification de la lumière intégrée au viseur du casque, permettant au porteur de voir dans le noir.
   components:
   - type: Sprite
     state: night_visor
@@ -449,8 +449,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinSecHud
-  name: integrated security visor
-  description: A security heads-up display built into the helmet, showing job, mindshield and criminal record status.
+  name: viseur de sécurité intégré
+  description: Un affichage tête haute de sécurité intégré au casque, affichant le poste, le bouclier mental et le casier judiciaire.
   components:
   - type: Sprite
     state: sechud_visor
@@ -470,8 +470,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinMedHud
-  name: integrated medical visor
-  description: A medical heads-up display built into the helmet, showing the health of those around you.
+  name: viseur médical intégré
+  description: Un affichage tête haute médical intégré au casque, affichant la santé de ceux qui vous entourent.
   components:
   - type: Sprite
     state: medhud_visor
@@ -489,8 +489,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinFlashProtection
-  name: integrated flash protection
-  description: The helmet's visor is polarized against flashes and welding arcs while the suit is active.
+  name: protection contre les éclairs intégrée
+  description: Le viseur du casque est polarisé contre les éclairs et les arcs de soudage tant que la combinaison est active.
   components:
   - type: Sprite
     state: welding
@@ -506,8 +506,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinInsulation
-  name: insulated gauntlets
-  description: The gauntlets are lined with insulation, protecting the wearer from electric shocks even while the suit is off.
+  name: gantelets isolés
+  description: Les gantelets sont doublés d'un isolant, protégeant le porteur des chocs électriques même lorsque la combinaison est éteinte.
   components:
   - type: Sprite
     state: module
@@ -523,8 +523,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinAutoInjector
-  name: integrated auto-injector
-  description: An emergency auto-injector built into the chestplate. It doses the wearer with combat medicine when they fall into critical condition.
+  name: auto-injecteur intégré
+  description: Un auto-injecteur d'urgence intégré au plastron. Il dose le porteur avec de la médecine de combat lorsqu'il tombe en état critique.
   components:
   - type: Sprite
     state: injector
@@ -544,8 +544,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinChameleon
-  name: chameleon projector
-  description: A holographic projector that lets the control unit disguise itself as another backpack.
+  name: projecteur caméléon
+  description: Un projecteur holographique qui permet à l'unité de contrôle de se déguiser en un autre sac à dos.
   components:
   - type: Sprite
     state: chameleon
@@ -558,8 +558,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinInstrument
-  name: integrated synthesizer
-  description: A tiny synthesizer built into the helmet, for when the job gets boring.
+  name: synthétiseur intégré
+  description: Un minuscule synthétiseur intégré au casque, pour quand le travail devient ennuyeux.
   components:
   - type: Sprite
     state: bikehorn
@@ -574,8 +574,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinGrip
-  name: reinforced grip
-  description: Servos in the gauntlets give the wearer an iron grip when grabbing others.
+  name: prise renforcée
+  description: Des servos dans les gantelets donnent au porteur une prise en fer lorsqu'il attrape les autres.
   components:
   - type: Sprite
     state: clamp
@@ -594,8 +594,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleQuickCarry
-  name: MOD quick carry module
-  description: A suite of advanced servos, redirecting power from the suit's arms to help carry the wounded; or simply for fun. However, Nanotrasen has locked the module's ability to assist in hand-to-hand combat.
+  name: module de port rapide MOD
+  description: Une suite de servos avancés, redirigeant l'énergie des bras de la combinaison pour aider à transporter les blessés ; ou simplement pour s'amuser. Cependant, Nanotrasen a verrouillé la capacité du module à aider au combat corps à corps.
   components:
   - type: Sprite
     state: carry
@@ -613,8 +613,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleInjector
-  name: MOD injector module
-  description: A module installed into the wrist of the suit, this functions as a high-capacity syringe, with a tip fine enough to locate the emergency injection ports on any suit of armor.
+  name: module injecteur MOD
+  description: Un module installé au poignet de la combinaison, fonctionnant comme une seringue à grande capacité, avec une pointe assez fine pour localiser les ports d'injection d'urgence sur n'importe quelle combinaison de blindage.
   components:
   - type: Sprite
     state: injector
@@ -630,8 +630,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleDefibrillator
-  name: MOD defibrillator module
-  description: A module built into the gauntlets of the suit; commonly known as the 'Healing Hands' by medical professionals. Onboard computers in the suit calculate the necessary voltage, and the wearer returns to Medical a hero.
+  name: module de défibrillateur MOD
+  description: Un module intégré dans les gantelets de la combinaison ; communément connu sous le nom de 'Mains Guérisseuses' par les professionnels de santé. Les ordinateurs de bord de la combinaison calculent la tension nécessaire, et le porteur retourne à l'infirmerie en héros.
   components:
   - type: Sprite
     state: defibrillator
@@ -647,8 +647,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModulePatientTransport
-  name: MOD patient transport module
-  description: A module built into the forearm of the suit. Summonable with merely a gesture, the hardlight transport bag keeps a patient in stasis, but only holds together while the wearer drags it.
+  name: module de transport de patient MOD
+  description: Un module intégré dans l'avant-bras de la combinaison. Invoquable d'un simple geste, le sac de transport en dur-lumière maintient un patient en stase, mais ne tient que tant que le porteur le traîne.
   components:
   - type: Sprite
     state: patient_transport
@@ -664,8 +664,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleThreadRipper
-  name: MOD thread ripper module
-  description: A module that rips open and rethreads the fabric of a patient's clothing as needed, letting the wearer operate without undressing them first.
+  name: module de déchireur de fil MOD
+  description: Un module qui déchire et recout le tissu des vêtements d'un patient selon les besoins, permettant au porteur d'opérer sans les dévêtir d'abord.
   components:
   - type: Sprite
     state: thread_ripper
@@ -683,8 +683,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleTRay
-  name: MOD t-ray scan module
-  description: A module installed into the visor of the suit, allowing the user to use a pulse of terahertz radiation to essentially echolocate things beneath the floor, mostly cables and pipes.
+  name: module de scan T-ray MOD
+  description: Un module installé dans le viseur de la combinaison, permettant à l'utilisateur d'utiliser une impulsion de radiation térahertz pour essentiellement écholocaliser les choses sous le sol, principalement des câbles et des tuyaux.
   components:
   - type: Sprite
     state: tray
@@ -704,8 +704,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleRadProtection
-  name: MOD radiation protection module
-  description: A module utilizing polymers and reflective shielding to protect the user against ionizing radiation.
+  name: module de protection contre les radiations MOD
+  description: Un module utilisant des polymères et un blindage réfléchissant pour protéger l'utilisateur contre les radiations ionisantes.
   components:
   - type: Sprite
     state: radshield
@@ -720,8 +720,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleHeadProtector
-  name: MOD safety-first head protection module
-  description: A series of dampening plates installed along the back and inside of the helmet, protecting the wearer from falling debris and the occasional blunt instrument.
+  name: module de protection de la tête MOD
+  description: Une série de plaques amortissantes installée le long de l'arrière et de l'intérieur du casque, protégeant le porteur des débris qui tombent et de l'instrument contondant occasionnel.
   components:
   - type: Sprite
     state: module
@@ -739,8 +739,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleTether
-  name: MOD emergency tether module
-  description: A custom-built grappling-hook powered by a winch capable of hauling the user. While some older models of cargo-oriented grapples have capacities of a few tons, these are only capable of working in zero-gravity environments, a blessing to some Engineers.
+  name: module de câble d'urgence MOD
+  description: Un grappin sur mesure alimenté par un treuil capable de hisser l'utilisateur. Bien que certains modèles anciens de grappins orientés cargaison aient des capacités de quelques tonnes, ceux-ci ne sont capables de fonctionner que dans des environnements en apesanteur, une bénédiction pour certains Ingénieurs.
   components:
   - type: Sprite
     state: tether
@@ -756,8 +756,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleMister
-  name: MOD water mister module
-  description: A module containing a mister, able to spray water to extinguish fires. Refills itself slowly from the suit's internal reservoir.
+  name: module de brumisateur d'eau MOD
+  description: Un module contenant un brumisateur, capable de pulvériser de l'eau pour éteindre les incendies. Se remplit lentement depuis le réservoir interne de la combinaison.
   components:
   - type: Sprite
     state: mister
@@ -773,8 +773,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleResinMister
-  name: MOD resin mister module
-  description: An atmospheric resin launcher that fires globs of quick-setting metal foam, patching breaches from a safe distance.
+  name: module de brumisateur de résine MOD
+  description: Un lanceur de résine atmosphérique qui tire des globes de mousse métallique à prise rapide, colmatant les brèches à distance de sécurité.
   components:
   - type: Sprite
     state: mister
@@ -791,8 +791,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleHolster
-  name: MOD holster module
-  description: Based off typical storage compartments, this system allows the suit to holster a standard firearm across its surface and allow for extremely quick retrieval.
+  name: module d'holster MOD
+  description: Basé sur des compartiments de stockage typiques, ce système permet à la combinaison d'holster une arme à feu standard sur sa surface et de permettre une récupération extrêmement rapide.
   components:
   - type: Sprite
     state: holster
@@ -812,8 +812,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleMegaphone
-  name: MOD megaphone module
-  description: A microchip megaphone linked to a MODsuit, for very important purposes, like loudness.
+  name: module de mégaphone MOD
+  description: Un mégaphone à micropuce lié à une MODsuit, pour des purposes très importants, comme le volume sonore.
   components:
   - type: Sprite
     state: megaphone
@@ -832,8 +832,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModulePepperShoulders
-  name: MOD pepper shoulders module
-  description: A module that attaches two pepper sprayers on shoulders of a MODsuit, releasing a cloud of capsaicin around the wearer on command.
+  name: module d'épaules au poivre MOD
+  description: Un module qui attache deux vaporisateurs de poivre sur les épaules d'une MODsuit, libérant un nuage de capsaïcine autour du porteur sur commande.
   components:
   - type: Sprite
     state: pepper_shoulder
@@ -848,8 +848,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleRestraintAssist
-  name: MOD restraint assist module
-  description: Enhanced gauntlet grip pads that help with placing individuals in restraints more quickly.
+  name: module d'assistance à la contention MOD
+  description: Coussinets de prise de gantelets améliorés qui aident à placer des individus dans des entraves plus rapidement.
   components:
   - type: Sprite
     state: module
@@ -866,8 +866,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleBulwark
-  name: MOD bulwark module
-  description: Layers of hydraulic stabilizers in the suit's legs keep the wearer firmly planted, making them impossible to shove around.
+  name: module de bastion MOD
+  description: Des couches de stabilisateurs hydrauliques dans les jambes de la combinaison maintiennent le porteur fermement planté, le rendant impossible à bousculer.
   components:
   - type: Sprite
     state: bulwark
@@ -884,8 +884,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleDrill
-  name: MOD drill module
-  description: An integrated drill, typically extending over the user's hand. While useful for drilling through rock, your drill is surely the one that both pierces and creates the heavens.
+  name: module de foreuse MOD
+  description: Une foreuse intégrée, s'étendant généralement au-dessus de la main de l'utilisateur. Bien qu'utile pour forer à travers le roc, votre foreuse est sûrement celle qui perce et crée les cieux.
   components:
   - type: Sprite
     state: drill
@@ -908,8 +908,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleOreBag
-  name: MOD ore bag module
-  description: An integrated ore storage system installed into the gauntlets, magnetically pulling in nearby ore while active.
+  name: module de sac à minerai MOD
+  description: Un système de stockage de minerai intégré installé dans les gantelets, attirant magnétiquement le minerai voisin pendant qu'il est actif.
   components:
   - type: Sprite
     state: ore
@@ -940,8 +940,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleClamp
-  name: MOD hydraulic clamp module
-  description: A series of actuators installed into both arms of the suit, boasting a lifting capacity of almost a ton. However, this design has been locked by Nanotrasen to be primarily utilized for lifting various crates.
+  name: module de pince hydraulique MOD
+  description: Une série d'actionneurs installés dans les deux bras de la combinaison, offrant une capacité de levage d'une tonne presque. Cependant, ce design a été verrouillé par Nanotrasen pour être principalement utilisé pour soulever diverses caisses.
   components:
   - type: Sprite
     state: clamp
@@ -957,8 +957,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleReagentScanner
-  name: MOD reagent scanner module
-  description: A module installed into the visor of the suit, this allows the user to see the chemical composition of any reagent container they look at.
+  name: module de scanneur de réactif MOD
+  description: Un module installé dans le viseur de la combinaison, permettant à l'utilisateur de voir la composition chimique de tout conteneur de réactif qu'il regarde.
   components:
   - type: Sprite
     state: scanner
@@ -976,8 +976,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleAntiGravity
-  name: MOD anti-gravity module
-  description: A module that uses a gravitational core to make the user completely weightless, letting them float freely even with gravity on.
+  name: module d'antigravité MOD
+  description: Un module qui utilise un noyau gravitationnel pour rendre l'utilisateur complètement sans poids, lui permettant de flotter librement même avec la gravité activée.
   components:
   - type: Sprite
     state: antigrav
@@ -1000,8 +1000,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleBikeHorn
-  name: MOD bike horn module
-  description: A shoulder-mounted piece of heavy sonic artillery, this module uses the finest femto-manipulator technology to precisely deliver an almost lethal squeeze to a bike horn.
+  name: module de klaxon de vélo MOD
+  description: Une pièce d'artillerie sonique lourde montée sur l'épaule, ce module utilise la meilleure technologie de manipulateur femto pour délivrer précisément un écrasement presque létal à un klaxon de vélo.
   components:
   - type: Sprite
     state: bikehorn
@@ -1019,8 +1019,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleWaddle
-  name: MOD waddle module
-  description: Some of the most primitive technology in use by Honk Co. This module works off an automatic intention system, utilizing its sensitivity to the pilot's often-limited brainwaves to directly read their next step.
+  name: module de déhanchement MOD
+  description: Certaines des technologies les plus primitives utilisées par Honk Co. Ce module fonctionne grâce à un système d'intention automatique, utilisant sa sensibilité aux ondes cérébrales souvent limitées du pilote pour lire directement leur prochaine étape.
   components:
   - type: Sprite
     state: waddle
@@ -1037,8 +1037,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleJanitorMister
-  name: MOD janitorial mister module
-  description: A module containing a space cleaner mister, able to spray it on any surfaces to clean them. Refills itself slowly from the suit's internal reservoir.
+  name: module de brumisateur d'entretien MOD
+  description: Un module contenant un brumisateur de nettoyant spatial, capable d'en pulvériser sur n'importe quelle surface pour la nettoyer. Se remplit lentement depuis le réservoir interne de la combinaison.
   components:
   - type: Sprite
     state: cleaner
@@ -1054,8 +1054,8 @@
 - type: entity
   parent: Syringe
   id: ModsuitDeviceInjector
-  name: MOD injector
-  description: A high-capacity syringe extending from the suit's wrist.
+  name: injecteur MOD
+  description: Une seringue à grande capacité s'étendant du poignet de la combinaison.
   categories: [ HideSpawnMenu ]
   components:
   - type: PhysicalComposition
@@ -1066,8 +1066,8 @@
 - type: entity
   parent: DefibrillatorOneHandedUnpowered
   id: ModsuitDeviceDefibrillator
-  name: MOD defibrillator paddles
-  description: Shock paddles extending from the suit's gauntlets, powered by the suit itself.
+  name: pelles de défibrillateur MOD
+  description: Pelles à choc s'étendant des gantelets de la combinaison, alimentées par la combinaison elle-même.
   categories: [ HideSpawnMenu ]
   components:
   - type: StaticPrice
@@ -1078,8 +1078,8 @@
 - type: entity
   parent: BaseItem
   id: ModsuitDevicePatientTransport
-  name: MOD hardlight bag projector
-  description: Use it on a patient to wrap them in a hardlight stasis bag. The bag only holds together while you drag it.
+  name: projecteur de sac en dur-lumière MOD
+  description: Utilisez-le sur un patient pour l'envelopper dans un sac de stase en dur-lumière. Le sac ne tient que tant que vous le traînez.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -1094,8 +1094,8 @@
 - type: entity
   parent: BodyBag
   id: ModsuitHardlightBag
-  name: hardlight transport bag
-  description: A weightless bag of solid light that keeps its contents in stasis. It dissipates the moment it's let go.
+  name: sac de transport en dur-lumière
+  description: Un sac sans poids de lumière solide qui garde son contenu en stase. Il se dissipe dès qu'on le lâche.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -1109,8 +1109,8 @@
 - type: entity
   parent: WeaponGrapplingGun
   id: ModsuitDeviceTether
-  name: MOD emergency tether
-  description: A grappling winch extending from the suit's gauntlets.
+  name: câble d'urgence MOD
+  description: Un treuil à grappin s'étendant des gantelets de la combinaison.
   categories: [ HideSpawnMenu ]
   components:
   - type: StaticPrice
@@ -1121,8 +1121,8 @@
 - type: entity
   parent: BaseItem
   id: ModsuitDeviceMister
-  name: MOD water mister
-  description: A mister nozzle extending from the suit, fed by its internal reservoir.
+  name: brumisateur d'eau MOD
+  description: Une buse de brumisateur s'étendant de la combinaison, alimentée par son réservoir interne.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -1161,8 +1161,8 @@
 - type: entity
   parent: BaseItem
   id: ModsuitDeviceJanitorMister
-  name: MOD janitorial mister
-  description: A space cleaner mister extending from the suit, fed by its internal reservoir.
+  name: brumisateur d'entretien MOD
+  description: Un brumisateur de nettoyant spatial s'étendant de la combinaison, alimenté par son réservoir interne.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -1197,8 +1197,8 @@
 - type: entity
   parent: BaseItem
   id: ModsuitDeviceResinMister
-  name: MOD resin launcher
-  description: Fires globs of quick-setting metal foam. Recharges from the suit's internal reservoir.
+  name: lanceur de résine MOD
+  description: Tire des globes de mousse métallique à prise rapide. Se recharge depuis le réservoir interne de la combinaison.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -1232,7 +1232,7 @@
 - type: entity
   parent: BaseBulletTrigger
   id: ModsuitResinGlob
-  name: resin glob
+  name: globe de résine
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -1252,8 +1252,8 @@
 - type: entity
   parent: BaseItem
   id: ModsuitDeviceClamp
-  name: MOD hydraulic clamp
-  description: Hydraulic actuators for hauling crates. Use it on a crate to pick it up, and on the floor to set one down.
+  name: pince hydraulique MOD
+  description: Actionneurs hydrauliques pour transporter des caisses. Utilisez-la sur une caisse pour la prendre, et sur le sol pour la déposer.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -1274,8 +1274,8 @@
 - type: entity
   parent: MiningDrill
   id: ModsuitDeviceDrill
-  name: MOD drill
-  description: A drill extending over the suit's hand.
+  name: foreuse MOD
+  description: Une foreuse s'étendant au-dessus de la main de la combinaison.
   categories: [ HideSpawnMenu ]
   components:
   - type: StaticPrice
@@ -1311,8 +1311,8 @@
 - type: entity
   parent: BaseModsuitModuleSyndicate
   id: ModsuitModuleArmorBooster
-  name: MOD armor booster module
-  description: A retrofitted series of retractable armor plates, allowing the suit to function as essentially power armor. However, the additional plating cannot deploy alongside the parts of the suit used for vacuum sealing, so the suit offers no protection from the void while it's active.
+  name: module de renfort d'armure MOD
+  description: Une série de plaques d'armure rétractables rétrofitée, permettant à la combinaison de fonctionner comme une armure motorisée. Cependant, le placage supplémentaire ne peut pas se déployer aux côtés des parties de la combinaison utilisées pour l'étanchéité au vide, donc la combinaison n'offre aucune protection contre le vide tant qu'il est actif.
   components:
   - type: Sprite
     state: armor_booster
@@ -1341,8 +1341,8 @@
 - type: entity
   parent: BaseModsuitModuleSyndicate
   id: ModsuitModuleEnergyShield
-  name: MOD energy shield module
-  description: A personal, protective forcefield typically seen in military applications. It is capable of blocking nearly any incoming attack, but only once every few seconds; a grim reminder of the user's mortality.
+  name: module de bouclier d'énergie MOD
+  description: Un champ de force personnel et protecteur généralement vu dans des applications militaires. Il est capable de bloquer presque toute attaque entrante, mais seulement une fois toutes les quelques secondes ; un rappel sinistre de la mortalité de l'utilisateur.
   components:
   - type: Sprite
     state: energy_shield
@@ -1354,8 +1354,8 @@
 - type: entity
   parent: BaseModsuitModuleSyndicate
   id: ModsuitModuleNoSlip
-  name: MOD anti slip module
-  description: A modified variant of standard magnetic boots, utilizing piezoelectric crystals on the soles to keep the wearer upright on slippery floors.
+  name: module antidérapant MOD
+  description: Une variante modifiée de bottes magnétiques standard, utilisant des cristaux piézoélectriques sur les semelles pour maintenir le porteur droit sur les sols glissants.
   components:
   - type: Sprite
     state: noslip
@@ -1372,8 +1372,8 @@
 - type: entity
   parent: BaseModsuitModuleSyndicate
   id: ModsuitModulePlateCompression
-  name: MOD plate compression module
-  description: A module that keeps the suit in a very tightly fit state, letting the control unit fit in a bag. Due to the pressure on all the parts, typical storage modules do not fit.
+  name: module de compression de plaque MOD
+  description: Un module qui maintient la combinaison dans un état très serré, permettant à l'unité de contrôle de tenir dans un sac. En raison de la pression sur toutes les parties, les modules de stockage typiques ne rentrent pas.
   components:
   - type: Sprite
     state: plate_compression
@@ -1392,8 +1392,8 @@
 - type: entity
   parent: BaseModsuitModuleSyndicate
   id: ModsuitModuleChameleon
-  name: MOD chameleon module
-  description: A module using chameleon technology to disguise the control unit as another backpack.
+  name: module caméléon MOD
+  description: Un module utilisant la technologie caméléon pour déguiser l'unité de contrôle en un autre sac à dos.
   components:
   - type: Sprite
     state: chameleon
@@ -1414,8 +1414,8 @@
 - type: entity
   parent: BaseModsuitModuleSyndicate
   id: ModsuitModuleEmpPulse
-  name: MOD EMP pulse module
-  description: A suit-mounted EMP emitter that releases an electromagnetic pulse around the wearer. The suit's own systems are shielded from the blast.
+  name: module d'impulsion EMP MOD
+  description: Un émetteur EMP monté sur la combinaison qui libère une impulsion électromagnétique autour du porteur. Les propres systèmes de la combinaison sont protégés de l'explosion.
   components:
   - type: Sprite
     state: emp_pulse
@@ -1431,8 +1431,8 @@
 - type: entity
   parent: BaseModsuitModuleSyndicate
   id: ModsuitModuleCloak
-  name: MOD prototype cloaking module
-  description: A module that bends light around the wearer, rendering them nearly invisible while they stand still. Attacking, shooting or getting hit breaks the cloak.
+  name: module de camouflage prototype MOD
+  description: Un module qui plie la lumière autour du porteur, les rendant presque invisibles tant qu'ils restent immobiles. Attaquer, tirer ou se faire toucher brise le camouflage.
   components:
   - type: Sprite
     state: cloak_traitor
@@ -1455,8 +1455,8 @@
 - type: entity
   parent: BaseModsuitModuleSyndicate
   id: ModsuitModuleAdrenalineBoost
-  name: MOD adrenaline boost module
-  description: An emergency injector that floods the wearer with stimulants, shaking off stuns and pushing their body past its limits.
+  name: module de boost d'adrénaline MOD
+  description: Un injecteur d'urgence qui inonde le porteur de stimulants, secouant les étourdissements et poussant leur corps au-delà de ses limites.
   components:
   - type: Sprite
     state: adrenaline_boost
@@ -1476,8 +1476,8 @@
 - type: entity
   parent: BaseModsuitModuleSyndicate
   id: ModsuitModuleDnaLock
-  name: MOD DNA lock module
-  description: A module which engages with the various locks and seals tied to the suit's systems, letting only the wearer whose DNA it has recorded activate or modify the suit.
+  name: module de verrou ADN MOD
+  description: Un module qui interagit avec les diverses serrures et scellés liés aux systèmes de la combinaison, ne permettant qu'au porteur dont l'ADN a été enregistré d'activer ou de modifier la combinaison.
   components:
   - type: Sprite
     state: dnalock
@@ -1490,8 +1490,8 @@
 - type: entity
   parent: BaseModsuitModuleSyndicate
   id: ModsuitModuleInfiltrator
-  name: MOD infiltration core programs module
-  description: The primary stealth systems operating within the suit. Utilizing electromagnetic signals, the wearer's footsteps are silenced and their voice is masked.
+  name: module de programmes de cœur d'infiltration MOD
+  description: Les principaux systèmes de furtivité opérant au sein de la combinaison. Utilisant des signaux électromagnétiques, les pas du porteur sont rendus silencieux et leur voix est masquée.
   components:
   - type: Sprite
     state: infiltrator
@@ -1510,8 +1510,8 @@
 - type: entity
   parent: BaseModsuitModuleSyndicate
   id: ModsuitModulePowerKick
-  name: MOD power kick module
-  description: This module uses high-power myomer to generate an incredible amount of energy, launching the wearer at a target with a devastating kick.
+  name: module de coup de pied propulsé MOD
+  description: Ce module utilise des myomères haute puissance pour générer une quantité incroyable d'énergie, lançant le porteur vers une cible avec un coup de pied dévastateur.
   components:
   - type: Sprite
     state: power_kick
@@ -1531,8 +1531,8 @@
 - type: entity
   parent: [ BaseModsuitModuleDevice, BaseSyndicateContraband ]
   id: ModsuitModuleMedbeam
-  name: MOD medical beamgun module
-  description: A wrist mounted variant of the medical beam gun, allowing the user to heal their allies without the risk of dropping it.
+  name: module de pistolet à rayons médicaux MOD
+  description: Une variante montée au poignet du pistolet à rayons médicaux, permettant à l'utilisateur de soigner ses alliés sans risquer de le laisser tomber.
   components:
   - type: Sprite
     state: chronogun
@@ -1546,8 +1546,8 @@
 - type: entity
   parent: MedicalBeamGun
   id: ModsuitDeviceMedbeam
-  name: MOD medical beamgun
-  description: A medical beam gun extending from the suit's wrist.
+  name: pistolet à rayons médicaux MOD
+  description: Un pistolet à rayons médicaux s'étendant du poignet de la combinaison.
   categories: [ HideSpawnMenu ]
   components:
   - type: StaticPrice
@@ -1558,8 +1558,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinSphereTransform
-  name: "MOD sphere transform module"
-  description: "A module able to move the suit's parts around, turning it and the user into a sphere. The sphere can move quickly and launch mining micromissiles to decimate terrain and fauna alike."
+  name: "module de transformation en sphère MOD"
+  description: "Un module capable de déplacer les parties de la combinaison, transformant l'utilisateur et la combinaison en sphère. La sphère peut se déplacer rapidement et lancer des micromissiles de minage pour décimer le terrain et la faune."
   components:
   - type: Sprite
     state: sphere
@@ -1585,8 +1585,8 @@
 - type: entity
   parent: BaseBullet
   id: BulletModMiningMissile
-  name: mining micromissile
-  description: A missile. Why are you examining this?
+  name: micromissile de minage
+  description: Un missile. Pourquoi examinez-vous ceci ?
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -1619,7 +1619,8 @@
 - type: entity
   parent: ModsuitModuleBuiltinSphereTransform
   id: ModsuitModuleBuiltinSphereTransformCorporate
-  suffix: Corporate
+  suffix: Entreprise
+  description: "Variante entreprise de la transformation en sphère."
   components:
   - type: ModSphereTransformModule
     primaryColor: "#254022"
@@ -1629,8 +1630,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinAshAccretion
-  name: "MOD ash accretion module"
-  description: "A module that collects ash from the terrain, covering the suit in a protective layer, this layer is lost when moving across standard terrain."
+  name: "module d'accrétion de cendre MOD"
+  description: "Un module qui collecte la cendre du terrain, recouvrant la combinaison d'une couche protectrice. Cette couche est perdue en se déplaçant sur un terrain standard."
   components:
   - type: Sprite
     state: ash_accretion
@@ -1683,8 +1684,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleBuiltinLoaderClamp
-  name: "MOD loader hydraulic clamp module"
-  description: "A series of actuators installed into both arms of the suit, boasting a lifting capacity of almost a ton. However, this design has been locked by Nanotrasen to be primarily utilized for lifting various crates. A lot of people would say that loading cargo is a dull job, but you could not disagree more."
+  name: "module de pince hydraulique de chargeur MOD"
+  description: "Une série d'actionneurs installés dans les deux bras de la combinaison, offrant une capacité de levage d'une tonne. Cependant, cette conception a été verrouillée par Nanotrasen pour être principalement utilisée pour soulever diverses caisses. Beaucoup diraient que charger le fret est un travail ennuyeux, mais vous ne pourriez pas être plus en désaccord."
   components:
   - type: Sprite
     state: clamp_loader
@@ -1701,7 +1702,7 @@
 - type: entity
   parent: ModsuitDeviceClamp
   id: ModsuitDeviceLoaderClamp
-  name: MOD loader hydraulic clamp
+  name: pince hydraulique de chargeur MOD
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -1717,8 +1718,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinHydraulicArms
-  name: "MOD loader hydraulic arms module"
-  description: "A pair of powerful hydraulic arms installed in a MODsuit."
+  name: "module de bras hydrauliques de chargeur MOD"
+  description: "Une paire de puissants bras hydrauliques installés dans un MODsuit."
   components:
   - type: Sprite
     state: launch_loader
@@ -1747,8 +1748,8 @@
 - type: entity
   parent: BaseModsuitModuleBuiltin
   id: ModsuitModuleBuiltinLoaderMagnet
-  name: "MOD loader hydraulic magnet module"
-  description: "A powerful hydraulic electromagnet able to launch crates and lockers towards the user, and keep 'em attached."
+  name: "module d'aimant hydraulique de chargeur MOD"
+  description: "Un puissant électroaimant hydraulique capable de lancer des caisses et des casiers vers l'utilisateur, et de les maintenir attachés."
   components:
   - type: Sprite
     state: magnet_loader
@@ -1767,8 +1768,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleCandelaSpool
-  name: "MOD \"Candela\" beacon spool module"
-  description: "A set of tethers and connectors, capable of automatically deploying \"Candela\" beacons from within a MODsuit."
+  name: "module de bobine de balises « Candela » MOD"
+  description: "Un ensemble de câbles et de connecteurs, capable de déployer automatiquement des balises « Candela » depuis l'intérieur d'un MODsuit."
   components:
   - type: Sprite
     state: candela_spool
@@ -1788,8 +1789,8 @@
 - type: entity
   parent: BaseModsuitModuleStorage
   id: ModsuitModuleStorageCase
-  name: "MOD case storage module"
-  description: "Some concessions had to be made when creating a compressed modular suit core. As a result, Roseus Galactic equipped their suit with a slimline storage case. If you find this equipped to a standard modular suit, then someone has almost certainly shortchanged you on a proper storage module."
+  name: "module de stockage de coffre MOD"
+  description: "Des concessions ont dû être faites lors de la création d'un cœur modulaire compressé. En conséquence, Roseus Galactic a équipé leur combinaison d'une mallette de stockage fine. Si vous trouvez ceci équipé sur une combinaison modulaire standard, quelqu'un vous a presque certainement arnaqué en ne vous donnant pas un module de stockage approprié."
   components:
   - type: Sprite
     state: storage_case
@@ -1809,8 +1810,8 @@
 - type: entity
   parent: BaseModsuitModuleStorage
   id: ModsuitModuleStorageHolding
-  name: "MOD storage module of holding"
-  description: "A prototype storage module utilizing the power of anomalous bluespace phenomena to store copious amounts of matter."
+  name: "module de stockage de poche MOD"
+  description: "Un module de stockage prototype utilisant la puissance des phénomènes de l'espace bleu anomal pour stocker d'énormes quantités de matière."
   components:
   - type: Sprite
     state: storage_holding
@@ -1830,8 +1831,8 @@
 - type: entity
   parent: ModsuitModuleJetpack
   id: ModsuitModuleJetpackAdvanced
-  name: "MOD advanced ion jetpack module"
-  description: "An improvement on the previous model of electric thrusters. This one achieves higher precision and spatial stability through mounting of more jets and application of red paint."
+  name: "module de réacteur à ions avancé MOD"
+  description: "Une amélioration sur le modèle précédent de propulseurs électriques. Celui-ci atteint une précision et une stabilité spatiale supérieures grâce au montage de plus de jets et à l'application de peinture rouge."
   components:
   - type: Sprite
     state: jetpack_advanced
@@ -1851,8 +1852,8 @@
 - type: entity
   parent: ModsuitModuleBuiltinThermal
   id: ModsuitModuleThermalVisor
-  name: "MOD thermal visor module"
-  description: "A heads-up display installed into the visor of the suit. This uses a small IR scanner to detect and identify the thermal radiation output of objects near the user. While it can detect the heat output of even something as small as a rodent, it still produces irritating red overlay. They say these also let you see behind you."
+  name: "module de viseur thermique MOD"
+  description: "Un affichage à tête haute installé dans le viseur de la combinaison. Celui-ci utilise un petit scanner IR pour détecter et identifier le rayonnement thermique émis par les objets proches de l'utilisateur. Bien qu'il puisse détecter la chaleur de quelque chose d'aussi petit qu'un rongeur, il produit toujours une irritante superposition rouge. On dit que ceux-ci vous permettent aussi de voir derrière vous."
   components:
   - type: ModModule
     moduleType: Toggle
@@ -1875,8 +1876,8 @@
 - type: entity
   parent: ModsuitModuleBuiltinNightVision
   id: ModsuitModuleNightVisor
-  name: "MOD night visor module"
-  description: "A heads-up display installed into the visor of the suit. Typical for both civilian and military applications, this allows the user to perceive their surroundings while in complete darkness, enhancing the view by tenfold; yet brightening everything into a spooky green glow. They say these also let you see behind you."
+  name: "module de viseur de vision nocturne MOD"
+  description: "Un affichage à tête haute installé dans le viseur de la combinaison. Typique pour les applications civiles et militaires, celui-ci permet à l'utilisateur de percevoir son environnement dans l'obscurité totale, améliorant la vue de dix fois ; tout en éclaircissant tout en une lueur verte inquiétante. On dit que ceux-ci vous permettent aussi de voir derrière vous."
   components:
   - type: ModModule
     moduleType: Toggle
@@ -1899,8 +1900,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleQuickCarryAdvanced
-  name: "MOD advanced quick carry module"
-  description: "A suite of advanced servos, redirecting power from the suit's arms to help carry the wounded; or simply for fun. However, Nanotrasen has locked the module's ability to assist in hand-to-hand combat."
+  name: "module de port avancé MOD"
+  description: "Une suite de servos avancés, redirigeant l'énergie des bras de la combinaison pour aider à porter les blessés ; ou simplement pour s'amuser. Cependant, Nanotrasen a verrouillé la capacité du module à assister dans le combat corps à corps."
   components:
   - type: Sprite
     state: carry
@@ -1918,8 +1919,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleShockAbsorber
-  name: "MOD shock absorption module"
-  description: "A module that makes the user resistant to the knockdown and CNS disruption inflicted by Stun Batons."
+  name: "module d'absorption de chocs MOD"
+  description: "Un module qui rend l'utilisateur résistant au KO et à la perturbation du SNC infligée par les matraques à impulsion électrique."
   components:
   - type: Sprite
     state: no_baton
@@ -1938,8 +1939,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleBurgerDispenser
-  name: "MOD burger dispenser module"
-  description: "A rare piece of technology reverse-engineered from a prototype found in a Donk Company vessel. This can draw incredible amounts of power from the suit's charge to create edible organic matter in the palm of the wearer's glove; however, research seemed to have entirely stopped at burgers. Notably, all attempts to get it to dispense Earl Grey tea have failed."
+  name: "module de distributeur de burgers MOD"
+  description: "Une pièce de technologie rare rétro-conçue à partir d'un prototype trouvé dans un vaisseau de la Donk Company. Celle-ci peut tirer des quantités incroyables d'énergie de la charge de la combinaison pour créer de la matière organique comestible dans la paume du gant du porteur ; cependant, la recherche semblait s'être entièrement arrêtée aux burgers. Notamment, toutes les tentatives pour le faire distribuer du thé Earl Grey ont échoué."
   components:
   - type: Sprite
     state: dispenser
@@ -1957,8 +1958,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModulePaperDispenser
-  name: "MOD paper dispenser module"
-  description: "A simple module designed by the bureaucrats of Torch Bay. It dispenses 'warm, clean, and crisp sheets of paper' into the wearer's hand. Usually."
+  name: "module de distributeur de papier MOD"
+  description: "Un module simple conçu par les bureaucrates de la baie de la Torch. Il distribue des 'feuilles de papier chaudes, propres et fraîches' dans la main du porteur. Habituellement."
   components:
   - type: Sprite
     state: paper_maker
@@ -1976,8 +1977,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleBalloonBlower
-  name: "MOD balloon blower module"
-  description: "A strange module invented years ago by some ingenious mimes. It blows balloons."
+  name: "module de gonfleur de ballons MOD"
+  description: "Un étrange module inventé il y a des années par quelques mimes ingénieux. Il gonfle des ballons."
   components:
   - type: Sprite
     state: bloon
@@ -1998,8 +1999,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleStamper
-  name: "MOD stamper module"
-  description: "A module installed into the wrist of the suit, this functions as a high-power stamp, able to switch between accept and deny modes."
+  name: "module de timbres MOD"
+  description: "Un module installé au poignet de la combinaison, celui-ci fonctionne comme un timbre haute puissance, capable de basculer entre les modes accepter et refuser."
   components:
   - type: Sprite
     state: stamp
@@ -2023,8 +2024,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleFishingGlove
-  name: "MOD fishing glove module"
-  description: "A MOD module with a built-in fishing rod, enabling the user to fish without having to hold one."
+  name: "module de gant de pêche MOD"
+  description: "Un module MOD avec une canne à pêche intégrée, permettant à l'utilisateur de pêcher sans avoir à en tenir une."
   components:
   - type: Sprite
     state: fishing_glove
@@ -2040,7 +2041,7 @@
 - type: entity
   parent: RubberStampApproved
   id: ModsuitDeviceStampApproved
-  name: MOD stamper (approved)
+  name: timbre (approuvé)
   categories: [ HideSpawnMenu ]
   components:
   - type: StaticPrice
@@ -2051,7 +2052,7 @@
 - type: entity
   parent: RubberStampDenied
   id: ModsuitDeviceStampDenied
-  name: MOD stamper (denied)
+  name: timbre (refusé)
   categories: [ HideSpawnMenu ]
   components:
   - type: StaticPrice
@@ -2062,7 +2063,7 @@
 - type: entity
   parent: FishingRod
   id: ModsuitDeviceFishingRod
-  name: MOD fishing rod
+  name: canne à pêche MOD
   categories: [ HideSpawnMenu ]
   components:
   - type: StaticPrice
@@ -2073,8 +2074,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleKinesis
-  name: "MOD kinesis module"
-  description: "A modular plug-in to the forearm, this module was presumed lost for many years, despite the suits it used to be mounted on still seeing some circulation. This piece of technology allows the user to generate precise anti-gravity fields, letting them move objects as small as a titanium rod to as large as industrial machinery. Oddly enough, it doesn't seem to work on living creatures."
+  name: "module de kinesis MOD"
+  description: "Un module branché sur l'avant-bras, ce module était présumé perdu depuis de nombreuses années, malgré les combinaisons sur lesquelles il était monté qui voient encore une certaine circulation. Cette pièce de technologie permet à l'utilisateur de générer des champs anti-gravité précis, lui permettant de déplacer des objets aussi petits qu'une tige en titane qu'aussi grands que des machines industrielles. Curieusement, cela ne semble pas fonctionner sur les créatures vivantes."
   components:
   - type: Sprite
     state: kinesis
@@ -2094,8 +2095,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleJumpJet
-  name: "MOD ionic jump jet module"
-  description: "A specialised ionic thruster which provides a short but powerful forward boost, after which time it needs to recharge."
+  name: "module de propulseur à saut ionique MOD"
+  description: "Un propulseur ionique spécialisé qui procure un court mais puissant boost vers l'avant, après quoi il doit se recharger."
   components:
   - type: Sprite
     state: jump_jet
@@ -2111,8 +2112,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleEmpShieldAdvanced
-  name: "MOD advanced EMP shield module"
-  description: "An advanced field inhibitor installed into the suit, protecting it against feedback such as electromagnetic pulses that would otherwise damage the electronic systems of the suit or electronic devices on the wearer, including augmentations. However, it will take from the suit's power to do so."
+  name: "module de bouclier EMP avancé MOD"
+  description: "Un inhibiteur de champ avancé installé dans la combinaison, la protégeant contre les rétroactions telles que les impulsions électromagnétiques qui endommageraient sinon les systèmes électroniques de la combinaison ou les appareils électroniques sur le porteur, y compris les augmentations. Cependant, cela puisera dans l'énergie de la combinaison pour ce faire."
   components:
   - type: Sprite
     state: empshield
@@ -2128,8 +2129,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleJointTorsion
-  name: "MOD joint torsion ratchet module"
-  description: "A compact, weak AC generator that charges the suit's internal cell through the power of deambulation. It doesn't work in zero G. More than one can be installed."
+  name: "module de cliquet de torsion d'articulation MOD"
+  description: "Un petit générateur AC faible qui charge la cellule interne de la combinaison grâce à la puissance de la déambulation. Cela ne fonctionne pas en apesanteur. Plusieurs peuvent être installés."
   components:
   - type: Sprite
     state: joint_torsion
@@ -2142,8 +2143,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleGloveTranslator
-  name: "MOD glove translator module"
-  description: "A module that adds motion sensors into the suit's gloves, which works in tandem with a short-range subspace transmitter, letting the audibly impaired use sign language over comms."
+  name: "module de traducteur de gants MOD"
+  description: "Un module qui ajoute des capteurs de mouvement dans les gants de la combinaison, qui fonctionne en tandem avec un émetteur subspace courte portée, permettant aux malentendants d'utiliser la langue des signes sur les coms."
   components:
   - type: Sprite
     state: signlang_radio
@@ -2162,8 +2163,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModulePlasmaStabilizer
-  name: "MOD plasma stabilizer module"
-  description: "This system essentially forms an atmosphere of its own, within the suit, efficiently and quickly preventing oxygen from causing the user's head to burst into flame. This allows plasmamen to safely remove their helmet, allowing for easier equipping of any MODsuit-related equipment, or otherwise. The purple glass of the visor seems to be constructed for nostalgic purposes."
+  name: "module de stabilisateur de plasma MOD"
+  description: "Ce système forme essentiellement sa propre atmosphère, à l'intérieur de la combinaison, empêchant efficacement et rapidement l'oxygène de faire flamber la tête de l'utilisateur. Cela permet aux plasmamens d'enlever leur casque en toute sécurité, facilitant l'équipement de tout équipement lié aux MODsuit, ou autre. Le verre violet du viseur semble avoir été construit à des fins nostalgiques."
   components:
   - type: Sprite
     state: plasma_stabilizer
@@ -2178,8 +2179,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleHatStabilizer
-  name: "MOD hat stabilizer module"
-  description: "A simple set of deployable stands, directly atop one's head; these will deploy under a hat to keep it from falling off, allowing them to be worn atop the sealed helmet. You still need to take the hat off your head while the helmet deploys, though. This is a must-have for Nanotrasen Captains, enabling them to show off their authoritative hat even while in their MODsuit."
+  name: "module de stabilisateur de chapeau MOD"
+  description: "Un simple ensemble de supports déployables, directement au sommet de la tête ; ceux-ci se déploieront sous un chapeau pour l'empêcher de tomber, permettant de les porter au-dessus du casque scellé. Vous devez cependant retirer le chapeau de votre tête pendant que le casque se déploie. C'est un incontournable pour les Capitaines Nanotrasen, leur permettant de montrer leur chapeau autoritaire même dans leur MODsuit."
   components:
   - type: Sprite
     state: hat_holder
@@ -2193,8 +2194,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleRecycler
-  name: "MOD recycler module"
-  description: "An innovative garbage collection module that recycles gathered trash into usable material. Doesn't work on debris and some items. Use the unload action to dump stored material."
+  name: "module de recyclage MOD"
+  description: "Un module de collecte des ordures innovant qui recycle les déchets rassemblés en matériau utilisable. Ne fonctionne pas sur les débris et certains objets. Utilisez l'action de vidage pour déverser le matériau stocké."
   components:
   - type: Sprite
     state: recycler
@@ -2212,8 +2213,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleDonkRecycler
-  name: MOD Donksoft recycler module
-  description: A Donk Co. take on the recycler that turns collected trash into foam darts. Use the unload action to dump them.
+  name: module de recyclage Donksoft MOD
+  description: Une version de Donk Co. du recyclage qui transforme les déchets collectés en fléchettes en mousse. Utilisez l'action de vidage pour les déverser.
   components:
   - type: Sprite
     state: donk_recycler
@@ -2232,8 +2233,8 @@
 - type: entity
   parent: BaseModsuitModuleDevice
   id: ModsuitModuleCriminalCapture
-  name: MOD criminal capture module
-  description: A security take on the patient transport. It wraps a suspect in a sealed hardlight holding bag that they can't get out of and that drags at full speed. It only holds together while the wearer drags it, and leaves them exhausted on the floor when it dissipates.
+  name: module de capture criminelle MOD
+  description: Une version sécurité du transport de patient. Il enveloppe un suspect dans un sac de maintien en dure-lumière scellé dont il ne peut pas sortir et qui se traîne à pleine vitesse. Il ne tient ensemble que tant que le porteur le traîne, et les laisse épuisés sur le sol quand il se dissipe.
   components:
   - type: Sprite
     state: criminal_capture
@@ -2249,8 +2250,8 @@
 - type: entity
   parent: ModsuitDevicePatientTransport
   id: ModsuitDeviceCriminalCapture
-  name: MOD hardlight capture projector
-  description: Use it on a suspect to seal them in a hardlight holding bag. The bag only holds together while you drag it.
+  name: projecteur de capture en dure-lumière MOD
+  description: Utilisez-le sur un suspect pour le sceller dans un sac de maintien en dure-lumière. Le sac ne tient ensemble que tant que vous le traînez.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -2262,8 +2263,8 @@
 - type: entity
   parent: BodyBag
   id: ModsuitCaptureBag
-  name: hardlight holding bag
-  description: A sealed bag of solid light for hauling suspects around. It can't be opened from either side and dissipates the moment it's let go.
+  name: sac de maintien en dure-lumière
+  description: Un sac scellé de lumière solide pour transporter des suspects. Il ne peut pas être ouvert d'aucun côté et se dissipe dès qu'on le lâche.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -2281,7 +2282,7 @@
 - type: entity
   parent: RedBalloon
   id: ModsuitBalloonRed
-  suffix: MOD, no cash
+  suffix: MOD, sans espèces
   categories: [ HideSpawnMenu ]
   components:
   - type: Destructible
@@ -2302,7 +2303,7 @@
 - type: entity
   parent: BlueBalloon
   id: ModsuitBalloonBlue
-  suffix: MOD, no cash
+  suffix: MOD, sans espèces
   categories: [ HideSpawnMenu ]
   components:
   - type: Destructible
@@ -2323,7 +2324,7 @@
 - type: entity
   parent: GreenBalloon
   id: ModsuitBalloonGreen
-  suffix: MOD, no cash
+  suffix: MOD, sans espèces
   categories: [ HideSpawnMenu ]
   components:
   - type: Destructible
@@ -2344,8 +2345,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleMagneticHarness
-  name: "MOD magnetic harness module"
-  description: "Based off old TerraGov harness kits, this magnetic harness automatically attaches dropped guns back to the wearer."
+  name: "module de harnais magnétique MOD"
+  description: "Basé sur les anciens kits de harnais TerraGov, ce harnais magnétique rattache automatiquement les armes tombées au porteur."
   components:
   - type: Sprite
     state: mag_harness
@@ -2362,8 +2363,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleProjectileDampener
-  name: "MOD projectile dampener module"
-  description: "Using technology from peaceborgs, this module weakens all projectiles in nearby range."
+  name: "module d'atténuation de projectiles MOD"
+  description: "Utilisant la technologie des peaceborgs, ce module affaiblit tous les projectiles à portée proximité."
   components:
   - type: Sprite
     state: projectile_dampener
@@ -2380,8 +2381,8 @@
 - type: entity
   parent: BaseModsuitModule
   id: ModsuitModuleShootingAssistant
-  name: "MOD shooting assistant module"
-  description: "A botched prototype meant to boost the TGMC crayon eaters' ability with firearms. It has only two modes available in its configurations: 'Quick Fire Stormtrooper' and 'Slow Ricochet Sharpshooter'."
+  name: "module d'assistant de tir MOD"
+  description: "Un prototype raté destiné à améliorer la capacité des mangeurs de crayons du TGMC avec les armes à feu. Il n'a que deux modes disponibles dans ses configurations : 'Tir Rapide Stormtrooper' et 'Tir Lent Ricochet Tireur d'Élite'."
   components:
   - type: Sprite
     state: shooting_assistant

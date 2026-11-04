@@ -20,8 +20,8 @@
 - type: entity
   parent: BaseAction
   id: ActionModSuitDeploy
-  name: Deploy MOD parts
-  description: Deploy or retract every part of your MODsuit.
+  name: Déployer les parties MOD
+  description: Déployer ou rétracter chaque partie de votre MODsuit.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -33,8 +33,8 @@
 - type: entity
   parent: BaseAction
   id: ActionModModule
-  name: Use MOD module
-  description: Use or toggle this MODsuit module.
+  name: Utiliser le module MOD
+  description: Utiliser ou basculer ce module MODsuit.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -45,8 +45,8 @@
 - type: entity
   parent: BaseAction
   id: ActionModPowerKick
-  name: Power kick
-  description: Launch yourself at a target with a devastating kick.
+  name: Coup de pied propulsé
+  description: Lancez-vous sur une cible avec un coup de pied dévastateur.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -63,8 +63,8 @@
 - type: entity
   parent: BaseAction
   id: ActionModHydraulicLaunch
-  name: Hydraulic launch
-  description: Charge the hydraulic arms and launch yourself at a target.
+  name: Lancement hydraulique
+  description: Chargez les bras hydrauliques et propulsez-vous vers une cible.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -81,8 +81,8 @@
 - type: entity
   parent: BaseAction
   id: ActionModMagnet
-  name: Hydraulic magnet
-  description: Pull a crate or locker to you, or fling the one you're dragging at a target.
+  name: Aimant hydraulique
+  description: Attirez une caisse ou un casier vers vous, ou lancez celui que vous traînez sur une cible.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -97,8 +97,8 @@
 - type: entity
   parent: BaseAction
   id: ActionModRecyclerUnload
-  name: Unload recycler
-  description: Dump everything the recycler has collected at your feet.
+  name: Vider le recyclage
+  description: Vider tout ce que le recyclage a collecté à vos pieds.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -110,8 +110,8 @@
 - type: entity
   parent: BaseAction
   id: ActionModShootingMode
-  name: Cycle shooting mode
-  description: Switch the shooting assistant between off, stormtrooper and sharpshooter modes.
+  name: Changer le mode de tir
+  description: Passer l'assistant de tir entre les modes désactivé, stormtrooper et tireur d'élite.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -123,8 +123,8 @@
 - type: entity
   parent: BaseAction
   id: ActionModSelectDevice
-  name: Select module tool
-  description: Choose which tool this MOD module deploys.
+  name: Sélectionner l'outil de module
+  description: Choisir l'outil déployé par ce module MOD.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -136,8 +136,8 @@
 - type: entity
   parent: BaseAction
   id: ActionModSphereMissiles
-  name: Launch micromissiles
-  description: Fire a volley of mining micromissiles at the target.
+  name: Lancer les micromissiles
+  description: Tirez une volée de micromissiles de minage sur la cible.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action

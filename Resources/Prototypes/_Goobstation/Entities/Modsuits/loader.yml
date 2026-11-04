@@ -1,8 +1,8 @@
 - type: entity
   parent: [ ClothingModsuitStandard, BaseCargoContraband ]
   id: ClothingModsuitLoader
-  name: loader modsuit control unit
-  description: "An unsealed experimental motorized harness manufactured by Scarborough Arms for quick and efficient munition supplies."
+  name: unité de contrôle modsuit chargeur
+  description: "Un harnais motorisé expérimental non scellé fabriqué par Scarborough Arms pour une livraison rapide et efficace des munitions."
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/OuterClothing/Modsuits/loader.rsi
@@ -37,8 +37,8 @@
 - type: entity
   parent: ClothingModsuitHelmetStandard
   id: ClothingModsuitHelmetLoader
-  name: loader modsuit helmet
-  description: The helmet of a loader modsuit. It covers the face, but isn't airtight.
+  name: casque modsuit chargeur
+  description: Le casque d'un modsuit chargeur. Il couvre le visage, mais n'est pas étanche à l'air.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -111,8 +111,8 @@
 - type: entity
   parent: ClothingModsuitChestplateStandard
   id: ClothingModsuitChestplateLoader
-  name: loader modsuit chestplate
-  description: The titanium exoskeleton of a loader modsuit. Its myomer-driven legs let the wearer run at full speed.
+  name: plastron modsuit chargeur
+  description: L'exosquelette en titane d'un modsuit chargeur. Ses jambes actionnées par myomères permettent au porteur de courir à pleine vitesse.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -158,8 +158,8 @@
 - type: entity
   parent: ClothingModsuitGauntletsStandard
   id: ClothingModsuitGauntletsLoader
-  name: loader modsuit gauntlets
-  description: The gauntlets of a loader modsuit. Partially insulated against shocks from the myomer arms.
+  name: gantelets modsuit chargeur
+  description: Les gantelets d'un modsuit chargeur. Partiellement isolés contre les chocs des bras myomères.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -170,8 +170,8 @@
 - type: entity
   parent: ClothingModsuitBootsStandard
   id: ClothingModsuitBootsLoader
-  name: loader modsuit boots
-  description: The boots of a loader modsuit.
+  name: bottes modsuit chargeur
+  description: Les bottes d'un modsuit chargeur.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
