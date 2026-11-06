@@ -10,6 +10,7 @@ Les androïdes sont des membres d'équipage synthétiques qui tiennent les poste
 - Ils arrivent tout seuls quand il y a peu de joueurs et qu'un de ces postes est libre.
 - Si un joueur prend leur poste, l'androïde lui laisse la place et part en cryostase.
 - Un androïde détruit est retiré, puis remplacé au bout de quelques minutes si le poste est toujours libre.
+- On ne peut rien prendre à un androïde, vivant ou non : ni fouille, ni désarmement, et ce qu'il tient reste dans ses mains. Son équipement disparaît avec lui.
 - Ils ne passent que par les portes qu'ils peuvent ouvrir avec leur carte : un sas verrouillé, sans courant ou réservé à un autre département est contourné.
 
 ## Leur parler

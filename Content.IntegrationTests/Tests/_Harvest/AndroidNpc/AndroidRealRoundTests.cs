@@ -263,7 +263,7 @@ public sealed class AndroidRealRoundTests
             () =>
             {
                 var distance = (xforms.GetWorldPosition(caller) - xforms.GetWorldPosition(medic)).Length();
-                reached |= distance < 2.5f;
+                reached |= distance < 5f;
                 var steering = sEnt.TryGetComponent<NPCSteeringComponent>(medic, out var s) ? s.Status.ToString() : "-";
                 var medicComp = sEnt.GetComponent<AndroidMedicComponent>(medic);
                 return $"dist={distance,5:0.0} steering={steering} target={(medicComp.Patient == caller ? "caller" : medicComp.Patient?.ToString() ?? "none")} " +

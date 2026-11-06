@@ -8,6 +8,7 @@ using Content.Shared.Interaction;
 using Content.Shared.Movement.Components;
 using Content.Shared.NPC;
 using Content.Shared.Physics;
+using Content.Shared.Slippery; // Harvest
 using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
@@ -614,6 +615,15 @@ public sealed partial class NPCSteeringSystem
                 (layer & otherBody.CollisionMask) == 0x0)
             {
                 continue;
+            }
+
+            // Harvest: a body's layers include its soft fixtures, so a banana peel looks like a wall. Agents that
+            // cannot slip walk over it: only what can really stop them counts.
+            if (HasComp<NoSlipComponent>(uid))
+            {
+                var (hardLayer, hardMask) = PhysicsSystem.GetHardCollision(ent);
+                if ((mask & hardLayer) == 0x0 && (layer & hardMask) == 0x0)
+                    continue;
             }
 
             var xformB = _xformQuery.GetComponent(ent);
