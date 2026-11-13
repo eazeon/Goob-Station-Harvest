@@ -229,7 +229,7 @@
             - EnergySpeedloader
 
 - type: entity
-  name: advanced disabler
+  name: disabler avancé
   parent: [ WeaponDisablerPractice, BaseCentcommContraband ]
   id: WeaponDisablerAdvanced
   description: Une arme de défense personnelle pour les cadres d'entreprise avec de l'argent à brûler. Fine, robuste et à recharge automatique pour votre commodité.
@@ -256,10 +256,19 @@
     autoRechargeRate: 40
 
 - type: entity
-  name: paralyseur du syndicat
+  name: disabler
+  parent: [ WeaponDisabler ]
+  id: WeaponDisablerSEC
+  description: L'arme de service standard du cyborg de la SEC. Sa batterie se recharge automatiquement. # Goobstation
+  components:
+  - type: BatterySelfRecharger # Goobstation - S.E.C. cyborg
+    autoRechargeRate: 100
+
+- type: entity
+  name: disabler du syndicat
   parent: [ WeaponDisablerPractice, BaseSyndicateContraband ]
   id: WeaponDisablerSyndicate
-  description: Un paralyseur élégant conçu à partir d'un prototype Nanotrasen rétro-ingénierisé. Bien qu'il manque de puissance d'arrêt, il compense par une cellule auto-régénérante.
+  description: Un disabler élégant conçu à partir d'un prototype Nanotrasen rétro-ingénierisé. Bien qu'il manque de puissance d'arrêt, il compense par une cellule auto-régénérante.
   components:
     - type: Gun
       fireRate: 3

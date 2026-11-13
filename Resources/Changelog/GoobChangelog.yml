@@ -27104,3 +27104,63 @@ Entries:
         is over, not where you initially clicked.
   id: 3034
   time: '2026-11-03T23:43:00.0000000+00:00'
+- author: IvanKuvalda
+  changes:
+    - type: Add
+      message: Added secmask hail actions to secborg
+    - type: Add
+      message: Added new recharging stunbaton to secborg
+    - type: Add
+      message: Added secborg resprite
+    - type: Remove
+      message: martyr has removed, no fun at this server
+    - type: Tweak
+      message: tweaked some laws in secborg
+    - type: Fix
+      message: Fixed security borgs not having access to the Security radio channel
+  id: 3035
+  time: '2026-11-06T20:06:51.0000000+00:00'
+- author: rivermyth
+  changes:
+    - type: Tweak
+      message: Reverted PTL nerfs
+  id: 3036
+  time: '2026-11-06T20:08:25.0000000+00:00'
+- author: Durk
+  changes:
+    - type: Tweak
+      message: Drop pods now have a global cooldown and should spam less.
+    - type: Tweak
+      message: >-
+        Tempest now chooses between having several roundstart antags, or
+        building up to lots of midrounds.
+    - type: Fix
+      message: Gamemodes should no longer cancel for having too few players ready.
+  id: 3037
+  time: '2026-11-07T02:26:41.0000000+00:00'
+- author: bobbble
+  changes:
+    - type: Tweak
+      message: updated NTR handheld fax sprites.
+  id: 3038
+  time: '2026-11-10T19:34:13.0000000+00:00'
+- author: Dummy
+  changes:
+    - type: Tweak
+      message: Buffed security's Taro to have the performance of a weaker revolver.
+  id: 3039
+  time: '2026-11-11T00:51:55.0000000+00:00'
+- author: Aidenkrz
+  changes:
+    - type: Tweak
+      message: >-
+        Sphere module now kicks you out of sphere mode if you are bolad or
+        stamcrit, running people over deals stamina to you
+    - type: Tweak
+      message: >-
+        Diona and harpies can now use modsuits, yowie can no longer use
+        modsuits.
+    - type: Fix
+      message: Fixed new vend UI not showing reagent colors (i.e., chemvend jugs)
+  id: 3040
+  time: '2026-11-13T00:28:43.0000000+00:00'

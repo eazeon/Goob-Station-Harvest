@@ -202,6 +202,33 @@
       shader: unshaded
 
 - type: entity
+  name: fax portable représentatnt NanoTrasen
+  parent: HandheldFax
+  id: HandheldFaxNTR
+  suffix: Officiel CentComm
+  components:
+  - type: FaxMachine
+    name: "CentComm Official"
+  - type: Item
+    size: Normal
+    sprite: _Goobstation/Objects/Tools/official_fax.rsi
+  - type: Prayable
+    sentMessage: prayer-popup-notify-centcom-sent
+    notificationPrefix: prayer-chat-notify-centcom
+    verb: prayer-verbs-call
+    verbImage: null
+    notificationSound:
+      path: /Audio/_Goobstation/Misc/phone_ring.ogg
+  - type: Sprite
+    sprite: _Goobstation/Objects/Tools/NTR_fax.rsi
+    drawdepth: SmallObjects
+    layers:
+    - state: icon
+      map: [ "enum.FaxMachineVisuals.VisualState" ]
+    - state: scanner
+      shader: unshaded
+
+- type: entity
   name: multioutil de borg
   parent: Multitool
   id: MultitoolBorg

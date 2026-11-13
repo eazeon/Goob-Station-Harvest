@@ -137,7 +137,7 @@
   - type: ModLightModule
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorEngineeringContraband ]
   id: ModsuitModuleMagboots
   name: module de stabilité magnétique MOD
   description: Ce sont de puissants électroaimants installés dans les bottes de la combinaison, offrant une excellente adhérence quelles que soient les conditions à l'intérieur, et permettant essentiellement de s'accrocher à l'extérieur d'une coque.
@@ -210,7 +210,7 @@
     - ModsuitModuleVisor
 
 - type: entity
-  parent: BaseModsuitModuleVisor
+  parent: [ BaseModsuitModuleVisor, BaseMinorMedicalContraband ]
   id: ModsuitModuleVisorMedical
   name: module de viseur médical MOD
   description: Un affichage tête haute installé dans le viseur de la combinaison. Celui-ci croise les données des capteurs de la combinaison avec une suite moderne de balayage biologique, permettant à l'utilisateur de visualiser la santé actuelle des formes de vie organiques.
@@ -225,7 +225,7 @@
     - type: ShowDiseaseIcons
 
 - type: entity
-  parent: [BaseModsuitModuleVisor, BaseSecurityContraband]
+  parent: [ BaseModsuitModuleVisor, BaseMajorSecurityContraband ]
   id: ModsuitModuleVisorSecurity
   name: module de viseur de sécurité MOD
   description: Un affichage tête haute installé dans le viseur de la combinaison. Ce module est un système de ciblage lourdement rétrofité, branché sur diverses bases de données criminelles pour pouvoir consulter les dossiers d'arrestation, commander des robots simples orientés sécurité, et généralement savoir qui abattre.
@@ -284,7 +284,7 @@
       mod-device: !type:ContainerSlot
 
 - type: entity
-  parent: BaseModsuitModuleDevice
+  parent: [ BaseModsuitModuleDevice, BaseMinorMedicalContraband ]
   id: ModsuitModuleHealthAnalyzer
   name: module d'analyseur de santé MOD
   description: Un module installé dans le gant de la combinaison. Il s'agit d'une suite de balayage biologique high-tech, permettant à l'utilisateur d'obtenir des informations approfondies sur les signes vitaux et les blessures des autres, même à distance.
@@ -316,7 +316,7 @@
     device: ModsuitDeviceGps
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorEngineeringContraband ]
   id: ModsuitModuleJetpack
   name: module de réacteur à ions MOD
   description: Une série de propulseurs électriques installés à travers la combinaison, ce module est très attendu par les stagiaires Ingénieurs. Plutôt que d'utiliser des gaz pour la poussée de combustion, ces jets sont capables d'accélérer des ions en utilisant la charge de la combinaison.
@@ -355,7 +355,7 @@
   - type: ModThermalRegulatorModule
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMajorSecurityContraband ]
   id: ModsuitModuleEmpShield
   name: module de bouclier EMP MOD
   description: Un inhibiteur de champ installé dans la combinaison, la protégeant contre les rétroactions telles que les impulsions électromagnétiques qui endommageraient autrement les systèmes électroniques de la combinaison.
@@ -592,7 +592,7 @@
       startingGrabStage: Hard
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorMedicalContraband ]
   id: ModsuitModuleQuickCarry
   name: module de port rapide MOD
   description: Une suite de servos avancés, redirigeant l'énergie des bras de la combinaison pour aider à transporter les blessés ; ou simplement pour s'amuser. Cependant, Nanotrasen a verrouillé la capacité du module à aider au combat corps à corps.
@@ -611,7 +611,7 @@
       multiplier: 0.4
 
 - type: entity
-  parent: BaseModsuitModuleDevice
+  parent: [ BaseModsuitModuleDevice, BaseMinorMedicalContraband ]
   id: ModsuitModuleInjector
   name: module injecteur MOD
   description: Un module installé au poignet de la combinaison, fonctionnant comme une seringue à grande capacité, avec une pointe assez fine pour localiser les ports d'injection d'urgence sur n'importe quelle combinaison de blindage.
@@ -628,7 +628,7 @@
     device: ModsuitDeviceInjector
 
 - type: entity
-  parent: BaseModsuitModuleDevice
+  parent: [ BaseModsuitModuleDevice, BaseMinorMedicalContraband ]
   id: ModsuitModuleDefibrillator
   name: module de défibrillateur MOD
   description: Un module intégré dans les gantelets de la combinaison ; communément connu sous le nom de 'Mains Guérisseuses' par les professionnels de santé. Les ordinateurs de bord de la combinaison calculent la tension nécessaire, et le porteur retourne à l'infirmerie en héros.
@@ -645,7 +645,7 @@
     device: ModsuitDeviceDefibrillator
 
 - type: entity
-  parent: BaseModsuitModuleDevice
+  parent: [ BaseModsuitModuleDevice, BaseMinorMedicalContraband ]
   id: ModsuitModulePatientTransport
   name: module de transport de patient MOD
   description: Un module intégré dans l'avant-bras de la combinaison. Invoquable d'un simple geste, le sac de transport en dur-lumière maintient un patient en stase, mais ne tient que tant que le porteur le traîne.
@@ -662,7 +662,7 @@
     device: ModsuitDevicePatientTransport
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorMedicalContraband ]
   id: ModsuitModuleThreadRipper
   name: module de déchireur de fil MOD
   description: Un module qui déchire et recout le tissu des vêtements d'un patient selon les besoins, permettant au porteur d'opérer sans les dévêtir d'abord.
@@ -681,7 +681,7 @@
     - type: SurgeryIgnoreClothing
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorEngineeringContraband ]
   id: ModsuitModuleTRay
   name: module de scan T-ray MOD
   description: Un module installé dans le viseur de la combinaison, permettant à l'utilisateur d'utiliser une impulsion de radiation térahertz pour essentiellement écholocaliser les choses sous le sol, principalement des câbles et des tuyaux.
@@ -702,7 +702,7 @@
   - type: ModTrayScannerModule
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorEngineeringContraband ]
   id: ModsuitModuleRadProtection
   name: module de protection contre les radiations MOD
   description: Un module utilisant des polymères et un blindage réfléchissant pour protéger l'utilisateur contre les radiations ionisantes.
@@ -718,7 +718,7 @@
         Radiation: 0.2
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorEngineeringContraband ]
   id: ModsuitModuleHeadProtector
   name: module de protection de la tête MOD
   description: Une série de plaques amortissantes installée le long de l'arrière et de l'intérieur du casque, protégeant le porteur des débris qui tombent et de l'instrument contondant occasionnel.
@@ -737,7 +737,7 @@
         Blunt: 0.9
 
 - type: entity
-  parent: BaseModsuitModuleDevice
+  parent: [ BaseModsuitModuleDevice, BaseMinorEngineeringContraband ]
   id: ModsuitModuleTether
   name: module de câble d'urgence MOD
   description: Un grappin sur mesure alimenté par un treuil capable de hisser l'utilisateur. Bien que certains modèles anciens de grappins orientés cargaison aient des capacités de quelques tonnes, ceux-ci ne sont capables de fonctionner que dans des environnements en apesanteur, une bénédiction pour certains Ingénieurs.
@@ -754,7 +754,7 @@
     device: ModsuitDeviceTether
 
 - type: entity
-  parent: BaseModsuitModuleDevice
+  parent: [ BaseModsuitModuleDevice, BaseMinorEngineeringContraband ]
   id: ModsuitModuleMister
   name: module de brumisateur d'eau MOD
   description: Un module contenant un brumisateur, capable de pulvériser de l'eau pour éteindre les incendies. Se remplit lentement depuis le réservoir interne de la combinaison.
@@ -771,7 +771,7 @@
     device: ModsuitDeviceMister
 
 - type: entity
-  parent: BaseModsuitModuleDevice
+  parent: [ BaseModsuitModuleDevice, BaseMinorEngineeringContraband ]
   id: ModsuitModuleResinMister
   name: module de brumisateur de résine MOD
   description: Un lanceur de résine atmosphérique qui tire des globes de mousse métallique à prise rapide, colmatant les brèches à distance de sécurité.
@@ -789,7 +789,7 @@
     device: ModsuitDeviceResinMister
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMajorSecurityContraband ]
   id: ModsuitModuleHolster
   name: module d'holster MOD
   description: Basé sur des compartiments de stockage typiques, ce système permet à la combinaison d'holster une arme à feu standard sur sa surface et de permettre une récupération extrêmement rapide.
@@ -810,7 +810,7 @@
       mod-holster: !type:ContainerSlot
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMajorSecurityContraband ]
   id: ModsuitModuleMegaphone
   name: module de mégaphone MOD
   description: Un mégaphone à micropuce lié à une MODsuit, pour des purposes très importants, comme le volume sonore.
@@ -830,7 +830,7 @@
   - type: ModLoudspeakerModule
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMajorSecurityContraband ]
   id: ModsuitModulePepperShoulders
   name: module d'épaules au poivre MOD
   description: Un module qui attache deux vaporisateurs de poivre sur les épaules d'une MODsuit, libérant un nuage de capsaïcine autour du porteur sur commande.
@@ -846,7 +846,7 @@
     prototype: ModsuitPepperSmokeEffect
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMajorSecurityContraband ]
   id: ModsuitModuleRestraintAssist
   name: module d'assistance à la contention MOD
   description: Coussinets de prise de gantelets améliorés qui aident à placer des individus dans des entraves plus rapidement.
@@ -864,7 +864,7 @@
       multiplier: 0.5
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMajorSecurityContraband ]
   id: ModsuitModuleBulwark
   name: module de bastion MOD
   description: Des couches de stabilisateurs hydrauliques dans les jambes de la combinaison maintiennent le porteur fermement planté, le rendant impossible à bousculer.
@@ -882,7 +882,7 @@
     - type: ModShoveBlocker
 
 - type: entity
-  parent: BaseModsuitModuleDevice
+  parent: [ BaseModsuitModuleDevice, BaseMinorCargoContraband ]
   id: ModsuitModuleDrill
   name: module de foreuse MOD
   description: Une foreuse intégrée, s'étendant généralement au-dessus de la main de l'utilisateur. Bien qu'utile pour forer à travers le roc, votre foreuse est sûrement celle qui perce et crée les cieux.
@@ -906,7 +906,7 @@
       - MiningScannerViewable
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorCargoContraband ]
   id: ModsuitModuleOreBag
   name: module de sac à minerai MOD
   description: Un système de stockage de minerai intégré installé dans les gantelets, attirant magnétiquement le minerai voisin pendant qu'il est actif.
@@ -938,7 +938,7 @@
           type: StorageBoundUserInterface
 
 - type: entity
-  parent: BaseModsuitModuleDevice
+  parent: [ BaseModsuitModuleDevice, BaseMinorCargoContraband ]
   id: ModsuitModuleClamp
   name: module de pince hydraulique MOD
   description: Une série d'actionneurs installés dans les deux bras de la combinaison, offrant une capacité de levage d'une tonne presque. Cependant, ce design a été verrouillé par Nanotrasen pour être principalement utilisé pour soulever diverses caisses.
@@ -974,7 +974,7 @@
     - type: SolutionScanner
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorEngineeringContraband ]
   id: ModsuitModuleAntiGravity
   name: module d'antigravité MOD
   description: Un module qui utilise un noyau gravitationnel pour rendre l'utilisateur complètement sans poids, lui permettant de flotter librement même avec la gravité activée.
@@ -1766,7 +1766,7 @@
       - EntityStorage
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorCargoContraband ]
   id: ModsuitModuleCandelaSpool
   name: "module de bobine de balises « Candela » MOD"
   description: "Un ensemble de câbles et de connecteurs, capable de déployer automatiquement des balises « Candela » depuis l'intérieur d'un MODsuit."
@@ -1850,7 +1850,7 @@
     weightlessModifier: 1.6
 
 - type: entity
-  parent: ModsuitModuleBuiltinThermal
+  parent: [ ModsuitModuleBuiltinThermal, BaseMajorSecurityContraband ]
   id: ModsuitModuleThermalVisor
   name: "module de viseur thermique MOD"
   description: "Un affichage à tête haute installé dans le viseur de la combinaison. Celui-ci utilise un petit scanner IR pour détecter et identifier le rayonnement thermique émis par les objets proches de l'utilisateur. Bien qu'il puisse détecter la chaleur de quelque chose d'aussi petit qu'un rongeur, il produit toujours une irritante superposition rouge. On dit que ceux-ci vous permettent aussi de voir derrière vous."
@@ -1874,7 +1874,7 @@
       Glass: 50
 
 - type: entity
-  parent: ModsuitModuleBuiltinNightVision
+  parent: [ ModsuitModuleBuiltinNightVision, BaseMinorSecurityMedicalContraband ]
   id: ModsuitModuleNightVisor
   name: "module de viseur de vision nocturne MOD"
   description: "Un affichage à tête haute installé dans le viseur de la combinaison. Typique pour les applications civiles et militaires, celui-ci permet à l'utilisateur de percevoir son environnement dans l'obscurité totale, améliorant la vue de dix fois ; tout en éclaircissant tout en une lueur verte inquiétante. On dit que ceux-ci vous permettent aussi de voir derrière vous."
@@ -1898,7 +1898,7 @@
       Glass: 50
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorMedicalContraband ]
   id: ModsuitModuleQuickCarryAdvanced
   name: "module de port avancé MOD"
   description: "Une suite de servos avancés, redirigeant l'énergie des bras de la combinaison pour aider à porter les blessés ; ou simplement pour s'amuser. Cependant, Nanotrasen a verrouillé la capacité du module à assister dans le combat corps à corps."
@@ -1917,7 +1917,7 @@
       multiplier: 0.15
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMajorSecurityContraband ]
   id: ModsuitModuleShockAbsorber
   name: "module d'absorption de chocs MOD"
   description: "Un module qui rend l'utilisateur résistant au KO et à la perturbation du SNC infligée par les matraques à impulsion électrique."
@@ -2093,7 +2093,7 @@
       - MobState
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorEngineeringContraband ]
   id: ModsuitModuleJumpJet
   name: "module de propulseur à saut ionique MOD"
   description: "Un propulseur ionique spécialisé qui procure un court mais puissant boost vers l'avant, après quoi il doit se recharger."
@@ -2110,7 +2110,7 @@
   - type: ModJumpJetModule
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMinorEngineeringContraband ]
   id: ModsuitModuleEmpShieldAdvanced
   name: "module de bouclier EMP avancé MOD"
   description: "Un inhibiteur de champ avancé installé dans la combinaison, la protégeant contre les rétroactions telles que les impulsions électromagnétiques qui endommageraient sinon les systèmes électroniques de la combinaison ou les appareils électroniques sur le porteur, y compris les augmentations. Cependant, cela puisera dans l'énergie de la combinaison pour ce faire."
@@ -2231,7 +2231,7 @@
       - Trash
 
 - type: entity
-  parent: BaseModsuitModuleDevice
+  parent: [ BaseModsuitModuleDevice, BaseMajorSecurityContraband ]
   id: ModsuitModuleCriminalCapture
   name: module de capture criminelle MOD
   description: Une version sécurité du transport de patient. Il enveloppe un suspect dans un sac de maintien en dure-lumière scellé dont il ne peut pas sortir et qui se traîne à pleine vitesse. Il ne tient ensemble que tant que le porteur le traîne, et les laisse épuisés sur le sol quand il se dissipe.
@@ -2343,7 +2343,7 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMajorSecurityContraband ]
   id: ModsuitModuleMagneticHarness
   name: "module de harnais magnétique MOD"
   description: "Basé sur les anciens kits de harnais TerraGov, ce harnais magnétique rattache automatiquement les armes tombées au porteur."
@@ -2361,7 +2361,7 @@
     - type: ModMagneticHarness
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMajorSecurityContraband ]
   id: ModsuitModuleProjectileDampener
   name: "module d'atténuation de projectiles MOD"
   description: "Utilisant la technologie des peaceborgs, ce module affaiblit tous les projectiles à portée proximité."
@@ -2379,7 +2379,7 @@
 
 
 - type: entity
-  parent: BaseModsuitModule
+  parent: [ BaseModsuitModule, BaseMajorSecurityContraband ]
   id: ModsuitModuleShootingAssistant
   name: "module d'assistant de tir MOD"
   description: "Un prototype raté destiné à améliorer la capacité des mangeurs de crayons du TGMC avec les armes à feu. Il n'a que deux modes disponibles dans ses configurations : 'Tir Rapide Stormtrooper' et 'Tir Lent Ricochet Tireur d'Élite'."

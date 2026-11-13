@@ -146,7 +146,7 @@
 
 - type: entity
   id: ModsuitPlatingParamedic
-  parent: PartModsuit
+  parent: [ PartModsuit, BaseMinorMedicalContraband ]
   name: placage 'sanitäter' standard urgentiste MOD
   description: Une pièce utilisée dans la construction MOD.
   components:
@@ -166,7 +166,7 @@
 
 - type: entity
   id: ModsuitPlatingEngineer
-  parent: PartModsuit
+  parent: [ PartModsuit, BaseMinorEngineeringContraband ]
   name: placage 'sapper' standard ingénieur MOD
   description: Une pièce utilisée dans la construction MOD.
   components:
@@ -186,7 +186,7 @@
 
 - type: entity
   id: ModsuitPlatingMining
-  parent: PartModsuit
+  parent: [ PartModsuit, BaseMinorCargoContraband ]
   name: blindage minier MOD
   description: Une pièce utilisée dans la construction d'un MOD.
   components:
@@ -206,7 +206,7 @@
 
 - type: entity
   id: ModsuitPlatingLoader
-  parent: PartModsuit
+  parent: [ PartModsuit, BaseMajorCargoCommandContraband ]
   name: blindage chargeur MOD
   description: Une pièce utilisée dans la construction d'un MOD. Un blindage de harnais motorisé expérimental de Scarborough Arms, délivré aux quartiers-maîtres.
   components:
@@ -226,7 +226,7 @@
 
 - type: entity
   id: ModsuitPlatingSecurity
-  parent: PartModsuit
+  parent: [ PartModsuit, BaseMajorSecurityContraband ]
   name: blindage standard MOD de sécurité 'soldat'
   description: Une pièce utilisée dans la construction MOD.
   components:
@@ -246,7 +246,7 @@
 
 - type: entity
   id: ModsuitPlatingHeadOfSecurity
-  parent: PartModsuit
+  parent: [ PartModsuit, BaseMajorSecurityCommandContraband ]
   name: blindage MOD standard du chef de la sécurité 'bulwark'
   description: Une pièce utilisée dans la construction MOD.
   components:
@@ -266,7 +266,7 @@
 
 - type: entity
   id: ModsuitPlatingCaptain
-  parent: PartModsuit
+  parent: [ PartModsuit, BaseMajorCommandContraband ]
   name: blindage 'magnat' standard capitaine MOD
   description: Une pièce utilisée dans la construction MOD.
   components:
@@ -286,7 +286,7 @@
 
 - type: entity
   id: ModsuitPlatingRD
-  parent: PartModsuit
+  parent: [ PartModsuit, BaseMajorScienceCommandContraband ]
   name: placage 'minerve' standard DR MOD
   description: Une pièce utilisée dans la construction MOD.
   components:
@@ -306,7 +306,7 @@
 
 - type: entity
   id: ModsuitPlatingAtmostech
-  parent: PartModsuit
+  parent: [ PartModsuit, BaseMinorEngineeringContraband ]
   name: blindage standard MOD de technicien atmosphérique 'éole'
   description: Une pièce utilisée dans la construction MOD.
   components:
@@ -326,7 +326,7 @@
 
 - type: entity
   id: ModsuitPlatingBrigMed
-  parent: PartModsuit
+  parent: [ PartModsuit, BaseMajorSecurityMedicalContraband ]
   name: blindage standard de traumatologie de sécurité MOD
   description: Une pièce utilisée dans la construction MOD.
   components:
@@ -346,7 +346,7 @@
 
 - type: entity
   id: ModsuitPlatingPraetorian
-  parent: PartModsuit
+  parent: [ PartModsuit, BaseMajorSecurityCommandContraband ]
   name: blindage prétoire MOD
   description: Une pièce utilisée dans la construction MOD. Délivré aux officiers Blueshield.
   components:
