@@ -128,8 +128,10 @@
     <GuideEntityEmbed Entity="XenoborgModuleSuperCloakDevice" Caption="module xénoborg dispositif camouflage"/>
   </Box>
 
-  ## Préparation
-  Avant de lancer une attaque, chaque xénoborg devra aider le nœud-mère à collecter des matériaux pour créer des xénoborgs vides. Avant de FTL près de la station, assurez-vous que l'IFF est désactivé. Cela peut se faire de n'importe quelle façon mais requerra du travail d'équipe pour assurer la vitesse. La façon la plus sûre de collecter des matériaux est depuis les débris spatiaux, où ferraille et matériaux raffinés peuvent être récoltés et donnés au Cœur du Nœud-Mère. Une fois assez de matériaux collectés, les Xénoborgs doivent alors essayer de collecter des cerveaux sensibles sans être détectés. Plus la menace reste inconnue, plus les xénoborgs deviennent dangereux.
+  ## Préparation et tactiques
+  Avant de FTL près de la station, assurez-vous que l'IFF est désactivé.
+  Avant de lancer une attaque, les xénoborgs devraient discuter de leur stratégie et décider quelles cibles frapper en premier.
+  Les xénoborgs devraient essayer de collecter des cerveaux sentients sans se faire repérer. Plus la menace reste inconnue longtemps, plus les xénoborgs deviennent dangereux.
 
   ## Lois du Nœud-Mère et Xénoborgs
   Le Nœud-Mère et Xénoborgs ont des lois uniques qui définissent leur but de s'auto-répliquer et protéger le Nœud-Mère.

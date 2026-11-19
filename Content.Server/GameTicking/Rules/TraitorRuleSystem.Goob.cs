@@ -2,7 +2,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using Content.Goobstation.Common.Traitor;
-using Content.Goobstation.Maths.FixedPoint;
+using Content.Shared.FixedPoint;
 using Content.Server.Popups;
 using Robust.Shared.Configuration;
 
