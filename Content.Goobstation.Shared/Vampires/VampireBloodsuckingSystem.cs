@@ -6,7 +6,7 @@ using Content.Shared.Body.Components;
 using Content.Shared.Body.Systems;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.DoAfter;
-using Content.Goobstation.Maths.FixedPoint;
+using Content.Shared.FixedPoint;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Mind;
 using Content.Shared.Mobs.Systems;
