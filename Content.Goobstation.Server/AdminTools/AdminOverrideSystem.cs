@@ -1,5 +1,5 @@
 using System.Numerics;
-using Content.Goobstation.Maths.FixedPoint;
+using Content.Shared.FixedPoint;
 using Content.Shared.Administration.Components;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Sprite;
