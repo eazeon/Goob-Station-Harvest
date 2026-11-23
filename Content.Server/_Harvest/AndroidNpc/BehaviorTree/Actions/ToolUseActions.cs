@@ -2,7 +2,7 @@
 
 using System.Numerics;
 using Content.Goobstation.Common.Footprints;
-using Content.Goobstation.Maths.FixedPoint;
+using Content.Shared.FixedPoint;
 using Content.Goobstation.Shared.FloorCleaner;
 using Content.Server._Harvest.AndroidNpc.BehaviorTree.Nodes;
 using Content.Server._Harvest.AndroidNpc.Components;

@@ -15,7 +15,7 @@ using Content.Server.NPC.Systems;
 using Content.Shared._Harvest.AdminSquad;
 using Content.Shared.Administration;
 using Content.Shared.Chat;
-using Content.Goobstation.Maths.FixedPoint;
+using Content.Shared.FixedPoint;
 using Content.Shared.CombatMode;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;

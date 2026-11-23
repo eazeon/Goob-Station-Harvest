@@ -1,5 +1,5 @@
 using System.Linq;
-using Content.Goobstation.Maths.FixedPoint;
+using Content.Shared.FixedPoint;
 using Content.Server.Botany;
 using Content.Server.Botany.Components;
 using Content.Shared._Harvest.Botany.SeedAnalyzer;
